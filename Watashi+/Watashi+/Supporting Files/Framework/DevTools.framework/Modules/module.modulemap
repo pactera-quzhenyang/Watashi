@@ -1,0 +1,11 @@
+framework module DevTools {
+  umbrella header "DevTools.h"
+
+  export *
+  module * { export * }
+}
+
+module DevTools.Swift {
+    header "DevTools-Swift.h"
+    requires objc
+}

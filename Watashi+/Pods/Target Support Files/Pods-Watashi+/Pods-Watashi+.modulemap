@@ -1,0 +1,6 @@
+framework module Pods_Watashi_ {
+  umbrella header "Pods-Watashi+-umbrella.h"
+
+  export *
+  module * { export * }
+}

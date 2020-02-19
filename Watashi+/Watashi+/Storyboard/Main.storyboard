@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BkP-EG-nqj">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cuI-wl-7gt">
+            <objects>
+                <tabBarController storyboardIdentifier="BaseTabbarController" hidesBottomBarWhenPushed="YES" id="BkP-EG-nqj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j7T-W6-Ewj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.16078431372549018" green="0.15686274509803921" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ceL-Nn-i88" kind="relationship" relationship="viewControllers" id="kdx-tv-9OB"/>
+                        <segue destination="6K9-lz-I43" kind="relationship" relationship="viewControllers" id="dR7-2Q-Zyg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yk0-yK-Lz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1042" y="-519"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Yuk-Wb-xJP">
+            <objects>
+                <navigationController id="ceL-Nn-i88" userLabel="Home" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="icon_chat_normal" selectedImage="icon_chat_select" id="Dau-M8-fep">
+                        <color key="badgeColor" red="0.16106376051902771" green="0.1561816930770874" blue="0.18167141079902649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HAA-VC-SQi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hTY-hb-BRa" kind="relationship" relationship="rootViewController" id="v1g-ZS-p7g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ols-4o-bZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="-334"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="JEh-kw-OTC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="hTY-hb-BRa" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jU6-xw-ehk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCW-CG-KOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1746" y="-335"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="sNn-IL-pAG">
+            <objects>
+                <navigationController id="6K9-lz-I43" userLabel="Search" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="home" image="icon_chat_normal" selectedImage="icon_chat_select" id="uQM-KF-XA3">
+                        <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qZw-wq-Z7q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6Yf-St-m2r" kind="relationship" relationship="rootViewController" id="dnF-tn-lN4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bak-vz-LFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="-1064"/>
+        </scene>
+        <!--SearchViewController-->
+        <scene sceneID="JVP-Sr-tZN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchViewController" id="6Yf-St-m2r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="f7n-px-CwR"/>
+                    <navigationItem key="navigationItem" id="r73-ce-W0u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dX-bm-jm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739" y="-1065"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_chat_normal" width="23" height="23"/>
+        <image name="icon_chat_select" width="25" height="25"/>
+    </resources>
+</document>
