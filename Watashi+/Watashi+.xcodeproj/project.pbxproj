@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		370A4845D798C273679ED6EE /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
+		531C9F8623FD2EFC00391B77 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8523FD2EFC00391B77 /* SecondViewController.swift */; };
+		531C9F8823FD2F0500391B77 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* ThirdViewController.swift */; };
+		5322D4A523FE1A200069D0C9 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322D4A423FE1A200069D0C9 /* FirstTableViewCell.swift */; };
 		533C5A1A23FBB03600735670 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1923FBB03600735670 /* SearchViewController.swift */; };
 		533C5A1E23FBB09200735670 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1D23FBB09200735670 /* HomeViewController.swift */; };
 		533C5A2A23FBB10100735670 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1F23FBB10000735670 /* PageContentView.swift */; };
@@ -24,6 +27,7 @@
 		533C5A3A23FBB39700735670 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A3923FBB39700735670 /* BaseViewController.swift */; };
 		533C5A3C23FBCBFF00735670 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A3B23FBCBFF00735670 /* LoadingView.swift */; };
 		533C5A3E23FBCC7900735670 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533C5A3D23FBCC7900735670 /* LoadingView.xib */; };
+		5340FC0D23FD2EAF00286426 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340FC0C23FD2EAF00286426 /* FirstViewController.swift */; };
 		53AC692323FB742C0088CBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC692223FB742C0088CBC0 /* AppDelegate.swift */; };
 		53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692B23FB742D0088CBC0 /* Assets.xcassets */; };
 		53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -39,11 +43,13 @@
 		53AC699F23FB90250088CBC0 /* DevTools.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 53AC695D23FB7EC00088CBC0 /* DevTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		53AC69A323FBABDE0088CBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
 		53AC69A523FBACBF0088CBC0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
-		53BC8D0323FBD46F00C2AF41 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BC8D0223FBD46F00C2AF41 /* HomeViewModel.swift */; };
 		53CF47A123FBE333005A52B9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF47A023FBE333005A52B9 /* ApiManager.swift */; };
 		53CF47A323FBE610005A52B9 /* MoyaProvider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF47A223FBE610005A52B9 /* MoyaProvider+Rx.swift */; };
 		53CF47A923FBE665005A52B9 /* Observable+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF47A823FBE665005A52B9 /* Observable+Response.swift */; };
 		53CF47AB23FBE66A005A52B9 /* Single+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF47AA23FBE66A005A52B9 /* Single+Response.swift */; };
+		53F6429923FE321200420A6F /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429823FE321200420A6F /* FirstModel.swift */; };
+		53F6429B23FE6CCE00420A6F /* FirstHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* FirstHeaderView.swift */; };
+		53F6429D23FE6D0600420A6F /* FirstHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* FirstHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,9 @@
 
 /* Begin PBXFileReference section */
 		09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.release.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.release.xcconfig"; sourceTree = "<group>"; };
+		531C9F8523FD2EFC00391B77 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		531C9F8723FD2F0500391B77 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		5322D4A423FE1A200069D0C9 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		533C5A1923FBB03600735670 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		533C5A1D23FBB09200735670 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		533C5A1F23FBB10000735670 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +103,7 @@
 		533C5A3923FBB39700735670 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		533C5A3B23FBCBFF00735670 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		533C5A3D23FBCC7900735670 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		5340FC0C23FD2EAF00286426 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		53AC691F23FB742C0088CBC0 /* Watashi+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC692223FB742C0088CBC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53AC692B23FB742D0088CBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,11 +124,13 @@
 		53AC699623FB873F0088CBC0 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		53AC69A223FBABDE0088CBC0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		53AC69A423FBACBF0088CBC0 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		53BC8D0223FBD46F00C2AF41 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = "Watashi+/Classes/Base/HomeViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		53CF47A023FBE333005A52B9 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		53CF47A223FBE610005A52B9 /* MoyaProvider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoyaProvider+Rx.swift"; sourceTree = "<group>"; };
 		53CF47A823FBE665005A52B9 /* Observable+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Response.swift"; sourceTree = "<group>"; };
 		53CF47AA23FBE66A005A52B9 /* Single+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Single+Response.swift"; sourceTree = "<group>"; };
+		53F6429823FE321200420A6F /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstModel.swift; path = "Watashi+/Classes/Home/View/FirstModel.swift"; sourceTree = SOURCE_ROOT; };
+		53F6429A23FE6CCE00420A6F /* FirstHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstHeaderView.swift; sourceTree = "<group>"; };
+		53F6429C23FE6D0600420A6F /* FirstHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstHeaderView.xib; sourceTree = "<group>"; };
 		DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -359,6 +371,9 @@
 			isa = PBXGroup;
 			children = (
 				533C5A1D23FBB09200735670 /* HomeViewController.swift */,
+				5340FC0C23FD2EAF00286426 /* FirstViewController.swift */,
+				531C9F8523FD2EFC00391B77 /* SecondViewController.swift */,
+				531C9F8723FD2F0500391B77 /* ThirdViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -366,6 +381,9 @@
 		53AC696123FB83220088CBC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5322D4A423FE1A200069D0C9 /* FirstTableViewCell.swift */,
+				53F6429A23FE6CCE00420A6F /* FirstHeaderView.swift */,
+				53F6429C23FE6D0600420A6F /* FirstHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,7 +391,6 @@
 		53AC696223FB832A0088CBC0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				53BC8D0223FBD46F00C2AF41 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -381,6 +398,7 @@
 		53AC696323FB83330088CBC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				53F6429823FE321200420A6F /* FirstModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -552,6 +570,7 @@
 				53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */,
 				533C5A3E23FBCC7900735670 /* LoadingView.xib in Resources */,
 				533C5A3823FBB1B100735670 /* Search.storyboard in Resources */,
+				53F6429D23FE6D0600420A6F /* FirstHeaderView.xib in Resources */,
 				53AC69A523FBACBF0088CBC0 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,19 +638,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5340FC0D23FD2EAF00286426 /* FirstViewController.swift in Sources */,
+				531C9F8823FD2F0500391B77 /* ThirdViewController.swift in Sources */,
 				533C5A3323FBB10100735670 /* PageTitleView+Rx.swift in Sources */,
 				533C5A3123FBB10100735670 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				533C5A2E23FBB10100735670 /* PageCollectionViewFlowLayout.swift in Sources */,
-				53BC8D0323FBD46F00C2AF41 /* HomeViewModel.swift in Sources */,
+				531C9F8623FD2EFC00391B77 /* SecondViewController.swift in Sources */,
 				533C5A3C23FBCBFF00735670 /* LoadingView.swift in Sources */,
 				533C5A2B23FBB10100735670 /* PageTitleView.swift in Sources */,
 				53CF47AB23FBE66A005A52B9 /* Single+Response.swift in Sources */,
 				53AC698A23FB851D0088CBC0 /* Constant.swift in Sources */,
 				533C5A3A23FBB39700735670 /* BaseViewController.swift in Sources */,
+				5322D4A523FE1A200069D0C9 /* FirstTableViewCell.swift in Sources */,
 				53AC698E23FB851D0088CBC0 /* AppConfig.swift in Sources */,
 				533C5A2D23FBB10100735670 /* Protocal.swift in Sources */,
 				533C5A2A23FBB10100735670 /* PageContentView.swift in Sources */,
 				533C5A3023FBB10100735670 /* PageStyle.swift in Sources */,
+				53F6429923FE321200420A6F /* FirstModel.swift in Sources */,
 				53CF47A123FBE333005A52B9 /* ApiManager.swift in Sources */,
 				53CF47A323FBE610005A52B9 /* MoyaProvider+Rx.swift in Sources */,
 				533C5A1E23FBB09200735670 /* HomeViewController.swift in Sources */,
@@ -645,6 +668,7 @@
 				533C5A3423FBB10100735670 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				53AC699523FB869C0088CBC0 /* NetworkRequest.swift in Sources */,
 				53AC697723FB83650088CBC0 /* BaseCollectionViewCell.swift in Sources */,
+				53F6429B23FE6CCE00420A6F /* FirstHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

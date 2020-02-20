@@ -1,26 +1,24 @@
+
+
+
 //
-//  BaseViewController.swift
+//  ThirdViewController.swift
 //  Watashi+
 //
-//  Created by 曲振阳 on 2020/2/18.
+//  Created by 曲振阳 on 2020/2/19.
 //  Copyright © 2020 曲振阳. All rights reserved.
 //
 
 import UIKit
 import Reusable
 
-class BaseViewController: UIViewController {
+class ThirdViewController: BaseViewController, StoryboardSceneBased {
 
-    public lazy var loadingView: LoadingView = {
-        let loadingView = LoadingView.loadFromNib()
-        return loadingView
-    }()
-    
+    static let sceneStoryboard = UIStoryboard(name: "Home", bundle: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .white
     }
     
 
