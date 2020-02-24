@@ -20,6 +20,7 @@ class FirstViewController: BaseViewController, StoryboardSceneBased {
 
     var dataSource:RxTableViewSectionedReloadDataSource<SectionModel<String,SectionDataModel>>?
     let disposeBag = DisposeBag()
+    private let viewModel = FirstViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()

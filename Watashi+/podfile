@@ -4,6 +4,7 @@ platform :ios, '12.0'
 use_frameworks!
 inhibit_all_warnings!
 
+#source "https://cpdc-eap.googlesource.com/spec.git"
 source 'https://github.com/CocoaPods/Specs.git'
 
 def default_pods
@@ -15,6 +16,8 @@ def default_pods
     pod 'SnapKit'
     pod 'Reusable'
     pod 'RxDataSources'
+
+#    pod 'FirebaseABTesting'
 end
 
 target 'Watashi+' do

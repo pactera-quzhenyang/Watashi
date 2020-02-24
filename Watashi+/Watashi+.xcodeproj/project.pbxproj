@@ -28,6 +28,8 @@
 		533C5A3C23FBCBFF00735670 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A3B23FBCBFF00735670 /* LoadingView.swift */; };
 		533C5A3E23FBCC7900735670 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533C5A3D23FBCC7900735670 /* LoadingView.xib */; };
 		5340FC0D23FD2EAF00286426 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340FC0C23FD2EAF00286426 /* FirstViewController.swift */; };
+		534C132823FF6F3A00FEE103 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C132723FF6F3A00FEE103 /* FirstViewModel.swift */; };
+		534C132A23FF6F8B00FEE103 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C132923FF6F8B00FEE103 /* BaseViewModel.swift */; };
 		53AC692323FB742C0088CBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC692223FB742C0088CBC0 /* AppDelegate.swift */; };
 		53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692B23FB742D0088CBC0 /* Assets.xcassets */; };
 		53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -104,6 +106,8 @@
 		533C5A3B23FBCBFF00735670 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		533C5A3D23FBCC7900735670 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		5340FC0C23FD2EAF00286426 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		534C132723FF6F3A00FEE103 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		534C132923FF6F8B00FEE103 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		53AC691F23FB742C0088CBC0 /* Watashi+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC692223FB742C0088CBC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53AC692B23FB742D0088CBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -391,6 +395,7 @@
 		53AC696223FB832A0088CBC0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				534C132723FF6F3A00FEE103 /* FirstViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 			children = (
 				533C5A3923FBB39700735670 /* BaseViewController.swift */,
 				53AC696823FB83650088CBC0 /* BaseCollectionViewCell.swift */,
+				534C132923FF6F8B00FEE103 /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -641,6 +647,7 @@
 				5340FC0D23FD2EAF00286426 /* FirstViewController.swift in Sources */,
 				531C9F8823FD2F0500391B77 /* ThirdViewController.swift in Sources */,
 				533C5A3323FBB10100735670 /* PageTitleView+Rx.swift in Sources */,
+				534C132823FF6F3A00FEE103 /* FirstViewModel.swift in Sources */,
 				533C5A3123FBB10100735670 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				533C5A2E23FBB10100735670 /* PageCollectionViewFlowLayout.swift in Sources */,
 				531C9F8623FD2EFC00391B77 /* SecondViewController.swift in Sources */,
@@ -660,6 +667,7 @@
 				533C5A1E23FBB09200735670 /* HomeViewController.swift in Sources */,
 				533C5A2F23FBB10100735670 /* Helper.swift in Sources */,
 				533C5A2C23FBB10100735670 /* PageContentView+Rx.swift in Sources */,
+				534C132A23FF6F8B00FEE103 /* BaseViewModel.swift in Sources */,
 				53AC692323FB742C0088CBC0 /* AppDelegate.swift in Sources */,
 				53AC698123FB83650088CBC0 /* UIView+Rx.swift in Sources */,
 				53AC699723FB873F0088CBC0 /* NetworkConfig.swift in Sources */,
@@ -856,7 +864,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-11.Watashi-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -890,7 +898,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "-11.Watashi-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

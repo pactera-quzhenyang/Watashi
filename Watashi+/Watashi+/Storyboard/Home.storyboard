@@ -85,9 +85,49 @@
                     <view key="view" contentMode="scaleToFill" id="qGZ-MX-5zG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NLc-Xt-e4L">
+                                <rect key="frame" x="57" y="323" width="300" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DGc-hH-Re7"/>
+                                    <constraint firstAttribute="width" constant="300" id="kC6-uu-WVP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOy-gU-DLa">
+                                <rect key="frame" x="57" y="423" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2de-eA-uQe"/>
+                                    <constraint firstAttribute="height" constant="50" id="3pZ-Bl-FXL"/>
+                                </constraints>
+                                <state key="normal" title="测试">
+                                    <color key="titleColor" red="0.87450980389999999" green="0.0" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mOy-gU-DLa" firstAttribute="centerX" secondItem="qGZ-MX-5zG" secondAttribute="centerX" id="0TW-1B-Vrt"/>
+                            <constraint firstItem="mOy-gU-DLa" firstAttribute="centerY" secondItem="qGZ-MX-5zG" secondAttribute="centerY" id="FFR-Dy-uRt"/>
+                            <constraint firstItem="NLc-Xt-e4L" firstAttribute="centerX" secondItem="qGZ-MX-5zG" secondAttribute="centerX" id="rTO-nU-sIs"/>
+                            <constraint firstItem="mOy-gU-DLa" firstAttribute="top" secondItem="NLc-Xt-e4L" secondAttribute="bottom" constant="50" id="uCB-Dg-uHe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Cf8-w8-amv"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="mOy-gU-DLa" id="4Ri-co-ogN"/>
+                        <outlet property="textField" destination="NLc-Xt-e4L" id="Ztf-6Q-vyc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGa-LX-y17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
