@@ -16,23 +16,26 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.16078431372549018" green="0.15686274509803921" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="ceL-Nn-i88" kind="relationship" relationship="viewControllers" id="kdx-tv-9OB"/>
                         <segue destination="6K9-lz-I43" kind="relationship" relationship="viewControllers" id="dR7-2Q-Zyg"/>
+                        <segue destination="itI-DY-Wno" kind="relationship" relationship="viewControllers" id="BwV-PD-ISy"/>
+                        <segue destination="bg3-MA-zcB" kind="relationship" relationship="viewControllers" id="Wbg-go-bCe"/>
+                        <segue destination="SZJ-jM-G8V" kind="relationship" relationship="viewControllers" id="D20-fg-Nbb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yk0-yK-Lz0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1042" y="-519"/>
+            <point key="canvasLocation" x="-854" y="-1708"/>
         </scene>
         <!--Home-->
         <scene sceneID="Yuk-Wb-xJP">
             <objects>
                 <navigationController id="ceL-Nn-i88" userLabel="Home" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="home" image="icon_chat_normal" selectedImage="icon_chat_select" id="Dau-M8-fep">
+                    <tabBarItem key="tabBarItem" title="ホーム" image="homeNormal" selectedImage="homeSelect" id="Dau-M8-fep">
                         <color key="badgeColor" red="0.16106376051902771" green="0.1561816930770874" blue="0.18167141079902649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HAA-VC-SQi">
@@ -61,7 +64,7 @@
         <scene sceneID="sNn-IL-pAG">
             <objects>
                 <navigationController id="6K9-lz-I43" userLabel="Search" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="home" image="icon_chat_normal" selectedImage="icon_chat_select" id="uQM-KF-XA3">
+                    <tabBarItem key="tabBarItem" title="さがす" image="searchNormal" selectedImage="search" id="uQM-KF-XA3">
                         <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qZw-wq-Z7q">
@@ -74,7 +77,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bak-vz-LFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="-1064"/>
+            <point key="canvasLocation" x="391" y="-1054"/>
         </scene>
         <!--SearchViewController-->
         <scene sceneID="JVP-Sr-tZN">
@@ -87,9 +90,110 @@
             </objects>
             <point key="canvasLocation" x="1739" y="-1065"/>
         </scene>
+        <!--Cart-->
+        <scene sceneID="Nur-6l-fOE">
+            <objects>
+                <navigationController id="itI-DY-Wno" userLabel="Cart" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="カート" image="cartNormal" selectedImage="cartSelect" id="dS9-gc-jSn">
+                        <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5zn-iw-OcY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Bwm-Ho-EYU" kind="relationship" relationship="rootViewController" id="kCS-KP-xjo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Va-pi-SZi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="-1707"/>
+        </scene>
+        <!--CartViewController-->
+        <scene sceneID="eUh-Sz-f45">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="CartViewController" id="Bwm-Ho-EYU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pp4-Ci-ckW"/>
+                    <navigationItem key="navigationItem" id="Loa-dl-2Bz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0RK-sk-Me4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="-1644"/>
+        </scene>
+        <!--Repurchase-->
+        <scene sceneID="9le-HY-GWj">
+            <objects>
+                <navigationController id="bg3-MA-zcB" userLabel="Repurchase" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="再購入" image="rePurchase" selectedImage="rePurchaseSelect" id="FYf-eL-36B">
+                        <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fuJ-mW-VmU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mQc-Tt-We0" kind="relationship" relationship="rootViewController" id="I2R-bD-Rn0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15t-NR-NQT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="-2398"/>
+        </scene>
+        <!--RepurchaseViewController-->
+        <scene sceneID="c5Q-oK-BlB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Repurchase" referencedIdentifier="RepurchaseViewController" id="mQc-Tt-We0" userLabel="RepurchaseViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="再購入" id="ogp-zv-w6F"/>
+                    <navigationItem key="navigationItem" id="zg7-vr-drI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLD-pL-b0w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="-2399"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="UpY-ig-VVh">
+            <objects>
+                <navigationController id="SZJ-jM-G8V" userLabel="Account" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="アカウント" image="accountNormal" selectedImage="accountSelect" id="DyO-0t-N15">
+                        <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uuo-vQ-AaC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZGR-gW-MYe" kind="relationship" relationship="rootViewController" id="4b3-1t-yex"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olT-dc-Rrb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="-3072"/>
+        </scene>
+        <!--AccountViewController-->
+        <scene sceneID="Ddg-UJ-1aT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="AccountViewController" id="ZGR-gW-MYe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2hJ-Ap-inj"/>
+                    <navigationItem key="navigationItem" id="wxV-PL-zRb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbZ-ac-A3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="-3073"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="icon_chat_normal" width="23" height="23"/>
-        <image name="icon_chat_select" width="25" height="25"/>
+        <image name="accountNormal" width="32" height="32"/>
+        <image name="accountSelect" width="32" height="32"/>
+        <image name="cartNormal" width="32" height="32"/>
+        <image name="cartSelect" width="32" height="32"/>
+        <image name="homeNormal" width="32" height="32"/>
+        <image name="homeSelect" width="32" height="32"/>
+        <image name="rePurchase" width="32" height="32"/>
+        <image name="rePurchaseSelect" width="32" height="32"/>
+        <image name="search" width="32" height="32"/>
+        <image name="searchNormal" width="32" height="32"/>
     </resources>
 </document>

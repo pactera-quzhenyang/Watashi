@@ -8,6 +8,8 @@
 
 import UIKit
 
-class Constant: NSObject {
-
+struct pageTitles {
+    static let checkNewProducts = "新商品をチェック"
+    static let trend = "トレンド"
+    static let seasonRecommend = "季節のおすすめ"
 }
