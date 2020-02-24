@@ -80,7 +80,7 @@ extension PageContentView {
         addSubview(collectionView)
         
         collectionView.backgroundColor = style.contentViewBackgroundColor
-        collectionView.isScrollEnabled = style.isContentScrollEnabled
+        collectionView.isScrollEnabled = false
 
         bind()
     }
