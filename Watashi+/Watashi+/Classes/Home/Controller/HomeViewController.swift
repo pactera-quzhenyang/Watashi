@@ -13,16 +13,20 @@ import RxCocoa
 class HomeViewController: BaseViewController {
 
     var viewModel = HomeViewModel()
-
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 
 
-        APIProvider.request(.login("1100000000047")) {[weak self] (result) in
-            self?.loadingView.rx.isHidden
-        }
+
+        
+        let data = TestAPI.loadChannels()
+        data.drive(onNext: { (douban) in
+            
+            }).disposed(by: disposeBag)
     }
     
 

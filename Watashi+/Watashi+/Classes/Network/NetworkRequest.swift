@@ -11,7 +11,9 @@ import Moya
 import RxSwift
 import SwiftyJSON
 
-let APIProvider = MoyaProvider<APIS>()
+
+let plugin = APIPlugin()
+let APIProvider = MoyaProvider<APIS>(plugins: [plugin])
 
 enum APIS {
     case login(String)
@@ -21,7 +23,8 @@ enum APIS {
 extension APIS: TargetType {
     var baseURL: URL {
         #if DEBUG
-        return URL(string: "https://www.baidu.com/")!
+//        return URL(string: "https://www.baidu.com/")!
+        return URL(string: "https://www.douban.com")!
         #endif
     }
 
@@ -30,12 +33,12 @@ extension APIS: TargetType {
         case .login:
             return "sw/api/auth/V1/SWFR120070.seam"
         case .other:
-            return ""
+            return "/j/app/radio/channels"
         }
     }
 
     var method: Moya.Method {
-        return .post
+        return .get
     }
 
     var sampleData: Data {
@@ -58,4 +61,25 @@ extension APIS: TargetType {
             "Content-Type": "application/json"
         ]
     }
+
 }
+
+
+
+public final class APIPlugin: PluginType {
+    public func willSend(_ request: RequestType, target: TargetType) {
+        print("willSend")
+    }
+    
+    public func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
+        print("didReceive")
+        switch result {
+        case .success(let response):
+            let json = try? JSONSerialization.jsonObject(with: response.data, options: .allowFragments)
+            print(json as Any)
+        case .failure(let error):
+            print(error.errorDescription as Any)
+        }
+    }
+}
+
