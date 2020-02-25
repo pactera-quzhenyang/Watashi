@@ -54,6 +54,98 @@
 		53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
 		53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
+		8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
+		8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
+		8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2623FBB10100735670 /* RxPageTitleViewDelegateProxy.swift */; };
+		8174158D240519890033FE43 /* PageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2323FBB10100735670 /* PageCollectionViewFlowLayout.swift */; };
+		8174158E240519890033FE43 /* SWUITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */; };
+		8174158F240519890033FE43 /* SWCheckNewProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */; };
+		81741590240519890033FE43 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2023FBB10000735670 /* PageTitleView.swift */; };
+		81741591240519890033FE43 /* SWConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC698523FB851D0088CBC0 /* SWConstant.swift */; };
+		81741592240519890033FE43 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A3923FBB39700735670 /* SWBaseViewController.swift */; };
+		81741593240519890033FE43 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532142262403C5AD00BB5977 /* SWAccountViewController.swift */; };
+		81741594240519890033FE43 /* SWCheckNewProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322D4A423FE1A200069D0C9 /* SWCheckNewProductsCell.swift */; };
+		81741595240519890033FE43 /* SWAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC698923FB851D0088CBC0 /* SWAppConfig.swift */; };
+		81741596240519890033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
+		81741597240519890033FE43 /* SWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93924050E1500F18377 /* SWHomeViewController.swift */; };
+		81741598240519890033FE43 /* SWRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */; };
+		81741599240519890033FE43 /* Protocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2223FBB10100735670 /* Protocal.swift */; };
+		8174159A240519890033FE43 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1F23FBB10000735670 /* PageContentView.swift */; };
+		8174159B240519890033FE43 /* SWCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3D982403C11C00B12A2A /* SWCartViewController.swift */; };
+		8174159C240519890033FE43 /* PageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2523FBB10100735670 /* PageStyle.swift */; };
+		8174159D240519890033FE43 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF47A023FBE333005A52B9 /* ApiManager.swift */; };
+		8174159E240519890033FE43 /* SWCheckNewProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF12403935C00607088 /* SWCheckNewProductsModel.swift */; };
+		8174159F240519890033FE43 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2423FBB10100735670 /* Helper.swift */; };
+		817415A0240519890033FE43 /* PageContentView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2123FBB10100735670 /* PageContentView+Rx.swift */; };
+		817415A1240519890033FE43 /* SWBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */; };
+		817415A2240519890033FE43 /* SWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */; };
+		817415A3240519890033FE43 /* SWUIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC697423FB83650088CBC0 /* SWUIView+Rx.swift */; };
+		817415A4240519890033FE43 /* SWNetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699623FB873F0088CBC0 /* SWNetworkConfig.swift */; };
+		817415A5240519890033FE43 /* SWSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1923FBB03600735670 /* SWSearchViewController.swift */; };
+		817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF92403B4E400607088 /* SWUIControlExtension.swift */; };
+		817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF524039A4100607088 /* SWHomeSearchField.swift */; };
+		817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2923FBB10100735670 /* RxPageContentViewDelegateProxy.swift */; };
+		817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
+		817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
+		817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
+		817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
+		817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
+		817415AF240519890033FE43 /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
+		817415B1240519890033FE43 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
+		817415B2240519890033FE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
+		817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
+		817415B4240519890033FE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692B23FB742D0088CBC0 /* Assets.xcassets */; };
+		817415B5240519890033FE43 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533C5A3723FBB1B100735670 /* Search.storyboard */; };
+		817415B6240519890033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
+		817415B7240519890033FE43 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
+		817415B8240519890033FE43 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
+		817415B9240519890033FE43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
+		817415C4240519A90033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
+		817415C5240519A90033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
+		817415C6240519A90033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2623FBB10100735670 /* RxPageTitleViewDelegateProxy.swift */; };
+		817415C7240519A90033FE43 /* PageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2323FBB10100735670 /* PageCollectionViewFlowLayout.swift */; };
+		817415C8240519A90033FE43 /* SWUITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */; };
+		817415C9240519A90033FE43 /* SWCheckNewProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */; };
+		817415CA240519A90033FE43 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2023FBB10000735670 /* PageTitleView.swift */; };
+		817415CB240519A90033FE43 /* SWConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC698523FB851D0088CBC0 /* SWConstant.swift */; };
+		817415CC240519A90033FE43 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A3923FBB39700735670 /* SWBaseViewController.swift */; };
+		817415CD240519A90033FE43 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532142262403C5AD00BB5977 /* SWAccountViewController.swift */; };
+		817415CE240519A90033FE43 /* SWCheckNewProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322D4A423FE1A200069D0C9 /* SWCheckNewProductsCell.swift */; };
+		817415CF240519A90033FE43 /* SWAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC698923FB851D0088CBC0 /* SWAppConfig.swift */; };
+		817415D0240519A90033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
+		817415D1240519A90033FE43 /* SWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93924050E1500F18377 /* SWHomeViewController.swift */; };
+		817415D2240519A90033FE43 /* SWRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */; };
+		817415D3240519A90033FE43 /* Protocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2223FBB10100735670 /* Protocal.swift */; };
+		817415D4240519A90033FE43 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1F23FBB10000735670 /* PageContentView.swift */; };
+		817415D5240519A90033FE43 /* SWCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3D982403C11C00B12A2A /* SWCartViewController.swift */; };
+		817415D6240519A90033FE43 /* PageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2523FBB10100735670 /* PageStyle.swift */; };
+		817415D7240519A90033FE43 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF47A023FBE333005A52B9 /* ApiManager.swift */; };
+		817415D8240519A90033FE43 /* SWCheckNewProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF12403935C00607088 /* SWCheckNewProductsModel.swift */; };
+		817415D9240519A90033FE43 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2423FBB10100735670 /* Helper.swift */; };
+		817415DA240519A90033FE43 /* PageContentView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2123FBB10100735670 /* PageContentView+Rx.swift */; };
+		817415DB240519A90033FE43 /* SWBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */; };
+		817415DC240519A90033FE43 /* SWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */; };
+		817415DD240519A90033FE43 /* SWUIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC697423FB83650088CBC0 /* SWUIView+Rx.swift */; };
+		817415DE240519A90033FE43 /* SWNetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699623FB873F0088CBC0 /* SWNetworkConfig.swift */; };
+		817415DF240519A90033FE43 /* SWSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1923FBB03600735670 /* SWSearchViewController.swift */; };
+		817415E0240519A90033FE43 /* SWUIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF92403B4E400607088 /* SWUIControlExtension.swift */; };
+		817415E1240519A90033FE43 /* SWHomeSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF524039A4100607088 /* SWHomeSearchField.swift */; };
+		817415E2240519A90033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2923FBB10100735670 /* RxPageContentViewDelegateProxy.swift */; };
+		817415E3240519A90033FE43 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
+		817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
+		817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
+		817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
+		817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
+		817415E9240519A90033FE43 /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
+		817415EB240519A90033FE43 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
+		817415EC240519A90033FE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
+		817415ED240519A90033FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
+		817415EE240519A90033FE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692B23FB742D0088CBC0 /* Assets.xcassets */; };
+		817415EF240519A90033FE43 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533C5A3723FBB1B100735670 /* Search.storyboard */; };
+		817415F0240519A90033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
+		817415F1240519A90033FE43 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
+		817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
+		817415F3240519A90033FE43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
 		8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +168,24 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		53AC699E23FB90160088CBC0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817415BB240519890033FE43 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817415F5240519A90033FE43 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -113,11 +223,11 @@
 		5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsViewController.swift; sourceTree = "<group>"; };
 		5389E93724050DC700F18377 /* SWTrendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTrendViewController.swift; sourceTree = "<group>"; };
 		5389E93924050E1500F18377 /* SWHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWHomeViewController.swift; sourceTree = "<group>"; };
-		53AC691F23FB742C0088CBC0 /* Watashi+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53AC691F23FB742C0088CBC0 /* Watashi+-pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppDelegate.swift; sourceTree = "<group>"; };
 		53AC692B23FB742D0088CBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AC692E23FB742D0088CBC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		53AC693023FB742D0088CBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AC693023FB742D0088CBC0 /* Watashi+-pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Watashi+-pro-Info.plist"; sourceTree = "<group>"; };
 		53AC693523FB742D0088CBC0 /* Watashi+Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watashi+Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC693923FB742D0088CBC0 /* Watashi_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watashi_Tests.swift; sourceTree = "<group>"; };
 		53AC693B23FB742D0088CBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +250,10 @@
 		53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsHeaderView.swift; sourceTree = "<group>"; };
 		53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCheckNewProductsHeaderView.xib; sourceTree = "<group>"; };
 		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
+		817415BF240519890033FE43 /* Watashi+-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817415C0240519890033FE43 /* Watashi+-dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-dev-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-dev-Info.plist"; sourceTree = "<absolute>"; };
+		817415F9240519A90033FE43 /* Watashi+-stg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-stg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817415FA240519A90033FE43 /* Watashi+-stg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-stg-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-stg-Info.plist"; sourceTree = "<absolute>"; };
 		8180CBD82404B9D400D03230 /* CUSemiModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUSemiModalView.swift; sourceTree = "<group>"; };
 		DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +279,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817415AE240519890033FE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817415AF240519890033FE43 /* Pods_Watashi_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817415E8240519A90033FE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817415E9240519A90033FE43 /* Pods_Watashi_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +532,11 @@
 		53AC692023FB742C0088CBC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53AC691F23FB742C0088CBC0 /* Watashi+.app */,
+				53AC691F23FB742C0088CBC0 /* Watashi+-pro.app */,
 				53AC693523FB742D0088CBC0 /* Watashi+Tests.xctest */,
 				53AC694023FB742D0088CBC0 /* Watashi+UITests.xctest */,
+				817415BF240519890033FE43 /* Watashi+-dev.app */,
+				817415F9240519A90033FE43 /* Watashi+-stg.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -486,7 +618,9 @@
 		53AC695723FB78670088CBC0 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				53AC693023FB742D0088CBC0 /* Info.plist */,
+				53AC693023FB742D0088CBC0 /* Watashi+-pro-Info.plist */,
+				817415C0240519890033FE43 /* Watashi+-dev-Info.plist */,
+				817415FA240519A90033FE43 /* Watashi+-stg-Info.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -612,9 +746,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53AC691E23FB742C0088CBC0 /* Watashi+ */ = {
+		53AC691E23FB742C0088CBC0 /* Watashi+-pro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53AC694923FB742D0088CBC0 /* Build configuration list for PBXNativeTarget "Watashi+" */;
+			buildConfigurationList = 53AC694923FB742D0088CBC0 /* Build configuration list for PBXNativeTarget "Watashi+-pro" */;
 			buildPhases = (
 				58E1D72B12B86DBC96F23CF1 /* [CP] Check Pods Manifest.lock */,
 				53AC691B23FB742C0088CBC0 /* Sources */,
@@ -627,9 +761,9 @@
 			);
 			dependencies = (
 			);
-			name = "Watashi+";
+			name = "Watashi+-pro";
 			productName = "Watashi+";
-			productReference = 53AC691F23FB742C0088CBC0 /* Watashi+.app */;
+			productReference = 53AC691F23FB742C0088CBC0 /* Watashi+-pro.app */;
 			productType = "com.apple.product-type.application";
 		};
 		53AC693423FB742D0088CBC0 /* Watashi+Tests */ = {
@@ -668,6 +802,46 @@
 			productReference = 53AC694023FB742D0088CBC0 /* Watashi+UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		81741587240519890033FE43 /* Watashi+-dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817415BC240519890033FE43 /* Build configuration list for PBXNativeTarget "Watashi+-dev" */;
+			buildPhases = (
+				81741588240519890033FE43 /* [CP] Check Pods Manifest.lock */,
+				81741589240519890033FE43 /* Sources */,
+				817415AE240519890033FE43 /* Frameworks */,
+				817415B0240519890033FE43 /* Resources */,
+				817415BA240519890033FE43 /* [CP] Embed Pods Frameworks */,
+				817415BB240519890033FE43 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watashi+-dev";
+			productName = "Watashi+";
+			productReference = 817415BF240519890033FE43 /* Watashi+-dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		817415C1240519A90033FE43 /* Watashi+-stg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817415F6240519A90033FE43 /* Build configuration list for PBXNativeTarget "Watashi+-stg" */;
+			buildPhases = (
+				817415C2240519A90033FE43 /* [CP] Check Pods Manifest.lock */,
+				817415C3240519A90033FE43 /* Sources */,
+				817415E8240519A90033FE43 /* Frameworks */,
+				817415EA240519A90033FE43 /* Resources */,
+				817415F4240519A90033FE43 /* [CP] Embed Pods Frameworks */,
+				817415F5240519A90033FE43 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watashi+-stg";
+			productName = "Watashi+";
+			productReference = 817415F9240519A90033FE43 /* Watashi+-stg.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -704,7 +878,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53AC691E23FB742C0088CBC0 /* Watashi+ */,
+				81741587240519890033FE43 /* Watashi+-dev */,
+				817415C1240519A90033FE43 /* Watashi+-stg */,
+				53AC691E23FB742C0088CBC0 /* Watashi+-pro */,
 				53AC693423FB742D0088CBC0 /* Watashi+Tests */,
 				53AC693F23FB742D0088CBC0 /* Watashi+UITests */,
 			);
@@ -742,6 +918,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		817415B0240519890033FE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817415B1240519890033FE43 /* Cart.storyboard in Resources */,
+				817415B2240519890033FE43 /* Main.storyboard in Resources */,
+				817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */,
+				817415B4240519890033FE43 /* Assets.xcassets in Resources */,
+				817415B5240519890033FE43 /* Search.storyboard in Resources */,
+				817415B6240519890033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */,
+				817415B7240519890033FE43 /* Account.storyboard in Resources */,
+				817415B8240519890033FE43 /* Repurchase.storyboard in Resources */,
+				817415B9240519890033FE43 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817415EA240519A90033FE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817415EB240519A90033FE43 /* Cart.storyboard in Resources */,
+				817415EC240519A90033FE43 /* Main.storyboard in Resources */,
+				817415ED240519A90033FE43 /* LaunchScreen.storyboard in Resources */,
+				817415EE240519A90033FE43 /* Assets.xcassets in Resources */,
+				817415EF240519A90033FE43 /* Search.storyboard in Resources */,
+				817415F0240519A90033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */,
+				817415F1240519A90033FE43 /* Account.storyboard in Resources */,
+				817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */,
+				817415F3240519A90033FE43 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -765,6 +973,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81741588240519890033FE43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watashi+-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817415BA240519890033FE43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817415C2240519A90033FE43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watashi+-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		817415F4240519A90033FE43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9856C19FEFD1CDC67A81CB3E /* [CP] Embed Pods Frameworks */ = {
@@ -852,17 +1138,115 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81741589240519890033FE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
+				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
+				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
+				8174158D240519890033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,
+				8174158E240519890033FE43 /* SWUITextFieldExtension.swift in Sources */,
+				8174158F240519890033FE43 /* SWCheckNewProductsViewController.swift in Sources */,
+				81741590240519890033FE43 /* PageTitleView.swift in Sources */,
+				81741591240519890033FE43 /* SWConstant.swift in Sources */,
+				81741592240519890033FE43 /* SWBaseViewController.swift in Sources */,
+				81741593240519890033FE43 /* SWAccountViewController.swift in Sources */,
+				81741594240519890033FE43 /* SWCheckNewProductsCell.swift in Sources */,
+				81741595240519890033FE43 /* SWAppConfig.swift in Sources */,
+				81741596240519890033FE43 /* CUStarView.swift in Sources */,
+				81741597240519890033FE43 /* SWHomeViewController.swift in Sources */,
+				81741598240519890033FE43 /* SWRepurchaseViewController.swift in Sources */,
+				81741599240519890033FE43 /* Protocal.swift in Sources */,
+				8174159A240519890033FE43 /* PageContentView.swift in Sources */,
+				8174159B240519890033FE43 /* SWCartViewController.swift in Sources */,
+				8174159C240519890033FE43 /* PageStyle.swift in Sources */,
+				8174159D240519890033FE43 /* ApiManager.swift in Sources */,
+				8174159E240519890033FE43 /* SWCheckNewProductsModel.swift in Sources */,
+				8174159F240519890033FE43 /* Helper.swift in Sources */,
+				817415A0240519890033FE43 /* PageContentView+Rx.swift in Sources */,
+				817415A1240519890033FE43 /* SWBaseViewModel.swift in Sources */,
+				817415A2240519890033FE43 /* SWAppDelegate.swift in Sources */,
+				817415A3240519890033FE43 /* SWUIView+Rx.swift in Sources */,
+				817415A4240519890033FE43 /* SWNetworkConfig.swift in Sources */,
+				817415A5240519890033FE43 /* SWSearchViewController.swift in Sources */,
+				817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */,
+				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
+				817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
+				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
+				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+				817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */,
+				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */,
+				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		817415C3240519A90033FE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817415C4240519A90033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
+				817415C5240519A90033FE43 /* PageTitleView+Rx.swift in Sources */,
+				817415C6240519A90033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
+				817415C7240519A90033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,
+				817415C8240519A90033FE43 /* SWUITextFieldExtension.swift in Sources */,
+				817415C9240519A90033FE43 /* SWCheckNewProductsViewController.swift in Sources */,
+				817415CA240519A90033FE43 /* PageTitleView.swift in Sources */,
+				817415CB240519A90033FE43 /* SWConstant.swift in Sources */,
+				817415CC240519A90033FE43 /* SWBaseViewController.swift in Sources */,
+				817415CD240519A90033FE43 /* SWAccountViewController.swift in Sources */,
+				817415CE240519A90033FE43 /* SWCheckNewProductsCell.swift in Sources */,
+				817415CF240519A90033FE43 /* SWAppConfig.swift in Sources */,
+				817415D0240519A90033FE43 /* CUStarView.swift in Sources */,
+				817415D1240519A90033FE43 /* SWHomeViewController.swift in Sources */,
+				817415D2240519A90033FE43 /* SWRepurchaseViewController.swift in Sources */,
+				817415D3240519A90033FE43 /* Protocal.swift in Sources */,
+				817415D4240519A90033FE43 /* PageContentView.swift in Sources */,
+				817415D5240519A90033FE43 /* SWCartViewController.swift in Sources */,
+				817415D6240519A90033FE43 /* PageStyle.swift in Sources */,
+				817415D7240519A90033FE43 /* ApiManager.swift in Sources */,
+				817415D8240519A90033FE43 /* SWCheckNewProductsModel.swift in Sources */,
+				817415D9240519A90033FE43 /* Helper.swift in Sources */,
+				817415DA240519A90033FE43 /* PageContentView+Rx.swift in Sources */,
+				817415DB240519A90033FE43 /* SWBaseViewModel.swift in Sources */,
+				817415DC240519A90033FE43 /* SWAppDelegate.swift in Sources */,
+				817415DD240519A90033FE43 /* SWUIView+Rx.swift in Sources */,
+				817415DE240519A90033FE43 /* SWNetworkConfig.swift in Sources */,
+				817415DF240519A90033FE43 /* SWSearchViewController.swift in Sources */,
+				817415E0240519A90033FE43 /* SWUIControlExtension.swift in Sources */,
+				817415E1240519A90033FE43 /* SWHomeSearchField.swift in Sources */,
+				817415E2240519A90033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
+				817415E3240519A90033FE43 /* SWTrendViewController.swift in Sources */,
+				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+				817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */,
+				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */,
+				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		53AC693723FB742D0088CBC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53AC691E23FB742C0088CBC0 /* Watashi+ */;
+			target = 53AC691E23FB742C0088CBC0 /* Watashi+-pro */;
 			targetProxy = 53AC693623FB742D0088CBC0 /* PBXContainerItemProxy */;
 		};
 		53AC694223FB742D0088CBC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 53AC691E23FB742C0088CBC0 /* Watashi+ */;
+			target = 53AC691E23FB742C0088CBC0 /* Watashi+-pro */;
 			targetProxy = 53AC694123FB742D0088CBC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1012,7 +1396,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 				);
-				INFOPLIST_FILE = "Watashi+/Supporting Files/Plist/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-pro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1020,6 +1404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PRODUCTION";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1044,7 +1429,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 				);
-				INFOPLIST_FILE = "Watashi+/Supporting Files/Plist/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-pro-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1052,6 +1437,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1137,6 +1523,138 @@
 			};
 			name = Release;
 		};
+		817415BD240519890033FE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		817415BE240519890033FE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		817415F7240519A90033FE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-stg-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STG";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		817415F8240519A90033FE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-stg-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1149,7 +1667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53AC694923FB742D0088CBC0 /* Build configuration list for PBXNativeTarget "Watashi+" */ = {
+		53AC694923FB742D0088CBC0 /* Build configuration list for PBXNativeTarget "Watashi+-pro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53AC694A23FB742D0088CBC0 /* Debug */,
@@ -1172,6 +1690,24 @@
 			buildConfigurations = (
 				53AC695023FB742D0088CBC0 /* Debug */,
 				53AC695123FB742D0088CBC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817415BC240519890033FE43 /* Build configuration list for PBXNativeTarget "Watashi+-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817415BD240519890033FE43 /* Debug */,
+				817415BE240519890033FE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		817415F6240519A90033FE43 /* Build configuration list for PBXNativeTarget "Watashi+-stg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				817415F7240519A90033FE43 /* Debug */,
+				817415F8240519A90033FE43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
