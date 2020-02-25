@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwRepurchaseViewController: UIViewController {
+class SWRepurchaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

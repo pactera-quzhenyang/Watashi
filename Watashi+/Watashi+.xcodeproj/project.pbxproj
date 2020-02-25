@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		370A4845D798C273679ED6EE /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
 		531C9F8823FD2F0500391B77 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
-		532142202403C57500BB5977 /* SwRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SwRepurchaseViewController.swift */; };
+		532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */; };
 		532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532142262403C5AD00BB5977 /* SWAccountViewController.swift */; };
 		532142292403C6EB00BB5977 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
 		5321422B2403C71600BB5977 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
@@ -51,11 +51,10 @@
 		53D07EF624039A4100607088 /* SWHomeSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF524039A4100607088 /* SWHomeSearchField.swift */; };
 		53D07EF82403A4FE00607088 /* SWUITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */; };
 		53D07EFA2403B4E400607088 /* SWUIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF92403B4E400607088 /* SWUIControlExtension.swift */; };
-		53EC33EA2405152A0003C1E4 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EC33E92405152A0003C1E4 /* StarView.swift */; };
 		53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
 		53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
-		81741550240515220033FE43 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8174154F240515210033FE43 /* StarView.swift */; };
-		8180CBD92404B9D400D03230 /* SWSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* SWSemiModalView.swift */; };
+		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
+		8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +89,7 @@
 /* Begin PBXFileReference section */
 		09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.release.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.release.xcconfig"; sourceTree = "<group>"; };
 		531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSeasonRecommendViewController.swift; sourceTree = "<group>"; };
-		5321421F2403C57500BB5977 /* SwRepurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwRepurchaseViewController.swift; sourceTree = "<group>"; };
+		5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRepurchaseViewController.swift; sourceTree = "<group>"; };
 		532142262403C5AD00BB5977 /* SWAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewController.swift; sourceTree = "<group>"; };
 		532142282403C6EB00BB5977 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		5321422A2403C71600BB5977 /* Repurchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repurchase.storyboard; sourceTree = "<group>"; };
@@ -138,11 +137,10 @@
 		53D07EF524039A4100607088 /* SWHomeSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHomeSearchField.swift; sourceTree = "<group>"; };
 		53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWUITextFieldExtension.swift; sourceTree = "<group>"; };
 		53D07EF92403B4E400607088 /* SWUIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUIControlExtension.swift; sourceTree = "<group>"; };
-		53EC33E92405152A0003C1E4 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsHeaderView.swift; sourceTree = "<group>"; };
 		53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCheckNewProductsHeaderView.xib; sourceTree = "<group>"; };
-		8174154F240515210033FE43 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
-		8180CBD82404B9D400D03230 /* SWSemiModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWSemiModalView.swift; sourceTree = "<group>"; };
+		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
+		8180CBD82404B9D400D03230 /* CUSemiModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUSemiModalView.swift; sourceTree = "<group>"; };
 		DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,7 +206,7 @@
 		5321421E2403C55F00BB5977 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5321421F2403C57500BB5977 /* SwRepurchaseViewController.swift */,
+				5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,8 +352,6 @@
 			isa = PBXGroup;
 			children = (
 				5389E93B240511BD00F18377 /* CustomView */,
-				8180CBD72404B9C200D03230 /* ModalView */,
-				8180CBD42404B08200D03230 /* StarView */,
 				533C5A3523FBB11000735670 /* PageView */,
 			);
 			path = Common;
@@ -373,8 +369,8 @@
 		5389E93B240511BD00F18377 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				8174154F240515210033FE43 /* StarView.swift */,
-				53EC33E92405152A0003C1E4 /* StarView.swift */,
+				8180CBD82404B9D400D03230 /* CUSemiModalView.swift */,
+				81741551240516010033FE43 /* CUStarView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -613,14 +609,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		8180CBD72404B9C200D03230 /* ModalView */ = {
-			isa = PBXGroup;
-			children = (
-				8180CBD82404B9D400D03230 /* SWSemiModalView.swift */,
-			);
-			path = ModalView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -815,8 +803,9 @@
 				532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */,
 				5322D4A523FE1A200069D0C9 /* SWCheckNewProductsCell.swift in Sources */,
 				53AC698E23FB851D0088CBC0 /* SWAppConfig.swift in Sources */,
+				81741552240516010033FE43 /* CUStarView.swift in Sources */,
 				5389E93A24050E1500F18377 /* SWHomeViewController.swift in Sources */,
-				532142202403C57500BB5977 /* SwRepurchaseViewController.swift in Sources */,
+				532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */,
 				533C5A2D23FBB10100735670 /* Protocal.swift in Sources */,
 				533C5A2A23FBB10100735670 /* PageContentView.swift in Sources */,
 				532C3D992403C11C00B12A2A /* SWCartViewController.swift in Sources */,
@@ -837,14 +826,12 @@
 				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
 				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
 				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
-				8180CBD92404B9D400D03230 /* SWSemiModalView.swift in Sources */,
+				8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */,
 				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
 				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
-				81741550240515220033FE43 /* StarView.swift in Sources */,
-				8180CBD92404B9D400D03230 /* SemiModalView.swift in Sources */,
+				8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */,
 				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
 				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
-				53EC33EA2405152A0003C1E4 /* StarView.swift in Sources */,
 				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

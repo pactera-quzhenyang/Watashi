@@ -23,7 +23,7 @@ public enum rateStyle: Int {
 public typealias CountCompleteBackBlock = (_ currentCount:Float) -> ()
 
 
-class StarView: UIView {
+class CUStarView: UIView {
     
     //星星的总量,默认是5星
     var numberOfStar: UInt = 5
@@ -101,7 +101,7 @@ class StarView: UIView {
 
 
 //MARK:- UI
-extension StarView {
+extension CUStarView {
     
     
     //重新设置属性刷新
@@ -206,7 +206,7 @@ extension StarView {
 }
 
 //MARK:- 事件
-extension StarView {
+extension CUStarView {
     
     @objc func tapStar(_ sender: UITapGestureRecognizer) {
         let tapPoint = sender.location(in: self)
@@ -268,7 +268,7 @@ extension StarView {
 
 }
 
-extension StarView {
+extension CUStarView {
     func yanh() {
         //创建发射器
         let emitter = CAEmitterLayer()

@@ -1,5 +1,5 @@
 //
-//  SemiModalView.swift
+//  CUSemiModalView.swift
 //  RXSwiftDemo
 //
 //  Created by NULL on 2020/2/12.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SWSemiModalView: UIView {
+class CUSemiModalView: UIView {
 
     
     var narrowedOff: Bool = false
@@ -64,7 +64,7 @@ class SWSemiModalView: UIView {
     }
 }
 
-extension SWSemiModalView {
+extension CUSemiModalView {
         
     func open() {
 
