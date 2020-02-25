@@ -19,4 +19,3 @@ DerivedData
 *.xcworkspace
 !default.xcworkspace
 Pods/
-Podfile.lock

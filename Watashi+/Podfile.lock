@@ -1,37 +1,36 @@
 PODS:
-  - Alamofire (5.0.0)
-  - Differentiator (4.0.1)
-  - IQKeyboardManagerSwift (6.5.5)
-  - Moya (14.0.0):
-    - Moya/Core (= 14.0.0)
-  - Moya-ObjectMapper/Core (2.9):
-    - Moya (~> 14.0.0-beta.6)
-    - ObjectMapper
-  - Moya-ObjectMapper/RxSwift (2.9):
+  - Alamofire (4.9.1)
+  - Differentiator (3.1.0)
+  - IQKeyboardManagerSwift (6.5.4)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya-ObjectMapper/Core (2.8):
+    - Moya (~> 12.0)
+    - ObjectMapper (~> 3.4)
+  - Moya-ObjectMapper/RxSwift (2.8):
     - Moya-ObjectMapper/Core
     - Moya/RxSwift
-    - RxSwift
-  - Moya/Core (14.0.0):
-    - Alamofire (~> 5.0)
-  - Moya/RxSwift (14.0.0):
+    - RxSwift (~> 4)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
     - Moya/Core
-    - RxSwift (~> 5.0)
+    - RxSwift (~> 4.0)
   - ObjectMapper (3.5.1)
+  - Result (4.1.0)
   - Reusable (4.1.0):
     - Reusable/Storyboard (= 4.1.0)
     - Reusable/View (= 4.1.0)
   - Reusable/Storyboard (4.1.0)
   - Reusable/View (4.1.0)
-  - RxCocoa (5.0.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxDataSources (4.0.1):
-    - Differentiator (~> 4.0)
-    - RxCocoa (~> 5.0)
-    - RxSwift (~> 5.0)
-  - RxRelay (5.0.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
@@ -55,26 +54,26 @@ SPEC REPOS:
     - Moya
     - Moya-ObjectMapper
     - ObjectMapper
+    - Result
     - Reusable
     - RxCocoa
     - RxDataSources
-    - RxRelay
     - RxSwift
     - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
-  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
-  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
-  Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
