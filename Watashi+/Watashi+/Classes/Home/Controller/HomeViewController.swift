@@ -13,7 +13,7 @@ import RxCocoa
 class HomeViewController: BaseViewController {
 
 
-    var viewModel = HomeViewModel()
+//    var viewModel = HomeViewModel()
     let disposeBag = DisposeBag()
     
 
