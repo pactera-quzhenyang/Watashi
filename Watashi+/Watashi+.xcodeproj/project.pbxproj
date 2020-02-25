@@ -54,6 +54,7 @@
 		53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
 		53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
 		8180CBD62404B09500D03230 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD52404B09500D03230 /* StarView.swift */; };
+		8180CBD92404B9D400D03230 /* SemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* SemiModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 		53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsHeaderView.swift; sourceTree = "<group>"; };
 		53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCheckNewProductsHeaderView.xib; sourceTree = "<group>"; };
 		8180CBD52404B09500D03230 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		8180CBD82404B9D400D03230 /* SemiModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiModalView.swift; sourceTree = "<group>"; };
 		DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -350,6 +352,9 @@
 			isa = PBXGroup;
 			children = (
 				5389E93B240511BD00F18377 /* CustomView */,
+				8180CBD72404B9C200D03230 /* ModalView */,
+				8180CBD42404B08200D03230 /* StarView */,
+				533C5A3F23FBCD0400735670 /* LoadingView */,
 				533C5A3523FBB11000735670 /* PageView */,
 			);
 			path = Common;
@@ -606,6 +611,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8180CBD42404B08200D03230 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				8180CBD52404B09500D03230 /* StarView.swift */,
+			);
+			path = StarView;
+			sourceTree = "<group>";
+		};
+		8180CBD72404B9C200D03230 /* ModalView */ = {
+			isa = PBXGroup;
+			children = (
+				8180CBD82404B9D400D03230 /* SemiModalView.swift */,
+			);
+			path = ModalView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -823,6 +844,10 @@
 				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
 				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
 				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
+				8180CBD92404B9D400D03230 /* SemiModalView.swift in Sources */,
+				53AC699523FB869C0088CBC0 /* NetworkRequest.swift in Sources */,
+				53AC697723FB83650088CBC0 /* BaseCollectionViewCell.swift in Sources */,
+				53F6429B23FE6CCE00420A6F /* FirstHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,14 +17,18 @@ class SWSearchViewController: SWBaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let narrowedModalView = SemiModalView(size:  CGSize(width: UIScreen.main.bounds.width, height: 300), baseViewController: navigationController!)
+        narrowedModalView.contentView.backgroundColor = UIColor.white
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let label = UILabel.init(frame: CGRect(x: 100, y: 100, width: 100, height: 20))
+        label.textColor = UIColor.black
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 16)
+        label.text = "暂无内容"
+        narrowedModalView.contentView.addSubview(label)
+
+        narrowedModalView.open()
     }
-    */
 
 }
