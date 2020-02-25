@@ -378,6 +378,15 @@
 			path = LoadingView;
 			sourceTree = "<group>";
 		};
+		535F88582404EF70008A4891 /* SwiftExtension */ = {
+			isa = PBXGroup;
+			children = (
+				53D07EF72403A4FE00607088 /* UITextFieldExtension.swift */,
+				53D07EF92403B4E400607088 /* UIControlExtension.swift */,
+			);
+			path = SwiftExtension;
+			sourceTree = "<group>";
+		};
 		539FD81B24037D0D005CBA87 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,7 +454,6 @@
 			children = (
 				53AC692223FB742C0088CBC0 /* AppDelegate.swift */,
 				53D07EF02403931200607088 /* Extension */,
-				53AC699023FB858F0088CBC0 /* RxExtension */,
 				539FD81B24037D0D005CBA87 /* UI */,
 				53BC8D0823FBE2CB00C2AF41 /* Manager */,
 				533C5A3623FBB16F00735670 /* Common */,
@@ -601,8 +609,8 @@
 		53D07EF02403931200607088 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				53D07EF72403A4FE00607088 /* UITextFieldExtension.swift */,
-				53D07EF92403B4E400607088 /* UIControlExtension.swift */,
+				535F88582404EF70008A4891 /* SwiftExtension */,
+				53AC699023FB858F0088CBC0 /* RxExtension */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
