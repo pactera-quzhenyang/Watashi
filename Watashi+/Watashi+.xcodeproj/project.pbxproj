@@ -58,6 +58,7 @@
 		53D07EFA2403B4E400607088 /* UIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF92403B4E400607088 /* UIControlExtension.swift */; };
 		53F6429B23FE6CCE00420A6F /* FirstHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* FirstHeaderView.swift */; };
 		53F6429D23FE6D0600420A6F /* FirstHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* FirstHeaderView.xib */; };
+		8180CBD62404B09500D03230 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD52404B09500D03230 /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,7 @@
 		53D07EF92403B4E400607088 /* UIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControlExtension.swift; sourceTree = "<group>"; };
 		53F6429A23FE6CCE00420A6F /* FirstHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstHeaderView.swift; sourceTree = "<group>"; };
 		53F6429C23FE6D0600420A6F /* FirstHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstHeaderView.xib; sourceTree = "<group>"; };
+		8180CBD52404B09500D03230 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.debug.xcconfig"; sourceTree = "<group>"; };
 		DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -357,6 +359,7 @@
 		533C5A3623FBB16F00735670 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8180CBD42404B08200D03230 /* StarView */,
 				533C5A3F23FBCD0400735670 /* LoadingView */,
 				533C5A3523FBB11000735670 /* PageView */,
 			);
@@ -610,6 +613,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8180CBD42404B08200D03230 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				8180CBD52404B09500D03230 /* StarView.swift */,
+			);
+			path = StarView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -808,6 +819,7 @@
 				532142272403C5AD00BB5977 /* AccountViewController.swift in Sources */,
 				5322D4A523FE1A200069D0C9 /* FirstTableViewCell.swift in Sources */,
 				53AC698E23FB851D0088CBC0 /* AppConfig.swift in Sources */,
+				8180CBD62404B09500D03230 /* StarView.swift in Sources */,
 				532142202403C57500BB5977 /* RepurchaseViewController.swift in Sources */,
 				533C5A2D23FBB10100735670 /* Protocal.swift in Sources */,
 				533C5A2A23FBB10100735670 /* PageContentView.swift in Sources */,

@@ -27,7 +27,11 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setPageViewCon()
+//        setPageViewCon()
+        let starview = StarView.init(frame: CGRect.init(x: (UIScreen.main.bounds.width - 320)/2, y: 200, width: 320, height: 100), starCount: 8, currentStar: 0, rateStyle: .half) { (current) -> (Void) in
+            print(current)
+        }
+        self.view.addSubview(starview)
     }
 
     override func viewWillAppear(_ animated: Bool) {
