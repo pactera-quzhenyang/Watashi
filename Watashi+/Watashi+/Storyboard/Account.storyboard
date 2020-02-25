@@ -11,7 +11,7 @@
         <!--Account View Controller-->
         <scene sceneID="Ned-IS-19b">
             <objects>
-                <viewController storyboardIdentifier="AccountViewController" id="J5X-uk-oNg" customClass="AccountViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWAccountViewController" id="J5X-uk-oNg" customClass="SWAccountViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sba-aY-ObK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -11,7 +11,7 @@
         <!--Search View Controller-->
         <scene sceneID="sBM-uZ-2D7">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="und-LO-4s6" customClass="SearchViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWSearchViewController" id="und-LO-4s6" customClass="SWSearchViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jid-wa-aEv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

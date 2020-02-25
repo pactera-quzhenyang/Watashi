@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="372" y="-334"/>
         </scene>
-        <!--HomeViewController-->
+        <!--SWHomeViewController-->
         <scene sceneID="JEh-kw-OTC">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="hTY-hb-BRa" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="SWHomeViewController" id="hTY-hb-BRa" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jU6-xw-ehk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCW-CG-KOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="391" y="-1054"/>
         </scene>
-        <!--SearchViewController-->
+        <!--SWSearchViewController-->
         <scene sceneID="JVP-Sr-tZN">
             <objects>
-                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchViewController" id="6Yf-St-m2r" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SWSearchViewController" id="6Yf-St-m2r" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="f7n-px-CwR"/>
                     <navigationItem key="navigationItem" id="r73-ce-W0u"/>
                 </viewControllerPlaceholder>
@@ -110,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="372" y="-1707"/>
         </scene>
-        <!--CartViewController-->
+        <!--SWCartViewController-->
         <scene sceneID="eUh-Sz-f45">
             <objects>
-                <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="CartViewController" id="Bwm-Ho-EYU" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="SWCartViewController" id="Bwm-Ho-EYU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="pp4-Ci-ckW"/>
                     <navigationItem key="navigationItem" id="Loa-dl-2Bz"/>
                 </viewControllerPlaceholder>
@@ -144,7 +144,7 @@
         <!--RepurchaseViewController-->
         <scene sceneID="c5Q-oK-BlB">
             <objects>
-                <viewControllerPlaceholder storyboardName="Repurchase" referencedIdentifier="RepurchaseViewController" id="mQc-Tt-We0" userLabel="RepurchaseViewController" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Repurchase" referencedIdentifier="SwRepurchaseViewController" id="mQc-Tt-We0" userLabel="RepurchaseViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="再購入" id="ogp-zv-w6F"/>
                     <navigationItem key="navigationItem" id="zg7-vr-drI"/>
                 </viewControllerPlaceholder>
@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="340" y="-3072"/>
         </scene>
-        <!--AccountViewController-->
+        <!--SWAccountViewController-->
         <scene sceneID="Ddg-UJ-1aT">
             <objects>
-                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="AccountViewController" id="ZGR-gW-MYe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Account" referencedIdentifier="SWAccountViewController" id="ZGR-gW-MYe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="2hJ-Ap-inj"/>
                     <navigationItem key="navigationItem" id="wxV-PL-zRb"/>
                 </viewControllerPlaceholder>

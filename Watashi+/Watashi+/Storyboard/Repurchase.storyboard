@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Repurchase View Controller-->
+        <!--Sw Repurchase View Controller-->
         <scene sceneID="0Eg-p1-z3h">
             <objects>
-                <viewController storyboardIdentifier="RepurchaseViewController" id="mNK-dI-0CF" customClass="RepurchaseViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SwRepurchaseViewController" id="mNK-dI-0CF" customClass="SwRepurchaseViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aqw-6i-dW8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

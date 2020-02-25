@@ -11,7 +11,7 @@
         <!--Cart View Controller-->
         <scene sceneID="w3W-gU-qCf">
             <objects>
-                <viewController storyboardIdentifier="CartViewController" id="rDW-yW-2WN" customClass="CartViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWCartViewController" id="rDW-yW-2WN" customClass="SWCartViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gou-co-iaJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

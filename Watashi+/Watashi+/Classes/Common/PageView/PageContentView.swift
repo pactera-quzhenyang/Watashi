@@ -44,7 +44,7 @@ open class PageContentView: UIView {
         if #available(iOS 10, *) {
             collectionView.isPrefetchingEnabled = false
         }
-        collectionView.register(cellType: BaseCollectionViewCell.self)
+        collectionView.register(cellType: SWBaseCollectionViewCell.self)
         return collectionView
     }()
     
@@ -152,7 +152,7 @@ extension PageContentView {
             .bind(to: titleView.bottomLine.rx.moveAnimated)
             .disposed(by: disposeBag)
 
-        childViewControllers.bind(to: collectionView.rx.items(cellIdentifier: BaseCollectionViewCell.self.reuseIdentifier)) { item, child, cell in
+        childViewControllers.bind(to: collectionView.rx.items(cellIdentifier: SWBaseCollectionViewCell.self.reuseIdentifier)) { item, child, cell in
             for subview in cell.contentView.subviews {
                 subview.removeFromSuperview()
             }
