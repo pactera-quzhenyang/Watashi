@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		370A4845D798C273679ED6EE /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
+		2DE60F10DCA8365F81011CB9 /* Pods_Watashi__dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90827FD2430D33F487E4ECC8 /* Pods_Watashi__dev.framework */; };
 		531C9F8823FD2F0500391B77 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */; };
 		532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532142262403C5AD00BB5977 /* SWAccountViewController.swift */; };
@@ -53,6 +53,7 @@
 		53D07EFA2403B4E400607088 /* SWUIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF92403B4E400607088 /* SWUIControlExtension.swift */; };
 		53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
 		53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
+		72285D535BCC5DDA65BE920E /* Pods_Watashi__stg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D133F8CF9FDEB1A9D8843C3 /* Pods_Watashi__stg.framework */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
 		8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
@@ -90,7 +91,6 @@
 		817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
 		817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
 		817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
-		817415AF240519890033FE43 /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
 		817415B1240519890033FE43 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		817415B2240519890033FE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
 		817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -136,7 +136,6 @@
 		817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
 		817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
 		817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
-		817415E9240519A90033FE43 /* Pods_Watashi_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */; };
 		817415EB240519A90033FE43 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		817415EC240519A90033FE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
 		817415ED240519A90033FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -147,6 +146,7 @@
 		817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
 		817415F3240519A90033FE43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
 		8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
+		B107AEC4D81D63C50BA11BA9 /* Pods_Watashi__pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0041C88B7461E95FD79ACF8F /* Pods_Watashi__pro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,7 +197,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0041C88B7461E95FD79ACF8F /* Pods_Watashi__pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi__pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		050ACB292579F126DD3B984D /* Pods-Watashi+-stg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-stg.release.xcconfig"; path = "Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg.release.xcconfig"; sourceTree = "<group>"; };
 		09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.release.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.release.xcconfig"; sourceTree = "<group>"; };
+		159F44300C287005828C2E31 /* Pods-Watashi+-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-pro.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro.debug.xcconfig"; sourceTree = "<group>"; };
+		42EF376369F902C9B77526C6 /* Pods-Watashi+-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-dev.release.xcconfig"; path = "Target Support Files/Pods-Watashi+-dev/Pods-Watashi+-dev.release.xcconfig"; sourceTree = "<group>"; };
+		4D133F8CF9FDEB1A9D8843C3 /* Pods_Watashi__stg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi__stg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSeasonRecommendViewController.swift; sourceTree = "<group>"; };
 		5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRepurchaseViewController.swift; sourceTree = "<group>"; };
 		532142262403C5AD00BB5977 /* SWAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewController.swift; sourceTree = "<group>"; };
@@ -255,8 +260,11 @@
 		817415F9240519A90033FE43 /* Watashi+-stg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-stg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817415FA240519A90033FE43 /* Watashi+-stg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-stg-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-stg-Info.plist"; sourceTree = "<absolute>"; };
 		8180CBD82404B9D400D03230 /* CUSemiModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUSemiModalView.swift; sourceTree = "<group>"; };
+		90827FD2430D33F487E4ECC8 /* Pods_Watashi__dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi__dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC974314431901BE0B468851 /* Pods-Watashi+-stg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-stg.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg.debug.xcconfig"; sourceTree = "<group>"; };
+		B2F526ADF13DEA9B1BCD9AF9 /* Pods-Watashi+-pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-pro.release.xcconfig"; path = "Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro.release.xcconfig"; sourceTree = "<group>"; };
 		DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+/Pods-Watashi+.debug.xcconfig"; sourceTree = "<group>"; };
-		DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D563234368581E36EF1F49 /* Pods-Watashi+-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-dev.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+-dev/Pods-Watashi+-dev.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				370A4845D798C273679ED6EE /* Pods_Watashi_.framework in Frameworks */,
+				B107AEC4D81D63C50BA11BA9 /* Pods_Watashi__pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +294,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817415AF240519890033FE43 /* Pods_Watashi_.framework in Frameworks */,
+				2DE60F10DCA8365F81011CB9 /* Pods_Watashi__dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +302,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817415E9240519A90033FE43 /* Pods_Watashi_.framework in Frameworks */,
+				72285D535BCC5DDA65BE920E /* Pods_Watashi__stg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +636,9 @@
 		53AC695923FB7D540088CBC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFD50D9FA176D0DE9D84F5E4 /* Pods_Watashi_.framework */,
+				90827FD2430D33F487E4ECC8 /* Pods_Watashi__dev.framework */,
+				0041C88B7461E95FD79ACF8F /* Pods_Watashi__pro.framework */,
+				4D133F8CF9FDEB1A9D8843C3 /* Pods_Watashi__stg.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -739,6 +749,12 @@
 			children = (
 				DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */,
 				09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */,
+				E6D563234368581E36EF1F49 /* Pods-Watashi+-dev.debug.xcconfig */,
+				42EF376369F902C9B77526C6 /* Pods-Watashi+-dev.release.xcconfig */,
+				159F44300C287005828C2E31 /* Pods-Watashi+-pro.debug.xcconfig */,
+				B2F526ADF13DEA9B1BCD9AF9 /* Pods-Watashi+-pro.release.xcconfig */,
+				AC974314431901BE0B468851 /* Pods-Watashi+-stg.debug.xcconfig */,
+				050ACB292579F126DD3B984D /* Pods-Watashi+-stg.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -968,7 +984,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Watashi+-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Watashi+-pro-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -990,7 +1006,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Watashi+-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Watashi+-dev-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1003,15 +1019,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+-dev/Pods-Watashi+-dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+-dev/Pods-Watashi+-dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+-dev/Pods-Watashi+-dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		817415C2240519A90033FE43 /* [CP] Check Pods Manifest.lock */ = {
@@ -1029,7 +1045,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Watashi+-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Watashi+-stg-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1042,15 +1058,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9856C19FEFD1CDC67A81CB3E /* [CP] Embed Pods Frameworks */ = {
@@ -1059,15 +1075,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+/Pods-Watashi+-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1379,7 +1395,7 @@
 		};
 		53AC694A23FB742D0088CBC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */;
+			baseConfigurationReference = 159F44300C287005828C2E31 /* Pods-Watashi+-pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1412,7 +1428,7 @@
 		};
 		53AC694B23FB742D0088CBC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */;
+			baseConfigurationReference = B2F526ADF13DEA9B1BCD9AF9 /* Pods-Watashi+-pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1525,7 +1541,7 @@
 		};
 		817415BD240519890033FE43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */;
+			baseConfigurationReference = E6D563234368581E36EF1F49 /* Pods-Watashi+-dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1558,7 +1574,7 @@
 		};
 		817415BE240519890033FE43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */;
+			baseConfigurationReference = 42EF376369F902C9B77526C6 /* Pods-Watashi+-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1591,7 +1607,7 @@
 		};
 		817415F7240519A90033FE43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBF513BC83C284E25B10A497 /* Pods-Watashi+.debug.xcconfig */;
+			baseConfigurationReference = AC974314431901BE0B468851 /* Pods-Watashi+-stg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1624,7 +1640,7 @@
 		};
 		817415F8240519A90033FE43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09D71B44D6B9FF28BB61F630 /* Pods-Watashi+.release.xcconfig */;
+			baseConfigurationReference = 050ACB292579F126DD3B984D /* Pods-Watashi+-stg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

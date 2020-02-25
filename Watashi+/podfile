@@ -20,9 +20,22 @@ def default_pods
     pod 'RxDataSources'
     pod 'Firebase/ABTesting'
     pod 'Firebase/RemoteConfig'
+    pod 'SwiftLint'
 end
 
-target 'Watashi+' do
+target 'Watashi+-dev' do
+  use_frameworks!
+  default_pods
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+end
+
+target 'Watashi+-stg' do
+  use_frameworks!
+  default_pods
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+end
+
+target 'Watashi+-pro' do
   use_frameworks!
   default_pods
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
