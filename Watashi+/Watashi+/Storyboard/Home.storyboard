@@ -16,38 +16,125 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAN-LB-6mT">
+                                <rect key="frame" x="15" y="84" width="80.5" height="18"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●●さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE2-AD-pyc">
+                                <rect key="frame" x="15" y="112" width="69.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Z7-dq-2lN">
+                                <rect key="frame" x="329" y="59" width="65" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="61u-f2-2O3"/>
+                                    <constraint firstAttribute="width" constant="65" id="V11-An-BQu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="4枚" image="medal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2x-o0-beO">
+                                <rect key="frame" x="254" y="59" width="65" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="qUW-BS-EFP"/>
+                                    <constraint firstAttribute="width" constant="65" id="yFJ-BD-NAD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="666" image="play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wn-bC-cr8">
+                                <rect key="frame" x="245" y="105" width="154" height="35"/>
+                                <color key="backgroundColor" white="0.90321486208920176" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="0CV-yO-7No"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="今日の肌予報" image="face">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wkE-MN-3eE" customClass="HomeSearchField" customModule="Watashi_" customModuleProvider="target">
+                                <rect key="frame" x="15" y="153.5" width="384" height="50"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tH5-ub-nU7"/>
+                                </constraints>
+                                <string key="placeholder">キーワードで探す
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-gU-8V0" customClass="PageTitleView" customModule="Watashi_" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <rect key="frame" x="15" y="213.5" width="384" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="FPX-h5-AC3"/>
+                                    <constraint firstAttribute="height" constant="40" id="FPX-h5-AC3"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szF-Rp-th8" customClass="PageContentView" customModule="Watashi_" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="114" width="414" height="782"/>
+                                <rect key="frame" x="15" y="263.5" width="384" height="632.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="R7q-gU-8V0" firstAttribute="trailing" secondItem="RFJ-Yl-Rb5" secondAttribute="trailing" id="5u8-Ea-rbr"/>
-                            <constraint firstItem="szF-Rp-th8" firstAttribute="top" secondItem="R7q-gU-8V0" secondAttribute="bottom" constant="20" id="D1t-6l-GGr"/>
-                            <constraint firstItem="RFJ-Yl-Rb5" firstAttribute="top" secondItem="R7q-gU-8V0" secondAttribute="top" id="J4X-6v-wMm"/>
-                            <constraint firstItem="szF-Rp-th8" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" id="UbH-mj-mlg"/>
-                            <constraint firstItem="szF-Rp-th8" firstAttribute="trailing" secondItem="RFJ-Yl-Rb5" secondAttribute="trailing" id="ZxE-C8-Y1D"/>
-                            <constraint firstItem="R7q-gU-8V0" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" id="hWP-OO-42q"/>
-                            <constraint firstAttribute="bottom" secondItem="szF-Rp-th8" secondAttribute="bottom" id="iG0-9R-REg"/>
+                            <constraint firstItem="wkE-MN-3eE" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" constant="15" id="10V-DU-SnA"/>
+                            <constraint firstItem="R7q-gU-8V0" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" constant="15" id="1JJ-Rb-Sjc"/>
+                            <constraint firstItem="RFJ-Yl-Rb5" firstAttribute="trailing" secondItem="R7q-gU-8V0" secondAttribute="trailing" constant="15" id="1a2-zT-APi"/>
+                            <constraint firstItem="RFJ-Yl-Rb5" firstAttribute="trailing" secondItem="8Z7-dq-2lN" secondAttribute="trailing" constant="20" id="3EB-4G-AJl"/>
+                            <constraint firstItem="RFJ-Yl-Rb5" firstAttribute="trailing" secondItem="1Wn-bC-cr8" secondAttribute="trailing" constant="15" id="3EV-lk-QF7"/>
+                            <constraint firstItem="8Z7-dq-2lN" firstAttribute="leading" secondItem="E2x-o0-beO" secondAttribute="trailing" constant="10" id="CTx-pi-Yzs"/>
+                            <constraint firstItem="szF-Rp-th8" firstAttribute="top" secondItem="R7q-gU-8V0" secondAttribute="bottom" constant="10" id="Eg9-L2-Rxb"/>
+                            <constraint firstItem="8Z7-dq-2lN" firstAttribute="top" secondItem="RFJ-Yl-Rb5" secondAttribute="top" constant="15" id="K8j-IL-yMy"/>
+                            <constraint firstItem="RFJ-Yl-Rb5" firstAttribute="trailing" secondItem="wkE-MN-3eE" secondAttribute="trailing" constant="15" id="NnV-ht-Qyu"/>
+                            <constraint firstItem="E2x-o0-beO" firstAttribute="top" secondItem="RFJ-Yl-Rb5" secondAttribute="top" constant="15" id="O86-0S-wSp"/>
+                            <constraint firstItem="szF-Rp-th8" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" constant="15" id="UZk-hg-hSk"/>
+                            <constraint firstItem="WAN-LB-6mT" firstAttribute="top" secondItem="RFJ-Yl-Rb5" secondAttribute="top" constant="40" id="VH9-Q0-mnL"/>
+                            <constraint firstItem="wkE-MN-3eE" firstAttribute="top" secondItem="aE2-AD-pyc" secondAttribute="bottom" constant="20" id="ZDP-y8-qfq"/>
+                            <constraint firstAttribute="bottom" secondItem="szF-Rp-th8" secondAttribute="bottom" id="alY-hK-Sj3"/>
+                            <constraint firstItem="aE2-AD-pyc" firstAttribute="top" secondItem="WAN-LB-6mT" secondAttribute="bottom" constant="10" id="fEx-kp-eoG"/>
+                            <constraint firstItem="1Wn-bC-cr8" firstAttribute="top" secondItem="8Z7-dq-2lN" secondAttribute="bottom" constant="11" id="h4c-u4-6u4"/>
+                            <constraint firstItem="R7q-gU-8V0" firstAttribute="top" secondItem="wkE-MN-3eE" secondAttribute="bottom" constant="10" id="hkw-Gf-jYR"/>
+                            <constraint firstItem="RFJ-Yl-Rb5" firstAttribute="trailing" secondItem="szF-Rp-th8" secondAttribute="trailing" constant="15" id="sfl-st-1aY"/>
+                            <constraint firstItem="wkE-MN-3eE" firstAttribute="top" secondItem="1Wn-bC-cr8" secondAttribute="bottom" constant="13.5" id="t21-by-cut"/>
+                            <constraint firstItem="aE2-AD-pyc" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" constant="15" id="xN1-rK-Bbj"/>
+                            <constraint firstItem="WAN-LB-6mT" firstAttribute="leading" secondItem="RFJ-Yl-Rb5" secondAttribute="leading" constant="15" id="zon-ru-eMS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RFJ-Yl-Rb5"/>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="szF-Rp-th8" id="Hpr-nr-zhC"/>
+                        <outlet property="searchField" destination="wkE-MN-3eE" id="BAI-3R-zr1"/>
                         <outlet property="titleView" destination="R7q-gU-8V0" id="xbh-M5-tcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qp-1E-aIy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="139"/>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="wVL-Xi-jSg">
@@ -149,4 +236,9 @@
             <point key="canvasLocation" x="133" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="face" width="24" height="24"/>
+        <image name="medal" width="24" height="24"/>
+        <image name="play" width="24" height="24"/>
+    </resources>
 </document>
