@@ -4,7 +4,7 @@ platform :ios, '12.0'
 use_frameworks!
 inhibit_all_warnings!
 
-#source "https://cpdc-eap.googlesource.com/spec.git"
+
 source 'https://github.com/CocoaPods/Specs.git'
 
 def default_pods
@@ -18,8 +18,8 @@ def default_pods
     pod 'Moya/RxSwift'
     pod 'Moya-ObjectMapper/RxSwift'
     pod 'RxDataSources'
-
-#    pod 'FirebaseABTesting'
+    pod 'Firebase/ABTesting'
+    pod 'Firebase/RemoteConfig'
 end
 
 target 'Watashi+' do
