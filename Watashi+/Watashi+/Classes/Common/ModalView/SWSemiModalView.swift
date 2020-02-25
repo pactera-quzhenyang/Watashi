@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SemiModalView: UIView {
+class SWSemiModalView: UIView {
 
     
     var narrowedOff: Bool = false
@@ -64,7 +64,7 @@ class SemiModalView: UIView {
     }
 }
 
-extension SemiModalView {
+extension SWSemiModalView {
         
     func open() {
 
