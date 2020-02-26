@@ -38,11 +38,9 @@
 		53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
 		53AC693A23FB742D0088CBC0 /* Watashi_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC693923FB742D0088CBC0 /* Watashi_Tests.swift */; };
 		53AC694523FB742D0088CBC0 /* Watashi_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC694423FB742D0088CBC0 /* Watashi_UITests.swift */; };
-		53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
 		53AC698123FB83650088CBC0 /* SWUIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC697423FB83650088CBC0 /* SWUIView+Rx.swift */; };
 		53AC698A23FB851D0088CBC0 /* SWConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC698523FB851D0088CBC0 /* SWConstant.swift */; };
 		53AC698E23FB851D0088CBC0 /* SWAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC698923FB851D0088CBC0 /* SWAppConfig.swift */; };
-		53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
 		53AC699723FB873F0088CBC0 /* SWNetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699623FB873F0088CBC0 /* SWNetworkConfig.swift */; };
 		53AC69A323FBABDE0088CBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
 		53AC69A523FBACBF0088CBC0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
@@ -51,7 +49,24 @@
 		53D07EF624039A4100607088 /* SWHomeSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF524039A4100607088 /* SWHomeSearchField.swift */; };
 		53D07EF82403A4FE00607088 /* SWUITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */; };
 		53D07EFA2403B4E400607088 /* SWUIControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF92403B4E400607088 /* SWUIControlExtension.swift */; };
-		53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
+		53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */; };
+		53F4FBE624063AA90016A38B /* SWUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4FBE524063AA80016A38B /* SWUIColorExtension.swift */; };
+		53F4FBE724063E550016A38B /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
+		53F4FBE824063E5E0016A38B /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
+		53F4FBE924063E640016A38B /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
+		53F4FBEA24063ECB0016A38B /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
+		53F4FBEB24063F840016A38B /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
+		53F4FBEC24063F8C0016A38B /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
+		53F4FBED24063F910016A38B /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
+		53F4FBEE24063F970016A38B /* SWBaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */; };
+		53F4FBEF24063FAE0016A38B /* SWUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4FBE524063AA80016A38B /* SWUIColorExtension.swift */; };
+		53F4FBF024063FB30016A38B /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
+		53F4FBF1240640250016A38B /* SWUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4FBE524063AA80016A38B /* SWUIColorExtension.swift */; };
+		53F4FBF22406402A0016A38B /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
+		53F4FBF32406402E0016A38B /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
+		53F4FBF4240640320016A38B /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
+		53F4FBF52406403F0016A38B /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
+		53F4FBF6240640440016A38B /* SWBaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */; };
 		53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
 		72285D535BCC5DDA65BE920E /* Pods_Watashi__stg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D133F8CF9FDEB1A9D8843C3 /* Pods_Watashi__stg.framework */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
@@ -87,10 +102,6 @@
 		817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF524039A4100607088 /* SWHomeSearchField.swift */; };
 		817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2923FBB10100735670 /* RxPageContentViewDelegateProxy.swift */; };
 		817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
-		817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
-		817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
-		817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
-		817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
 		817415B1240519890033FE43 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		817415B2240519890033FE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
 		817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -132,10 +143,6 @@
 		817415E1240519A90033FE43 /* SWHomeSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D07EF524039A4100607088 /* SWHomeSearchField.swift */; };
 		817415E2240519A90033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2923FBB10100735670 /* RxPageContentViewDelegateProxy.swift */; };
 		817415E3240519A90033FE43 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
-		817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC699423FB869C0088CBC0 /* SWNetworkRequest.swift */; };
-		817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */; };
-		817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */; };
-		817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
 		817415EB240519A90033FE43 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		817415EC240519A90033FE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A223FBABDE0088CBC0 /* Main.storyboard */; };
 		817415ED240519A90033FE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -145,7 +152,6 @@
 		817415F1240519A90033FE43 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
 		817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
 		817415F3240519A90033FE43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
-		8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8180CBD82404B9D400D03230 /* CUSemiModalView.swift */; };
 		B107AEC4D81D63C50BA11BA9 /* Pods_Watashi__pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0041C88B7461E95FD79ACF8F /* Pods_Watashi__pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -252,6 +258,8 @@
 		53D07EF524039A4100607088 /* SWHomeSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWHomeSearchField.swift; sourceTree = "<group>"; };
 		53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWUITextFieldExtension.swift; sourceTree = "<group>"; };
 		53D07EF92403B4E400607088 /* SWUIControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUIControlExtension.swift; sourceTree = "<group>"; };
+		53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWBaseTabbarController.swift; sourceTree = "<group>"; };
+		53F4FBE524063AA80016A38B /* SWUIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWUIColorExtension.swift; sourceTree = "<group>"; };
 		53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsHeaderView.swift; sourceTree = "<group>"; };
 		53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCheckNewProductsHeaderView.xib; sourceTree = "<group>"; };
 		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
@@ -498,6 +506,7 @@
 		535F88582404EF70008A4891 /* SwiftExtension */ = {
 			isa = PBXGroup;
 			children = (
+				53F4FBE524063AA80016A38B /* SWUIColorExtension.swift */,
 				53D07EF72403A4FE00607088 /* SWUITextFieldExtension.swift */,
 				53D07EF92403B4E400607088 /* SWUIControlExtension.swift */,
 			);
@@ -689,6 +698,7 @@
 				533C5A3923FBB39700735670 /* SWBaseViewController.swift */,
 				53AC696823FB83650088CBC0 /* SWBaseCollectionViewCell.swift */,
 				534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */,
+				53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1093,6 +1103,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F4FBF024063FB30016A38B /* SWNetworkRequest.swift in Sources */,
+				53F4FBEF24063FAE0016A38B /* SWUIColorExtension.swift in Sources */,
+				53F4FBEE24063F970016A38B /* SWBaseTabbarController.swift in Sources */,
+				53F4FBED24063F910016A38B /* SWBaseCollectionViewCell.swift in Sources */,
+				53F4FBEC24063F8C0016A38B /* CUSemiModalView.swift in Sources */,
+				53F4FBEB24063F840016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				531C9F8823FD2F0500391B77 /* SWSeasonRecommendViewController.swift in Sources */,
 				533C5A3323FBB10100735670 /* PageTitleView+Rx.swift in Sources */,
 				533C5A3123FBB10100735670 /* RxPageTitleViewDelegateProxy.swift in Sources */,
@@ -1125,16 +1141,6 @@
 				53D07EF624039A4100607088 /* SWHomeSearchField.swift in Sources */,
 				533C5A3423FBB10100735670 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				5389E93824050DC700F18377 /* SWTrendViewController.swift in Sources */,
-				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
-				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
-				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
-				8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */,
-				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
-				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
-				8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */,
-				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
-				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
-				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1158,6 +1164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F4FBEA24063ECB0016A38B /* CUSemiModalView.swift in Sources */,
+				53F4FBE924063E640016A38B /* SWBaseCollectionViewCell.swift in Sources */,
+				53F4FBE824063E5E0016A38B /* SWNetworkRequest.swift in Sources */,
+				53F4FBE724063E550016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
 				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
 				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
@@ -1177,6 +1187,7 @@
 				8174159A240519890033FE43 /* PageContentView.swift in Sources */,
 				8174159B240519890033FE43 /* SWCartViewController.swift in Sources */,
 				8174159C240519890033FE43 /* PageStyle.swift in Sources */,
+				53F4FBE624063AA90016A38B /* SWUIColorExtension.swift in Sources */,
 				8174159D240519890033FE43 /* ApiManager.swift in Sources */,
 				8174159E240519890033FE43 /* SWCheckNewProductsModel.swift in Sources */,
 				8174159F240519890033FE43 /* Helper.swift in Sources */,
@@ -1190,16 +1201,7 @@
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
 				817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
-				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
-				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
-				817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
-				817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */,
-				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
-				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
-				817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */,
-				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
-				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
-				817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1207,6 +1209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F4FBF6240640440016A38B /* SWBaseTabbarController.swift in Sources */,
+				53F4FBF52406403F0016A38B /* SWBaseCollectionViewCell.swift in Sources */,
+				53F4FBF4240640320016A38B /* SWNetworkRequest.swift in Sources */,
+				53F4FBF32406402E0016A38B /* CUSemiModalView.swift in Sources */,
+				53F4FBF22406402A0016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
+				53F4FBF1240640250016A38B /* SWUIColorExtension.swift in Sources */,
 				817415C4240519A90033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
 				817415C5240519A90033FE43 /* PageTitleView+Rx.swift in Sources */,
 				817415C6240519A90033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
@@ -1239,16 +1247,6 @@
 				817415E1240519A90033FE43 /* SWHomeSearchField.swift in Sources */,
 				817415E2240519A90033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				817415E3240519A90033FE43 /* SWTrendViewController.swift in Sources */,
-				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
-				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
-				817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
-				817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */,
-				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
-				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
-				817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */,
-				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
-				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
-				817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1407,7 +1405,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
@@ -1440,7 +1437,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
@@ -1553,7 +1549,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
@@ -1586,7 +1581,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
@@ -1619,7 +1613,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
@@ -1652,7 +1645,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Reusable\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
