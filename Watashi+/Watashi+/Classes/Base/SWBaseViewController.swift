@@ -11,6 +11,7 @@ import Reusable
 
 class SWBaseViewController: UIViewController {
     
+    var titleText: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,4 +30,24 @@ class SWBaseViewController: UIViewController {
     }
     */
 
+}
+
+extension SWBaseViewController {
+    
+    func logEvent(list: [String], titleText: String? = nil) {
+        let title = titleText ?? self.titleText
+        for item in list {
+            let eventBody = [GAKey.custom_event_category: title,
+                             GAKey.custom_event_action: item]
+            SWFirebaseManager.GA.event(eventBody).track()
+        }
+    }
+
+    func logEvent(action: String, label: String, titleText: String? = nil) {
+        let title = titleText ?? self.titleText
+        let eventBody = [GAKey.custom_event_category: title,
+                         GAKey.custom_event_action: action,
+                         GAKey.custom_event_label: label]
+        SWFirebaseManager.GA.event(eventBody).track()
+    }
 }

@@ -69,6 +69,15 @@
 		53F4FBF6240640440016A38B /* SWBaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */; };
 		53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */; };
 		72285D535BCC5DDA65BE920E /* Pods_Watashi__stg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D133F8CF9FDEB1A9D8843C3 /* Pods_Watashi__stg.framework */; };
+		810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
+		810FE05E2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
+		810FE05F2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
+		810FE069240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */; };
+		810FE06A240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */; };
+		810FE06B240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */; };
+		810FE06E24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */; };
+		810FE06F24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */; };
+		810FE07024063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
 		8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
@@ -262,6 +271,11 @@
 		53F4FBE524063AA80016A38B /* SWUIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWUIColorExtension.swift; sourceTree = "<group>"; };
 		53F6429A23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsHeaderView.swift; sourceTree = "<group>"; };
 		53F6429C23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWCheckNewProductsHeaderView.xib; sourceTree = "<group>"; };
+		810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRCValueManager.swift; sourceTree = "<group>"; };
+		810FE064240616D000CE1F54 /* SWBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWBridging-Header.h"; sourceTree = "<group>"; };
+		810FE067240616D000CE1F54 /* SWABTestProtocolDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWABTestProtocolDispatcher.h; sourceTree = "<group>"; };
+		810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWABTestProtocolDispatcher.m; sourceTree = "<group>"; };
+		810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirebaseManager.swift; sourceTree = "<group>"; };
 		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
 		817415BF240519890033FE43 /* Watashi+-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817415C0240519890033FE43 /* Watashi+-dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-dev-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-dev-Info.plist"; sourceTree = "<absolute>"; };
@@ -618,6 +632,7 @@
 		53AC695423FB74970088CBC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				810FE064240616D000CE1F54 /* SWBridging-Header.h */,
 				53AC695623FB78580088CBC0 /* Assets */,
 				53AC695723FB78670088CBC0 /* Plist */,
 			);
@@ -732,7 +747,11 @@
 		53BC8D0823FBE2CB00C2AF41 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */,
+				810FE067240616D000CE1F54 /* SWABTestProtocolDispatcher.h */,
+				810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */,
 				53CF47A023FBE333005A52B9 /* ApiManager.swift */,
+				810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -880,6 +899,7 @@
 				TargetAttributes = {
 					53AC691E23FB742C0088CBC0 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1110;
 					};
 					53AC693423FB742D0088CBC0 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -888,6 +908,12 @@
 					53AC693F23FB742D0088CBC0 = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 53AC691E23FB742C0088CBC0;
+					};
+					81741587240519890033FE43 = {
+						LastSwiftMigration = 1110;
+					};
+					817415C1240519A90033FE43 = {
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -1113,6 +1139,7 @@
 				533C5A3323FBB10100735670 /* PageTitleView+Rx.swift in Sources */,
 				533C5A3123FBB10100735670 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				533C5A2E23FBB10100735670 /* PageCollectionViewFlowLayout.swift in Sources */,
+				810FE07024063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */,
 				53D07EF82403A4FE00607088 /* SWUITextFieldExtension.swift in Sources */,
 				5389E93624050D8900F18377 /* SWCheckNewProductsViewController.swift in Sources */,
 				533C5A2B23FBB10100735670 /* PageTitleView.swift in Sources */,
@@ -1137,10 +1164,22 @@
 				53AC698123FB83650088CBC0 /* SWUIView+Rx.swift in Sources */,
 				53AC699723FB873F0088CBC0 /* SWNetworkConfig.swift in Sources */,
 				533C5A1A23FBB03600735670 /* SWSearchViewController.swift in Sources */,
+				810FE05F2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				53D07EFA2403B4E400607088 /* SWUIControlExtension.swift in Sources */,
 				53D07EF624039A4100607088 /* SWHomeSearchField.swift in Sources */,
 				533C5A3423FBB10100735670 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				5389E93824050DC700F18377 /* SWTrendViewController.swift in Sources */,
+				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
+				810FE06B240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
+				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
+				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
+				8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */,
+				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
+				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
+				8180CBD92404B9D400D03230 /* CUSemiModalView.swift in Sources */,
+				53AC699523FB869C0088CBC0 /* SWNetworkRequest.swift in Sources */,
+				53AC697723FB83650088CBC0 /* SWBaseCollectionViewCell.swift in Sources */,
+				53F6429B23FE6CCE00420A6F /* SWCheckNewProductsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1172,6 +1211,7 @@
 				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
 				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				8174158D240519890033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,
+				810FE06E24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */,
 				8174158E240519890033FE43 /* SWUITextFieldExtension.swift in Sources */,
 				8174158F240519890033FE43 /* SWCheckNewProductsViewController.swift in Sources */,
 				81741590240519890033FE43 /* PageTitleView.swift in Sources */,
@@ -1197,10 +1237,22 @@
 				817415A3240519890033FE43 /* SWUIView+Rx.swift in Sources */,
 				817415A4240519890033FE43 /* SWNetworkConfig.swift in Sources */,
 				817415A5240519890033FE43 /* SWSearchViewController.swift in Sources */,
+				810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */,
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
 				817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
+				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
+				810FE069240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
+				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+				817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */,
+				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415AD240519890033FE43 /* CUSemiModalView.swift in Sources */,
+				817415AA240519890033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415AB240519890033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415AC240519890033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
 				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1219,6 +1271,7 @@
 				817415C5240519A90033FE43 /* PageTitleView+Rx.swift in Sources */,
 				817415C6240519A90033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				817415C7240519A90033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,
+				810FE06F24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */,
 				817415C8240519A90033FE43 /* SWUITextFieldExtension.swift in Sources */,
 				817415C9240519A90033FE43 /* SWCheckNewProductsViewController.swift in Sources */,
 				817415CA240519A90033FE43 /* PageTitleView.swift in Sources */,
@@ -1243,10 +1296,22 @@
 				817415DD240519A90033FE43 /* SWUIView+Rx.swift in Sources */,
 				817415DE240519A90033FE43 /* SWNetworkConfig.swift in Sources */,
 				817415DF240519A90033FE43 /* SWSearchViewController.swift in Sources */,
+				810FE05E2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				817415E0240519A90033FE43 /* SWUIControlExtension.swift in Sources */,
 				817415E1240519A90033FE43 /* SWHomeSearchField.swift in Sources */,
 				817415E2240519A90033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				817415E3240519A90033FE43 /* SWTrendViewController.swift in Sources */,
+				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
+				810FE06A240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
+				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
+				817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */,
+				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415E7240519A90033FE43 /* CUSemiModalView.swift in Sources */,
+				817415E4240519A90033FE43 /* SWNetworkRequest.swift in Sources */,
+				817415E5240519A90033FE43 /* SWBaseCollectionViewCell.swift in Sources */,
+				817415E6240519A90033FE43 /* SWCheckNewProductsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1396,6 +1461,7 @@
 			baseConfigurationReference = 159F44300C287005828C2E31 /* Pods-Watashi+-pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1418,6 +1484,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PRODUCTION";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Watashi+/Supporting Files/SWBridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1428,6 +1496,7 @@
 			baseConfigurationReference = B2F526ADF13DEA9B1BCD9AF9 /* Pods-Watashi+-pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1450,6 +1519,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRODUCTION;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Watashi+/Supporting Files/SWBridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1540,6 +1610,7 @@
 			baseConfigurationReference = E6D563234368581E36EF1F49 /* Pods-Watashi+-dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1562,6 +1633,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Watashi+/Supporting Files/SWBridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1572,6 +1645,7 @@
 			baseConfigurationReference = 42EF376369F902C9B77526C6 /* Pods-Watashi+-dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1594,6 +1668,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Watashi+/Supporting Files/SWBridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1604,6 +1679,7 @@
 			baseConfigurationReference = AC974314431901BE0B468851 /* Pods-Watashi+-stg.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1626,6 +1702,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG STG";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Watashi+/Supporting Files/SWBridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1636,6 +1714,7 @@
 			baseConfigurationReference = 050ACB292579F126DD3B984D /* Pods-Watashi+-stg.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1658,6 +1737,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.watashi.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Watashi+/Supporting Files/SWBridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -20,6 +20,7 @@ def default_pods
     pod 'RxDataSources'
     pod 'Firebase/ABTesting'
     pod 'Firebase/RemoteConfig'
+    pod 'FirebaseAnalytics'
     pod 'SwiftLint'
 end
 
