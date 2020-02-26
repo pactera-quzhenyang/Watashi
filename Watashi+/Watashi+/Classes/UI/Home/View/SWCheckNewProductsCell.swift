@@ -14,6 +14,8 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
 
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.showsHorizontalScrollIndicator = false
         return scrollView
     }()
 
@@ -48,6 +50,12 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
             itemImage.image = UIImage(named: model.imageArray![i])
             bgView.addSubview(itemImage)
 
+            let priceLabel = UILabel()
+            priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
+            priceLabel.textColor = UIColor.init(hex: 0x666666)
+            priceLabel.font = UIFont.systemFont(ofSize: 14)
+            priceLabel.textAlignment = .center
+            bgView.addSubview(priceLabel)
 
             itemImage.snp.makeConstraints { (make) in
                 if i > 0 {
@@ -58,6 +66,17 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
                 }
                 make.width.equalTo(140)
                 make.height.equalTo(140)
+            }
+            priceLabel.snp.makeConstraints { (make) in
+                if i > 0 {
+                    let prevView = bgView.viewWithTag(i-1)
+                    make.left.equalTo(prevView!.snp.left).offset(150)
+                } else {
+                    make.left.equalTo(0)
+                }
+                make.top.equalTo(itemImage.snp.bottom)
+                make.width.equalTo(itemImage.snp.width)
+                make.height.equalTo(30)
             }
         }
     }

@@ -9,17 +9,14 @@
 import UIKit
 import Foundation
 
-struct AppConfig {
+var screenWidth: CGFloat {
+    return UIScreen.main.bounds.width
+}
 
-    static var screenWidth: CGFloat {
-        return UIScreen.main.bounds.width
-    }
+var screenHeight: CGFloat {
+    return UIScreen.main.bounds.height
+}
 
-    static var screenHeight: CGFloat {
-        return UIScreen.main.bounds.height
-    }
-
-    static var standardScreenWidth: CGFloat {
-        return 1024
-    }
+var baseColor: UIColor {
+    return UIColor.init(hex: 0xDF0068)
 }

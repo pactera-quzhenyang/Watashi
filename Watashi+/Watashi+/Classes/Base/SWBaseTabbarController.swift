@@ -13,8 +13,5 @@ class SWBaseTabbarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        for item in self.tabBar.items ?? Array<UITabBarItem>() {
-            item.setTitleTextAttributes([NSAttributedString.Key.font : UIFont.systemFont(ofSize: 11),NSAttributedString.Key.foregroundColor : UIColor.init(hex: 0x333333)], for: .normal)
-        }
     }
 }

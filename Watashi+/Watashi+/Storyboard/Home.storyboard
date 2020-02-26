@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="BCc-eT-nH1">
             <objects>
-                <viewController storyboardIdentifier="SWHomeViewController" id="cWI-dO-wi4" customClass="SWHomeViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWHomeViewController" id="cWI-dO-wi4" customClass="SWHomeViewController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NIq-3q-OfB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="4枚" image="medal">
+                                <state key="normal" title="4個" image="medal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -72,7 +72,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wkE-MN-3eE" customClass="SWHomeSearchField" customModule="Watashi_" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wkE-MN-3eE" customClass="SWHomeSearchField" customModule="Watashi__dev" customModuleProvider="target">
                                 <rect key="frame" x="15" y="153.5" width="384" height="50"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -88,14 +88,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-gU-8V0" customClass="PageTitleView" customModule="Watashi_" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7q-gU-8V0" customClass="PageTitleView" customModule="Watashi__dev" customModuleProvider="target">
                                 <rect key="frame" x="15" y="213.5" width="384" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FPX-h5-AC3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szF-Rp-th8" customClass="PageContentView" customModule="Watashi_" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szF-Rp-th8" customClass="PageContentView" customModule="Watashi__dev" customModuleProvider="target">
                                 <rect key="frame" x="15" y="263.5" width="384" height="632.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -139,12 +139,12 @@
         <!--Check New Products View Controller-->
         <scene sceneID="wVL-Xi-jSg">
             <objects>
-                <viewController storyboardIdentifier="SWCheckNewProductsViewController" id="Ryx-j9-bXI" customClass="SWCheckNewProductsViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWCheckNewProductsViewController" id="Ryx-j9-bXI" customClass="SWCheckNewProductsViewController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eo-0z-0o9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i9o-wo-fUv">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i9o-wo-fUv">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </tableView>
                         </subviews>
@@ -168,7 +168,7 @@
         <!--Trend View Controller-->
         <scene sceneID="FyW-EW-uWJ">
             <objects>
-                <viewController storyboardIdentifier="SWTrendViewController" id="L5Q-9Y-pyu" customClass="SWTrendViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWTrendViewController" id="L5Q-9Y-pyu" customClass="SWTrendViewController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qGZ-MX-5zG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,7 +223,7 @@
         <!--Season Recommend View Controller-->
         <scene sceneID="vSO-5q-iL0">
             <objects>
-                <viewController storyboardIdentifier="SWSeasonRecommendViewController" id="39w-Au-PSz" customClass="SWSeasonRecommendViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWSeasonRecommendViewController" id="39w-Au-PSz" customClass="SWSeasonRecommendViewController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5a-Wy-qhs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,7 +238,7 @@
     </scenes>
     <resources>
         <image name="face" width="24" height="24"/>
-        <image name="medal" width="24" height="24"/>
+        <image name="medal" width="32" height="32"/>
         <image name="play" width="24" height="24"/>
     </resources>
 </document>

@@ -73,7 +73,7 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
 
 extension SWCheckNewProductsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 170
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

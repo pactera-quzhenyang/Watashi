@@ -18,7 +18,7 @@ class SWHomeSearchField: UITextField {
     }()
 
     let leftViewX: CGFloat = 10
-    let leftViewWidth: CGFloat = 30
+    let leftViewWidth: CGFloat = 20
 
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(x: leftViewX, y: (self.frame.height - leftViewWidth) / 2, width: leftViewWidth, height: leftViewWidth)
