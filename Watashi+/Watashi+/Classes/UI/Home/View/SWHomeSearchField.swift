@@ -13,7 +13,7 @@ class SWHomeSearchField: UITextField {
     public lazy var searchImageView: UIImageView = {
         let searchImageView = UIImageView()
         searchImageView.backgroundColor = self.backgroundColor
-        searchImageView.image = UIImage(named: "search")
+        searchImageView.image = UIImage(named: "searchNormal")
         return searchImageView
     }()
 
