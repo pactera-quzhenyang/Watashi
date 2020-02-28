@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param implemertors 所有需要遵循协议的实现实例;
  @return 协议分发器;
  */
-+ (id)dispatcherProtocol:(Protocol *)protocol
++ (instancetype)dispatcherProtocol:(Protocol *)protocol
     withIndexImplemertor:(NSNumber *)indexImplemertor
           toImplemertors:(NSArray *)implemertors;
 @end
