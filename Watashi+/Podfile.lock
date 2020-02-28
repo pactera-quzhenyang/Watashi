@@ -81,6 +81,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.5.1):
     - GoogleUtilities/Logger
   - IQKeyboardManagerSwift (6.5.4)
+  - MJRefresh (3.3.1)
   - Moya (12.0.1):
     - Moya/Core (= 12.0.1)
   - Moya-ObjectMapper/Core (2.8):
@@ -126,6 +127,7 @@ DEPENDENCIES:
   - Firebase/RemoteConfig
   - FirebaseAnalytics
   - IQKeyboardManagerSwift
+  - MJRefresh
   - Moya
   - Moya-ObjectMapper/RxSwift
   - Moya/RxSwift
@@ -156,6 +158,7 @@ SPEC REPOS:
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
     - IQKeyboardManagerSwift
+    - MJRefresh
     - Moya
     - Moya-ObjectMapper
     - nanopb
@@ -189,6 +192,7 @@ SPEC CHECKSUMS:
   GoogleDataTransportCCTSupport: 36f69887fd212db6d7ef4dd45ba44523717a434e
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   Moya-ObjectMapper: c514b5eafcfd5e260f85f7a5bf66895a217e2b37
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
@@ -204,6 +208,6 @@ SPEC CHECKSUMS:
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 286f26884d1b314c03456c94df032b5660414ecf
+PODFILE CHECKSUM: bb46786954a76cc0c7d96b989ab4af90c4304126
 
 COCOAPODS: 1.8.4

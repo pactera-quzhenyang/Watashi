@@ -22,6 +22,7 @@ def default_pods
     pod 'Firebase/RemoteConfig'
     pod 'FirebaseAnalytics'
     pod 'SwiftLint'
+    pod 'MJRefresh'
 end
 
 target 'Watashi+-dev' do
