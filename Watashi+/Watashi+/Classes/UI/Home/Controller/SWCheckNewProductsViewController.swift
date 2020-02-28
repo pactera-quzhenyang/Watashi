@@ -20,10 +20,11 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
 
     var dataSource:RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>?
     let disposeBag = DisposeBag()
-
+    let a = SWABTestAViewModel()
+    let b = SWABTestBViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        SWABTestingManager.add([a, b])
         // Do any additional setup after loading the view.
         tableView.register(cellType: SWCheckNewProductsCell.self)
         bind()
@@ -32,6 +33,7 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
     func bind() {
         dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>(configureCell: { (dataSouece, tv, indexPath, element) -> SWCheckNewProductsCell in
             let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWCheckNewProductsCell.self)
+            cell.delegate = SWABTestingManager.testProtocol(at: 0) as? ABTestProtocol
             cell.setModel(model: element)
             return cell
         })

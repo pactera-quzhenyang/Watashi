@@ -46,7 +46,7 @@ BOOL ProtocolContainSel(Protocol *protocol, SEL sel) {
 
 @implementation SWABTestProtocolDispatcher
 
-+ (id)dispatcherProtocol:(Protocol *)protocol
++ (instancetype)dispatcherProtocol:(Protocol *)protocol
     withIndexImplemertor:(NSNumber *)indexImplemertor
           toImplemertors:(NSArray *)implemertors
 {

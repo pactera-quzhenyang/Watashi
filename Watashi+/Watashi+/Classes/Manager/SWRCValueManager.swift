@@ -15,7 +15,7 @@ enum ValueKey: String {
 
 
 class SWRCValueManager {
-    static let sharedInstance = SWRCValueManager()
+    static let shared = SWRCValueManager()
     var loadingDoneCallback: (() -> ())?
     var fetchComplete: Bool = false
     

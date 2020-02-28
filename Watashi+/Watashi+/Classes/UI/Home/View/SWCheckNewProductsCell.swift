@@ -11,14 +11,16 @@ import Reusable
 import SnapKit
 
 class SWCheckNewProductsCell: UITableViewCell, Reusable {
-
+    
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
         return scrollView
     }()
-
+    
+    weak var delegate: ABTestProtocol?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -78,9 +80,24 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
                 make.width.equalTo(itemImage.snp.width)
                 make.height.equalTo(30)
             }
+            
+            if delegate?.responds(to: #selector(delegate?.testButton)) ?? false {
+                let but = delegate!.testButton()
+                
+                bgView.addSubview(but)
+                but.snp.makeConstraints { (make) in
+                    make.left.equalTo(priceLabel.snp.right)
+                    make.bottom.equalToSuperview()
+                    make.size.equalTo(CGSize(width: 30, height: 30))
+                }
+            }
         }
+        
+        
     }
 
+ 
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -88,3 +105,10 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
     }
 
 }
+
+@objc protocol ABTestProtocol: NSObjectProtocol {
+
+    func testButton() -> UIButton
+}
+
+
