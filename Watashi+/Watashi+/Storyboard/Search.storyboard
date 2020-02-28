@@ -11,13 +11,44 @@
         <!--Search View Controller-->
         <scene sceneID="sBM-uZ-2D7">
             <objects>
-                <viewController storyboardIdentifier="SWSearchViewController" id="und-LO-4s6" customClass="SWSearchViewController" customModule="Watashi_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWSearchViewController" id="und-LO-4s6" customClass="SWSearchViewController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jid-wa-aEv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZzC-HE-lG5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="40G-RO-WuI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dbV-0e-MWN">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="40G-RO-WuI" secondAttribute="bottom" id="0G9-Tv-HVp"/>
+                            <constraint firstItem="ZzC-HE-lG5" firstAttribute="trailing" secondItem="OMn-cD-1kZ" secondAttribute="trailing" id="7w7-Pe-gJ9"/>
+                            <constraint firstItem="40G-RO-WuI" firstAttribute="trailing" secondItem="OMn-cD-1kZ" secondAttribute="trailing" id="EuO-L8-NI8"/>
+                            <constraint firstAttribute="bottom" secondItem="ZzC-HE-lG5" secondAttribute="bottom" id="Ke5-eX-wkg"/>
+                            <constraint firstItem="40G-RO-WuI" firstAttribute="top" secondItem="jid-wa-aEv" secondAttribute="top" id="Qd2-6h-Qpz"/>
+                            <constraint firstItem="40G-RO-WuI" firstAttribute="leading" secondItem="OMn-cD-1kZ" secondAttribute="leading" id="Xhd-6y-CWg"/>
+                            <constraint firstItem="ZzC-HE-lG5" firstAttribute="top" secondItem="OMn-cD-1kZ" secondAttribute="top" id="asz-YY-UYV"/>
+                            <constraint firstItem="ZzC-HE-lG5" firstAttribute="leading" secondItem="OMn-cD-1kZ" secondAttribute="leading" id="b6j-vW-OoL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OMn-cD-1kZ"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="40G-RO-WuI" id="817-cE-xZR"/>
+                        <outlet property="searchTableView" destination="ZzC-HE-lG5" id="zXq-7E-dJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pm-BM-jFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

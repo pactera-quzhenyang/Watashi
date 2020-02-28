@@ -28,11 +28,18 @@ class SWHomeViewController: SWBaseViewController {
 
         // Do any additional setup after loading the view.
         setPageViewCon()
+        bind()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+    }
+
+    func bind() {
+        searchField.rx.text.orEmpty.asObservable().subscribe { (text) in
+            self.tabBarController?.selectedIndex = 1
+        }.disposed(by: disposeBag)
     }
     
     func setPageViewCon() {
@@ -86,6 +93,42 @@ class SWHomeViewController: SWBaseViewController {
 
     }
 
+    func s() {
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 100, y: 500))
+        path.addLine(to: CGPoint(x: 100, y: 400))
+
+        let shape = CAShapeLayer()
+        shape.lineWidth = 1
+        shape.strokeColor = UIColor.black.cgColor
+        shape.path = path.cgPath
+        view.layer.addSublayer(shape)
+
+        let ani = CABasicAnimation(keyPath: "strokeEnd")
+        ani.duration = 0.2
+        ani.fromValue = 0
+        ani.toValue = 1
+        ani.timingFunction = .init(name: .easeIn)
+        ani.isRemovedOnCompletion = false
+        ani.fillMode = .forwards
+//        ani.timingFunction = CAMediaTimingFunction(controlPoints: 0.4, 0.0, 0.2, 1.0)
+
+        let ani1 = CABasicAnimation(keyPath: "strokeStart")
+        ani1.duration = 0.4
+        ani1.fromValue = 0
+        ani1.toValue = 1
+        ani1.isRemovedOnCompletion = false
+        ani1.fillMode = .forwards
+//        ani1.timingFunction = CAMediaTimingFunction(controlPoints: 0.4, 0.0, 0.2, 1.0)
+        ani.timingFunction = .init(name: .easeIn)
+        ani1.beginTime = 0.2
+        let group = CAAnimationGroup()
+        group.animations = [ani,ani1]
+        group.duration = 0.6
+        group.isRemovedOnCompletion = false
+        group.fillMode = .forwards
+        shape.add(group, forKey: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -96,4 +139,16 @@ class SWHomeViewController: SWBaseViewController {
     }
     */
 
+}
+
+extension SWHomeViewController: UITextFieldDelegate {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        s()
+        return true
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

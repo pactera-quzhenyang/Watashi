@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SWSearchView" customModule="Watashi__dev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZOw-5U-4MK" customClass="SWHomeSearchField" customModule="Watashi__dev" customModuleProvider="target">
+                    <rect key="frame" x="15" y="0.0" width="340" height="44"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YTd-5Y-Qpu"/>
+                    </constraints>
+                    <string key="placeholder">キーワードで探す
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDw-ei-DeO">
+                    <rect key="frame" x="355" y="0.0" width="59" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="KbA-tf-bP3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZOw-5U-4MK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0K7-Ig-efz"/>
+                <constraint firstItem="MDw-ei-DeO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3xq-5c-9Gg"/>
+                <constraint firstItem="MDw-ei-DeO" firstAttribute="leading" secondItem="ZOw-5U-4MK" secondAttribute="trailing" id="EhL-Ug-QRb"/>
+                <constraint firstItem="ZOw-5U-4MK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X43-Vh-3xQ"/>
+                <constraint firstItem="MDw-ei-DeO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="i7H-99-Uy0"/>
+                <constraint firstItem="ZOw-5U-4MK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="nmP-Yk-WVl"/>
+                <constraint firstAttribute="trailing" secondItem="MDw-ei-DeO" secondAttribute="trailing" id="wCQ-Ph-wU8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-370" y="115"/>
+        </view>
+    </objects>
+</document>

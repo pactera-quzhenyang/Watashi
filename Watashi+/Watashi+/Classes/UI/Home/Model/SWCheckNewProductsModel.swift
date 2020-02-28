@@ -16,10 +16,3 @@ struct SWCheckNewProductsModel {
         self.imageArray = imageArray
     }
 }
-
-extension SWCheckNewProductsModel: IdentifiableType{
-    typealias Identity = String
-    var identity:Identity {
-        return "haha"
-    }
-}
