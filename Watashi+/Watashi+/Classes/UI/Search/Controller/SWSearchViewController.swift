@@ -22,16 +22,55 @@ class SWSearchViewController: SWBaseViewController {
     let disposeBag = DisposeBag()
     var selectIndex: Int?
     var dataList = Variable([String]())
+    var sels = [Int]()
+
+    var tableList = BehaviorSubject(value: [SectionModel<String, SWSearchHistoryModel>]())
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        listenDataSourceChange()
         bindViewModel()
+    }
+
+    func listenDataSourceChange() {
+        _ = NotificationCenter.default.rx
+            .notification(NSNotification.Name(NotifyName.searchListChange))
+            .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
+            .subscribe({ notify in
+                let object = notify.element?.object
+                if object != nil {
+                    let index = object  as? Int
+                    self.searchHistortViewModel.list.remove(at: index ?? 0)
+                } else {
+                    self.searchHistortViewModel.list.removeAll()
+                }
+                let newData = SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: self.searchHistortViewModel.list)])
+                self.tableList.onNext([newData])
+        })
     }
 
     func bindViewModel() {
         searchTableView.register(cellType: SWSearchHistoryTableViewCell.self)
+        searchTableView.tableFooterView = UIView()
+
+        dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWSearchHistoryModel>>(configureCell: { (dataSouece, tv, indexPath, element) -> SWSearchHistoryTableViewCell in
+            let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWSearchHistoryTableViewCell.self)
+            cell.setModel(model: element)
+            return cell
+        })
+        dataSource!.titleForHeaderInSection = { ds, index in
+            return ds.sectionModels[index].model
+        }
+        tableList = BehaviorSubject(value: [
+            SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: searchHistortViewModel.list)]),
+        ])
+        tableList.bind(to: searchTableView.rx.items(dataSource: dataSource!)).disposed(by: disposeBag)
+        searchTableView.rx.setDelegate(self).disposed(by: disposeBag)
+    }
+
+    func collectionType() {
         collectionView.register(cellType: SWSearchHistoryCollectionViewCell.self)
 
         let flow = SWGridFlowLayout()
@@ -44,30 +83,51 @@ class SWSearchViewController: SWBaseViewController {
             let cell = collection.dequeueReusableCell(for: IndexPath(item: index, section: 0), cellType: SWSearchHistoryCollectionViewCell.self)
             cell.tagLabel.text = element
             cell.tag = index + 1000
-//            cell.deleteButton.rx.tap
-//                .map({_ in cell.selectIndex})
-//                .bind(to: self.searchHistortViewModel.rx.deleteItemAtIndexPath)
-//                .disposed(by: cell.disposBag)
-            cell.deleteButton.rx.tap.asDriver().drive(onNext: {
-//                self.dataList.onNext(self.searchHistortViewModel.list)
-                self.dataList.value.remove(at: cell.selectIndex)
+            cell.deleteButton.rx.tap.subscribe(onNext: {
+                let ll = self.collectionView.cellForItem(at: IndexPath(item: self.sels.first!, section: 0)) as! SWSearchHistoryCollectionViewCell
+                ll.deleteButton.isHidden = true
+                ll.lineView.isHidden = true
+                ll.tagLabel.snp.updateConstraints { (make) in
+                    make.edges.equalTo(UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15))
+                }
+                self.dataList.value.remove(at: self.sels.first!)
                 self.collectionView.reloadData()
             }).disposed(by: cell.disposBag)
-
+            cell.longPress.rx.event.subscribe { (gesture) in
+                if gesture.element?.state == UIGestureRecognizer.State.began {
+                    if self.sels.count > 0 {
+                        let ll = self.collectionView.cellForItem(at: IndexPath(item: self.sels.first!, section: 0)) as! SWSearchHistoryCollectionViewCell
+                        ll.deleteButton.isHidden = true
+                        ll.lineView.isHidden = true
+                        ll.tagLabel.snp.updateConstraints { (make) in
+                            make.edges.equalTo(UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15))
+                        }
+                        self.sels.removeAll()
+                    }
+                    self.sels.append((gesture.element?.view!.tag)! - 1000)
+                }
+            }.disposed(by: cell.disposBag)
             return cell
         }.disposed(by: disposeBag)
+    }
+}
 
-        dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWSearchHistoryModel>>(configureCell: { (dataSouece, tv, indexPath, element) -> SWSearchHistoryTableViewCell in
-            let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWSearchHistoryTableViewCell.self)
-            cell.setModel(model: element)
-            return cell
-        })
-        let items1 = Observable.just([
-        SectionModel(model: "搜索历史", items: [
-            SWSearchHistoryModel(tagList: ["1231231231231231231231231231231231231231231231212213123123123123123123123123123123123123123123123123123","iphone","面膜","电脑桌","电竞椅","iphone8 plus","iphonexsmax","氨基酸洗面奶","空气清新剂"])
-            ]),
-        ])
-        items1.bind(to: searchTableView.rx.items(dataSource: dataSource!)).disposed(by: disposeBag)
+extension SWSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let searchHistoryView = SWSearchHistoryView()
+        searchHistoryView.setupUI(list: searchHistortViewModel.list)
+        return searchHistoryView.frame.height + 30
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = SWSearchHeaderView.loadFromNib()
+        headerView.titleLabel.text = SearchPage.searchHistory
+        headerView.trashButton.setImage(UIImage(named: "trash"), for: .normal)
+        return headerView
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 70
     }
 }
 
@@ -75,7 +135,7 @@ extension SWSearchViewController: SWGridFlowLayoutDelegate {
     func gridFlowLayout(layout: SWGridFlowLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         let title = dataList.value[indexPath.item]
         let att: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)]
-        var textWidth = (title.boundingRect(with: CGSize(width: Double(MAXFLOAT), height: 30), options: .usesLineFragmentOrigin, attributes:att, context: nil)).size.width + 2
+        var textWidth = (title.boundingRect(with: CGSize(width: Double(MAXFLOAT), height: 30), options: .usesLineFragmentOrigin, attributes:att, context: nil)).size.width + 1
         textWidth = textWidth >= screenWidth - 60 ? screenWidth - 60 : textWidth
         return CGSize(width: textWidth + 30, height: 30)
     }

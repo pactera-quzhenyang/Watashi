@@ -27,4 +27,18 @@ extension Reactive where Base: UILabel {
             }
         }
     }
+
+    var isSelected: Binder<Bool> {
+        return Binder(self.base) { label, isLongPress  in
+            if isLongPress {
+                var rect = label.frame
+                rect.origin.x = 5
+                label.frame = rect
+            } else {
+                var rect = label.frame
+                rect.origin.x = 15
+                label.frame = rect
+            }
+        }
+    }
 }

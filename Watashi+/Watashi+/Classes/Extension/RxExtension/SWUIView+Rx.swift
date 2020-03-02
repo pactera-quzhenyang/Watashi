@@ -20,3 +20,11 @@ extension Reactive where Base: UIView {
         }
     }
 }
+
+extension Reactive where Base: SWSearchHistoryView {
+    var selectIndex: Binder<Int> {
+        return Binder(self.base) { view, index in
+            view.selectIndex = index
+        }
+    }
+}

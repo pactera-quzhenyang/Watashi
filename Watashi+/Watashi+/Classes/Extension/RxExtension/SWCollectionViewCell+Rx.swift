@@ -20,11 +20,11 @@ extension Reactive where Base: SWSearchHistoryCollectionViewCell {
     }
 }
 
-extension Reactive where Base: SWSearchHistoryViewModel {
+extension Reactive where Base: UICollectionView {
 
     var deleteItemAtIndexPath: Binder<Int> {
-        return Binder(self.base) { model, index  in
-            model.list.remove(at: index)
+        return Binder(self.base) { cl, index  in
+            cl.deleteItems(at: [IndexPath(item: index, section: 0)])
         }
     }
 }
