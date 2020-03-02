@@ -1,5 +1,5 @@
 //
-//  SWMJRefreshComponentExtension.swift
+//  SWMJRefreshComponent+Rx.swift
 //  Watashi+
 //
 //  Created by NULL on 2020/2/28.

@@ -9,10 +9,6 @@
 import Foundation
 import Firebase
 
-enum ValueKey: String {
-    case navBarBackground
-}
-
 
 class SWRCValueManager {
     static let shared = SWRCValueManager()
@@ -25,7 +21,11 @@ class SWRCValueManager {
     }
     
     func loadDefaultValues() {
-        let appDefaults: [String: Any?] = [ValueKey.navBarBackground.rawValue: "#535E66"]
+        
+        let appDefaults: [String: Any?] = [
+            SWRemoteConfigKey.shoppingCart.rawValue: "shoppingCartA"
+            
+        ]
         RemoteConfig.remoteConfig().setDefaults(appDefaults as? [String: NSObject])
     }
     
@@ -41,7 +41,7 @@ class SWRCValueManager {
                 strongSelf.fetchComplete = true
                 RemoteConfig.remoteConfig().activate(completionHandler: { (error) in
                   // ...
-                    print("Error: \(error?.localizedDescription ?? "No error available.")")
+                    print("Error: \(error?.localizedDescription ?? "")")
                 })
             } else {
                 print("Config not fetched")
@@ -55,20 +55,20 @@ class SWRCValueManager {
         RemoteConfig.remoteConfig().configSettings = RemoteConfigSettings()
     }
     
-    func color(forKey key: ValueKey) -> UIColor {
+    func color(forKey key: SWRemoteConfigKey) -> UIColor {
       let hexString = RemoteConfig.remoteConfig()[key.rawValue].stringValue ?? "#FFFFFFFF"
       return UIColor(hex: hexString)!
     }
     
-    func bool(forKey key: ValueKey) -> Bool {
+    func bool(forKey key: SWRemoteConfigKey) -> Bool {
       return RemoteConfig.remoteConfig()[key.rawValue].boolValue
     }
     
-    func string(forKey key: ValueKey) -> String {
+    func string(forKey key: SWRemoteConfigKey) -> String {
       return RemoteConfig.remoteConfig()[key.rawValue].stringValue ?? ""
     }
     
-    func double(forKey key: ValueKey) -> Double {
+    func double(forKey key: SWRemoteConfigKey) -> Double {
       if let numberValue = RemoteConfig.remoteConfig()[key.rawValue].numberValue {
         return numberValue.doubleValue
       } else {

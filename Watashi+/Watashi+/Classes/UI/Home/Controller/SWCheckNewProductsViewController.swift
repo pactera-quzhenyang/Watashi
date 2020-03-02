@@ -24,7 +24,7 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
     let b = SWABTestBViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        SWABTestingManager.add([a, b])
+        SWABTestingManager.add(["shoppingCartA": a, "shoppingCartB": b])
         // Do any additional setup after loading the view.
         tableView.register(cellType: SWCheckNewProductsCell.self)
         bind()
@@ -33,7 +33,7 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
     func bind() {
         dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>(configureCell: { (dataSouece, tv, indexPath, element) -> SWCheckNewProductsCell in
             let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWCheckNewProductsCell.self)
-            cell.delegate = SWABTestingManager.testProtocol(at: 0) as? ABTestProtocol
+            cell.delegate = SWABTestingManager.shoppingCartsType() as? ABTestProtocol
             cell.setModel(model: element)
             return cell
         })
