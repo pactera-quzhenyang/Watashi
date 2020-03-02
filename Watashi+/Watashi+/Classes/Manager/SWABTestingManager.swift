@@ -10,19 +10,23 @@ import UIKit
 
 class SWABTestingManager {
     static let shared = SWABTestingManager()
-    lazy var procotols: [Any] = []
-    
+    lazy var shoppingCarts: [String: Any] = [:]
     private init() {
         
     }
 }
 
 extension SWABTestingManager {
-    class func add(_ procotols: [Any]) {
-        SWABTestingManager.shared.procotols = procotols
+    
+    /// 添加购物车类型
+    /// - Parameter shoppingCarts: 购物车类型
+    class func add(_ shoppingCarts: [String: Any]) {
+        SWABTestingManager.shared.shoppingCarts = shoppingCarts
     }
     
-    class func testProtocol(at index: Int) -> Any {
-        return SWABTestingManager.shared.procotols[index]
+    /// 获取购物车类型
+    class func shoppingCartsType() -> Any {
+        let key = SWRCValueManager.shared.string(forKey: .shoppingCart)
+        return SWABTestingManager.shared.shoppingCarts[key] as Any
     }
 }

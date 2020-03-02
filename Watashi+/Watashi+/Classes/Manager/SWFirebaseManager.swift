@@ -25,6 +25,7 @@ class SWFirebaseManager {
         guard let firebaseOption = FirebaseOptions(contentsOfFile: filePath) else { return }
         
         FirebaseApp.configure(options: firebaseOption)
+        let _ = SWRCValueManager.shared
     }
 }
 

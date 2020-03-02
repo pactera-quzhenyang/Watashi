@@ -51,7 +51,12 @@ class SWSearchHistoryCollectionViewCell: SWBaseCollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
     }
 
     func initUI() {

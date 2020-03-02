@@ -92,6 +92,12 @@
 		81036CD52408DCD000300E01 /* SWAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81036CD42408DCD000300E01 /* SWAccountViewModel.swift */; };
 		81036CD62408DCD000300E01 /* SWAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81036CD42408DCD000300E01 /* SWAccountViewModel.swift */; };
 		81036CD72408DCD000300E01 /* SWAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81036CD42408DCD000300E01 /* SWAccountViewModel.swift */; };
+		810AF8B3240C917B0086176B /* SWRemoteConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */; };
+		810AF8B4240C917B0086176B /* SWRemoteConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */; };
+		810AF8B5240C917B0086176B /* SWRemoteConfigKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */; };
+		810AF8C3240C9D810086176B /* GoogleService-pro-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 810AF8B8240C9BFB0086176B /* GoogleService-pro-Info.plist */; };
+		810AF8C4240C9D840086176B /* GoogleService-stg-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 810AF8B7240C9BFB0086176B /* GoogleService-stg-Info.plist */; };
+		810AF8C5240C9DDA0086176B /* GoogleService-dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 810AF8B6240C9BFB0086176B /* GoogleService-dev-Info.plist */; };
 		810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
 		810FE05E2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
 		810FE05F2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
@@ -315,6 +321,10 @@
 		81036CCC24089F9200300E01 /* SWABTestingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWABTestingManager.swift; sourceTree = "<group>"; };
 		81036CD02408D9EA00300E01 /* SWMJRefreshComponentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWMJRefreshComponentExtension.swift; sourceTree = "<group>"; };
 		81036CD42408DCD000300E01 /* SWAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SWAccountViewModel.swift; path = "Watashi+/Classes/Extension/RxExtension/SWAccountViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRemoteConfigKey.swift; sourceTree = "<group>"; };
+		810AF8B6240C9BFB0086176B /* GoogleService-dev-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-dev-Info.plist"; sourceTree = "<group>"; };
+		810AF8B7240C9BFB0086176B /* GoogleService-stg-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-stg-Info.plist"; sourceTree = "<group>"; };
+		810AF8B8240C9BFB0086176B /* GoogleService-pro-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-pro-Info.plist"; sourceTree = "<group>"; };
 		810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRCValueManager.swift; sourceTree = "<group>"; };
 		810FE064240616D000CE1F54 /* SWBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWBridging-Header.h"; sourceTree = "<group>"; };
 		810FE067240616D000CE1F54 /* SWABTestProtocolDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWABTestProtocolDispatcher.h; sourceTree = "<group>"; };
@@ -705,6 +715,9 @@
 		53AC695723FB78670088CBC0 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				810AF8B6240C9BFB0086176B /* GoogleService-dev-Info.plist */,
+				810AF8B8240C9BFB0086176B /* GoogleService-pro-Info.plist */,
+				810AF8B7240C9BFB0086176B /* GoogleService-stg-Info.plist */,
 				53AC693023FB742D0088CBC0 /* Watashi+-pro-Info.plist */,
 				817415C0240519890033FE43 /* Watashi+-dev-Info.plist */,
 				817415FA240519A90033FE43 /* Watashi+-stg-Info.plist */,
@@ -772,6 +785,7 @@
 			children = (
 				53AC698523FB851D0088CBC0 /* SWConstant.swift */,
 				53AC698923FB851D0088CBC0 /* SWAppConfig.swift */,
+				810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1012,6 +1026,7 @@
 				53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */,
 				53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */,
 				533C5A3823FBB1B100735670 /* Search.storyboard in Resources */,
+				810AF8C3240C9D810086176B /* GoogleService-pro-Info.plist in Resources */,
 				53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */,
 				532142292403C6EB00BB5977 /* Account.storyboard in Resources */,
 				5321422B2403C71600BB5977 /* Repurchase.storyboard in Resources */,
@@ -1041,6 +1056,7 @@
 				817415B2240519890033FE43 /* Main.storyboard in Resources */,
 				817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */,
 				817415B4240519890033FE43 /* Assets.xcassets in Resources */,
+				810AF8C5240C9DDA0086176B /* GoogleService-dev-Info.plist in Resources */,
 				817415B5240519890033FE43 /* Search.storyboard in Resources */,
 				817415B6240519890033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */,
 				817415B7240519890033FE43 /* Account.storyboard in Resources */,
@@ -1054,6 +1070,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810AF8C4240C9D840086176B /* GoogleService-stg-Info.plist in Resources */,
 				817415EB240519A90033FE43 /* Cart.storyboard in Resources */,
 				817415EC240519A90033FE43 /* Main.storyboard in Resources */,
 				817415ED240519A90033FE43 /* LaunchScreen.storyboard in Resources */,
@@ -1216,6 +1233,7 @@
 				5322D4A523FE1A200069D0C9 /* SWCheckNewProductsCell.swift in Sources */,
 				53AC698E23FB851D0088CBC0 /* SWAppConfig.swift in Sources */,
 				81741552240516010033FE43 /* CUStarView.swift in Sources */,
+				810AF8B5240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
 				5389E93A24050E1500F18377 /* SWHomeViewController.swift in Sources */,
 				532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */,
 				533C5A2D23FBB10100735670 /* Protocal.swift in Sources */,
@@ -1272,6 +1290,7 @@
 				53F4FBE724063E550016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
 				533D10F724074E64000F116D /* SWSearchHistoryModel.swift in Sources */,
+				810AF8B3240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
 				53F0BF8D240799AA00473C46 /* SWSearchHistoryViewModel.swift in Sources */,
 				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
 				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
@@ -1318,7 +1337,6 @@
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
 				81036CD52408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponentExtension.swift in Sources */,
-
 				810FE069240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
 				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 			);
@@ -1351,6 +1369,7 @@
 				817415CE240519A90033FE43 /* SWCheckNewProductsCell.swift in Sources */,
 				817415CF240519A90033FE43 /* SWAppConfig.swift in Sources */,
 				817415D0240519A90033FE43 /* CUStarView.swift in Sources */,
+				810AF8B4240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
 				817415D1240519A90033FE43 /* SWHomeViewController.swift in Sources */,
 				817415D2240519A90033FE43 /* SWRepurchaseViewController.swift in Sources */,
 				817415D3240519A90033FE43 /* Protocal.swift in Sources */,
