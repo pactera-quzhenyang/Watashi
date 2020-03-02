@@ -18,6 +18,7 @@ class SWBaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
         Analytics.logEvent("mainPageLoaded", parameters: nil)
+        
         print("\(self.classForCoder) viewDidLoad")
     }
     

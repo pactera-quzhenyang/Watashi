@@ -12,15 +12,15 @@ import RxSwift
 import SwiftyJSON
 
 
-let plugin = APIPlugin()
-let APIProvider = MoyaProvider<APIS>(plugins: [plugin])
 
-enum APIS {
+let APIProvider = MoyaProvider<SWAPIS>(plugins: [SWNetworkPlugin()])
+
+enum SWAPIS {
     case login(String)
     case other
 }
 
-extension APIS: TargetType {
+extension SWAPIS: TargetType {
     var baseURL: URL {
         #if DEBUG
 //        return URL(string: "https://www.baidu.com/")!
@@ -61,25 +61,9 @@ extension APIS: TargetType {
             "Content-Type": "application/json"
         ]
     }
-
-}
-
-
-
-public final class APIPlugin: PluginType {
-    public func willSend(_ request: RequestType, target: TargetType) {
-        print("willSend")
-    }
     
-    public func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
-        print("didReceive")
-        switch result {
-        case .success(let response):
-            let json = try? JSONSerialization.jsonObject(with: response.data, options: .allowFragments)
-            print(json as Any)
-        case .failure(let error):
-            print(error.errorDescription as Any)
-        }
+    var isShowHUD: Bool {
+        return true
     }
 }
 

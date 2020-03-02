@@ -41,7 +41,7 @@ class SWRCValueManager {
                 strongSelf.fetchComplete = true
                 RemoteConfig.remoteConfig().activate(completionHandler: { (error) in
                   // ...
-                    print("Error: \(error?.localizedDescription ?? "No error available.")")
+                    print("Error: \(error?.localizedDescription ?? "")")
                 })
             } else {
                 print("Config not fetched")
