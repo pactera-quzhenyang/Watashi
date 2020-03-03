@@ -87,6 +87,13 @@ class SWSearchViewController: SWBaseViewController {
         ])
         tableList.bind(to: searchTableView.rx.items(dataSource: dataSource!)).disposed(by: disposeBag)
         searchTableView.rx.setDelegate(self).disposed(by: disposeBag)
+
+        let tap = UITapGestureRecognizer()
+        searchTableView.addGestureRecognizer(tap)
+
+        tap.rx.event.subscribe(onNext: { (grs) in
+            self.searchTableView.reloadData()
+            }).disposed(by: disposeBag)
     }
 
     func collectionType() {
