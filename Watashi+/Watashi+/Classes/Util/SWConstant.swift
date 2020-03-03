@@ -8,8 +8,16 @@
 
 import UIKit
 
-struct pageTitles {
+struct PageTitles {
     static let checkNewProducts = "新商品をチェック"
     static let trend = "トレンド"
     static let seasonRecommend = "季節のおすすめ"
+}
+
+struct SearchPage {
+    static let searchHistory = "搜索历史"
+}
+
+struct NotifyName {
+    static let searchListChange = "searchListChange"
 }

@@ -38,6 +38,9 @@
 		5389E93624050D8900F18377 /* SWCheckNewProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */; };
 		5389E93824050DC700F18377 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
 		5389E93A24050E1500F18377 /* SWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93924050E1500F18377 /* SWHomeViewController.swift */; };
+		539D7D6A240CFD03002130EF /* SWSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */; };
+		539D7D6C240CFD16002130EF /* SWSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */; };
+		539D7D6E240CFF2E002130EF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6D240CFF2E002130EF /* BaseView.swift */; };
 		53AC692323FB742C0088CBC0 /* SWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */; };
 		53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692B23FB742D0088CBC0 /* Assets.xcassets */; };
 		53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -283,6 +286,9 @@
 		5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsViewController.swift; sourceTree = "<group>"; };
 		5389E93724050DC700F18377 /* SWTrendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTrendViewController.swift; sourceTree = "<group>"; };
 		5389E93924050E1500F18377 /* SWHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWHomeViewController.swift; sourceTree = "<group>"; };
+		539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWSearchHeaderView.xib; sourceTree = "<group>"; };
+		539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchHeaderView.swift; sourceTree = "<group>"; };
+		539D7D6D240CFF2E002130EF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		53AC691F23FB742C0088CBC0 /* Watashi+-pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppDelegate.swift; sourceTree = "<group>"; };
 		53AC692B23FB742D0088CBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -535,6 +541,8 @@
 				53F0BF8E2407A16100473C46 /* SWGridFlowLayout.swift */,
 				534420F32408EF980072AC16 /* SWSearchView.swift */,
 				534420F52408EFC50072AC16 /* SWSearchView.xib */,
+				539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */,
+				539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -775,6 +783,7 @@
 				534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */,
 				53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */,
 				53AE73B324076DC800056460 /* SWBaseTableViewCell.swift */,
+				539D7D6D240CFF2E002130EF /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1050,6 +1059,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539D7D6A240CFD03002130EF /* SWSearchHeaderView.xib in Resources */,
 				817415B1240519890033FE43 /* Cart.storyboard in Resources */,
 				817415B2240519890033FE43 /* Main.storyboard in Resources */,
 				817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */,
@@ -1291,6 +1301,7 @@
 				810AF8B3240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
 				53F0BF8D240799AA00473C46 /* SWSearchHistoryViewModel.swift in Sources */,
 				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
+				539D7D6C240CFD16002130EF /* SWSearchHeaderView.swift in Sources */,
 				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				8174158D240519890033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,
 				810FE06E24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */,
@@ -1333,8 +1344,10 @@
 				817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */,
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
 				817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
+				539D7D6E240CFF2E002130EF /* BaseView.swift in Sources */,
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
 				81036CD52408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
+				81036CD12408D9EA00300E01 /* SWMJRefreshComponentExtension.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 			);

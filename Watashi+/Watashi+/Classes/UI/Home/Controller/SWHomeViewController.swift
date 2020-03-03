@@ -52,7 +52,7 @@ class SWHomeViewController: SWBaseViewController {
         style.bottomLineColor = baseColor
         style.isShowBottomLine = true
 
-        let titles = [pageTitles.checkNewProducts,pageTitles.trend,pageTitles.seasonRecommend]
+        let titles = [PageTitles.checkNewProducts,PageTitles.trend,PageTitles.seasonRecommend]
         var txtWidth: CGFloat = 0.0
         let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: 40)
         let attList = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)]

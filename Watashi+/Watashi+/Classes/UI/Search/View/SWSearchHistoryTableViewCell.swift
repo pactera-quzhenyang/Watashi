@@ -11,14 +11,14 @@ import SnapKit
 
 class SWSearchHistoryTableViewCell: SWBaseTableViewCell {
 
-    lazy var searchHistoryView: SWSearchHistoryView = {
-        let searchHistoryView = SWSearchHistoryView()
-        return searchHistoryView
-    }()
-
     func setModel(model: SWSearchHistoryModel) {
         let tagList = model.tagList
 
+        selectionStyle = .none
+        for view in contentView.subviews {
+            view.removeFromSuperview()
+        }
+        let searchHistoryView = SWSearchHistoryView()
         contentView.addSubview(searchHistoryView)
 
         searchHistoryView.setupUI(list: tagList!)
