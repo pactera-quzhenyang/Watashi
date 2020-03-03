@@ -21,3 +21,9 @@ struct SearchPage {
 struct NotifyName {
     static let searchListChange = "searchListChange"
 }
+
+struct SearchListChangeType {
+    static let removeObjectAtIndex = "removeObjectAtIndex"
+    static let removeAllObject = "removeAllObject"
+    static let reloadCellHeight = "reloadCellHeight"
+}

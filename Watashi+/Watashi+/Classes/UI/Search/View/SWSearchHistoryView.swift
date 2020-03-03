@@ -18,7 +18,7 @@ class SWSearchHistoryView: UIView {
     var tapGestures: [UILongPressGestureRecognizer] = [UILongPressGestureRecognizer]()
 
     let viewHeight: CGFloat = 30 //tagView高度
-    let maxWidth: CGFloat = screenWidth - 30 //tagView最大宽度
+    let viewMaxWidth: CGFloat = screenWidth - 30 //tagView最大宽度
     let viewBeginX: CGFloat = 15 //tagView起始x
     let viewSpace: CGFloat = 10 //tagView之间间距(上下左右)
     let labelTextSpace: CGFloat = 30 //文字左右空出来的大小总和
@@ -27,14 +27,38 @@ class SWSearchHistoryView: UIView {
     let lineViewHeight: CGFloat = 15
 
     var selectIndex: Int = -1 //删除的index
-    var lines: Int = 0 //默认显示两行
+    var isShowAll = false //默认显示两行
+    var stopAtIndex: Int = 0 //默认显示到index
 
     let disposeBag = DisposeBag()
 
+    lazy var arrowButton: UIButton = {
+        let arrowButton = UIButton()
+        return arrowButton
+    }()
+
     func setupUI(list: [String]) {
         self.list = list
+
+        var lines: Int = 0 //获取当前行数
+        let defalutShowLines = 2 //默认显示两行
+
+        tapGestures.removeAll()
+
         for i in 0..<list.count {
             let title = list[i]
+
+            let prevTagButton = viewWithTag(i+99) //上一个button
+            let remainingWidth = prevTagButton != nil ? (viewMaxWidth - prevTagButton!.frame.maxX) : viewMaxWidth //剩余宽度
+            let buttonWidth = tagButtonWidth(title: title) //button总宽度
+            let isNewLine = remainingWidth - buttonWidth <= 0 //是否换行
+            if isNewLine {
+                lines += 1
+                if lines == defalutShowLines && !SWSearchHistoryManager.shared.isShowAll {
+                    stopAtIndex = i - 1
+                    break
+                }
+            }
 
             let tagView = UIView()
             tagView.backgroundColor = UIColor.init(hex: 0xf5f5f5)
@@ -68,15 +92,8 @@ class SWSearchHistoryView: UIView {
 
             let longPress = UILongPressGestureRecognizer()
             tagView.addGestureRecognizer(longPress)
-            tapGestures.append(longPress)
 
-            let prevTagButton = viewWithTag(i+99) //上一个button
-            let remainingWidth = prevTagButton != nil ? (maxWidth - prevTagButton!.frame.maxX) : maxWidth //剩余宽度
-            let buttonWidth = tagButtonWidth(title: title) //button总宽度
-            let isNewLine = remainingWidth - buttonWidth <= 0 //是否换行
-            if isNewLine {
-                lines += 1
-            }
+            tapGestures.append(longPress)
 
             let x = isNewLine ? viewBeginX : (prevTagButton != nil ? prevTagButton!.frame.maxX + viewSpace : viewBeginX)
             let y = isNewLine ? (prevTagButton != nil ? (prevTagButton!.frame.maxY) + viewSpace : 0) : (prevTagButton != nil ? (prevTagButton!.frame.minY) : 0)
@@ -90,9 +107,6 @@ class SWSearchHistoryView: UIView {
         }
 
         if let lastButton = viewWithTag(list.count + 99) {
-            let arrowButton = UIButton()
-            arrowButton.setImage(UIImage(named: "down"), for: .normal)
-            arrowButton.setImage(UIImage(named: "up"), for: .selected)
             self.addSubview(arrowButton)
 
             arrowButton.frame = CGRect(x: lastButton.frame.maxX, y: lastButton.frame.minY, width: viewHeight, height: viewHeight)
@@ -100,6 +114,7 @@ class SWSearchHistoryView: UIView {
         }
 
         bindLongPress()
+        bindArrowButton()
     }
 
     func bindLongPress() {
@@ -164,8 +179,16 @@ class SWSearchHistoryView: UIView {
         }).disposed(by: disposeBag)
     }
 
-    func bindArrowButton(arrowButton: UIButton) {
+    func bindArrowButton() {
+        Observable.just(SWSearchHistoryManager.shared.isShowAll ? UIImage(named: "up") : UIImage(named: "down")).bind(to: arrowButton.rx.image()).disposed(by: disposeBag)        
         arrowButton.rx.tap
+            .map({_ in !SWSearchHistoryManager.shared.isShowAll})
+            .bind(to: self.arrowButton.rx.showImage)
+            .disposed(by: disposeBag)
+        arrowButton.rx.tap.subscribe(onNext: { () in
+            SWSearchHistoryManager.shared.isShowAll = !SWSearchHistoryManager.shared.isShowAll
+            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.reloadCellHeight: SWSearchHistoryManager.shared.isShowAll])
+        }).disposed(by: disposeBag)
     }
 
     func tagButtonWidth(title: String) -> CGFloat {

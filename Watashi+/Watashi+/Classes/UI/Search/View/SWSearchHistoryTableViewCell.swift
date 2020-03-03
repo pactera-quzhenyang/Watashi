@@ -8,9 +8,12 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class SWSearchHistoryTableViewCell: SWBaseTableViewCell {
 
+    var disposBag = DisposeBag()
     func setModel(model: SWSearchHistoryModel) {
         let tagList = model.tagList
 
@@ -29,5 +32,8 @@ class SWSearchHistoryTableViewCell: SWBaseTableViewCell {
 
         // Configure the view for the selected state
     }
-
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposBag = DisposeBag()
+    }
 }
