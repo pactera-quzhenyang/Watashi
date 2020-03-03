@@ -19,7 +19,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         return scrollView
     }()
     
-    weak var delegate: ABTestProtocol?
+    weak var delegate: SWShoppingABTestProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,15 +37,24 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         scrollView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
          }
-        let bgView = UIView()
-        scrollView.addSubview(bgView)
-        bgView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-            make.width.equalTo(140*arrayCount+10*(arrayCount-1))
-            make.height.equalToSuperview()
-        }
-
+//        let bgView = UIView()
+//        scrollView.addSubview(bgView)
+//        bgView.snp.makeConstraints { (make) in
+//            make.edges.equalToSuperview()
+//            make.width.equalTo(140*arrayCount+10*(arrayCount-1))
+//            make.height.equalToSuperview()
+//        }
+        scrollView.contentSize = CGSize(width: 140 * arrayCount, height: 0)
         for i in 0..<arrayCount {
+            
+            let bgView = UIView()
+            scrollView.addSubview(bgView)
+            bgView.snp.makeConstraints { (make) in
+                make.left.equalTo(140 * i)
+                make.width.equalTo(140)
+                make.height.equalToSuperview()
+            }
+            
             let itemImage = UIImageView()
             itemImage.backgroundColor = .gray
             itemImage.tag = i
@@ -60,40 +69,30 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
             bgView.addSubview(priceLabel)
 
             itemImage.snp.makeConstraints { (make) in
-                if i > 0 {
-                    let prevView = bgView.viewWithTag(i-1)
-                    make.left.equalTo(prevView!.snp.left).offset(150)
-                } else {
+//                if i > 0 {
+//                    let prevView = bgView.viewWithTag(i-1)
+//                    make.left.equalTo(prevView!.snp.left).offset(150)
+//                } else {
                     make.left.equalTo(0)
-                }
+//                }
                 make.width.equalTo(140)
                 make.height.equalTo(140)
             }
             priceLabel.snp.makeConstraints { (make) in
-                if i > 0 {
-                    let prevView = bgView.viewWithTag(i-1)
-                    make.left.equalTo(prevView!.snp.left).offset(150)
-                } else {
+//                if i > 0 {
+//                    let prevView = bgView.viewWithTag(i-1)
+//                    make.left.equalTo(prevView!.snp.left).offset(150)
+//                } else {
                     make.left.equalTo(0)
-                }
+//                }
                 make.top.equalTo(itemImage.snp.bottom)
                 make.width.equalTo(itemImage.snp.width)
                 make.height.equalTo(30)
             }
-            
-            if delegate?.responds(to: #selector(delegate?.testButton)) ?? false {
-                let but = delegate!.testButton()
-                
-                bgView.addSubview(but)
-                but.snp.makeConstraints { (make) in
-                    make.left.equalTo(priceLabel.snp.right)
-                    make.bottom.equalToSuperview()
-                    make.size.equalTo(CGSize(width: 30, height: 30))
-                }
-            }
+    
+            delegate?.shoppingButton(forProduct: model, superView: bgView)
+ 
         }
-        
-        
     }
 
  
@@ -106,9 +105,9 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
 
 }
 
-@objc protocol ABTestProtocol: NSObjectProtocol {
-
-    func testButton() -> UIButton
+protocol SWShoppingABTestProtocol: NSObjectProtocol {
+    
+    func shoppingButton(forProduct product: SWCheckNewProductsModel, superView: UIView)
 }
 
 
