@@ -104,12 +104,15 @@
 		810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
 		810FE05E2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
 		810FE05F2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */; };
-		810FE069240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */; };
-		810FE06A240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */; };
-		810FE06B240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */; };
 		810FE06E24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */; };
 		810FE06F24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */; };
 		810FE07024063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */; };
+		812046AD240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812046AC240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift */; };
+		812046AE240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812046AC240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift */; };
+		812046AF240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812046AC240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift */; };
+		812046B1240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812046B0240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift */; };
+		812046B2240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812046B0240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift */; };
+		812046B3240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812046B0240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
 		8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
@@ -193,12 +196,6 @@
 		817415F1240519A90033FE43 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
 		817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
 		817415F3240519A90033FE43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
-		81F9C4292407879F002B49C7 /* SWABTestAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4282407879F002B49C7 /* SWABTestAViewModel.swift */; };
-		81F9C42A2407879F002B49C7 /* SWABTestAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4282407879F002B49C7 /* SWABTestAViewModel.swift */; };
-		81F9C42B2407879F002B49C7 /* SWABTestAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C4282407879F002B49C7 /* SWABTestAViewModel.swift */; };
-		81F9C42D240787B6002B49C7 /* SWABTestBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C42C240787B6002B49C7 /* SWABTestBViewModel.swift */; };
-		81F9C42E240787B6002B49C7 /* SWABTestBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C42C240787B6002B49C7 /* SWABTestBViewModel.swift */; };
-		81F9C42F240787B6002B49C7 /* SWABTestBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9C42C240787B6002B49C7 /* SWABTestBViewModel.swift */; };
 		B107AEC4D81D63C50BA11BA9 /* Pods_Watashi__pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0041C88B7461E95FD79ACF8F /* Pods_Watashi__pro.framework */; };
 /* End PBXBuildFile section */
 
@@ -331,17 +328,15 @@
 		810AF8C6240CAB7C0086176B /* SWNetworkPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWNetworkPlugin.swift; sourceTree = "<group>"; };
 		810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRCValueManager.swift; sourceTree = "<group>"; };
 		810FE064240616D000CE1F54 /* SWBridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWBridging-Header.h"; sourceTree = "<group>"; };
-		810FE067240616D000CE1F54 /* SWABTestProtocolDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWABTestProtocolDispatcher.h; sourceTree = "<group>"; };
-		810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWABTestProtocolDispatcher.m; sourceTree = "<group>"; };
 		810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirebaseManager.swift; sourceTree = "<group>"; };
+		812046AC240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShoppingABTestViewModelA.swift; sourceTree = "<group>"; };
+		812046B0240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWShoppingABTestViewModelB.swift; sourceTree = "<group>"; };
 		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
 		817415BF240519890033FE43 /* Watashi+-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817415C0240519890033FE43 /* Watashi+-dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-dev-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-dev-Info.plist"; sourceTree = "<absolute>"; };
 		817415F9240519A90033FE43 /* Watashi+-stg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-stg.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817415FA240519A90033FE43 /* Watashi+-stg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-stg-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-stg-Info.plist"; sourceTree = "<absolute>"; };
 		8180CBD82404B9D400D03230 /* CUSemiModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUSemiModalView.swift; sourceTree = "<group>"; };
-		81F9C4282407879F002B49C7 /* SWABTestAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWABTestAViewModel.swift; sourceTree = "<group>"; };
-		81F9C42C240787B6002B49C7 /* SWABTestBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWABTestBViewModel.swift; sourceTree = "<group>"; };
 		90827FD2430D33F487E4ECC8 /* Pods_Watashi__dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi__dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC974314431901BE0B468851 /* Pods-Watashi+-stg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-stg.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F526ADF13DEA9B1BCD9AF9 /* Pods-Watashi+-pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-pro.release.xcconfig"; path = "Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro.release.xcconfig"; sourceTree = "<group>"; };
@@ -820,8 +815,6 @@
 			isa = PBXGroup;
 			children = (
 				810FE05C2405FC1900CE1F54 /* SWRCValueManager.swift */,
-				810FE067240616D000CE1F54 /* SWABTestProtocolDispatcher.h */,
-				810FE068240616D000CE1F54 /* SWABTestProtocolDispatcher.m */,
 				53CF47A023FBE333005A52B9 /* ApiManager.swift */,
 				810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */,
 				81036CCC24089F9200300E01 /* SWABTestingManager.swift */,
@@ -864,8 +857,8 @@
 		81F9C4272407874C002B49C7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				81F9C4282407879F002B49C7 /* SWABTestAViewModel.swift */,
-				81F9C42C240787B6002B49C7 /* SWABTestBViewModel.swift */,
+				812046AC240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift */,
+				812046B0240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1218,7 +1211,6 @@
 				53F4FBF024063FB30016A38B /* SWNetworkRequest.swift in Sources */,
 				53F4FBEF24063FAE0016A38B /* SWUIColorExtension.swift in Sources */,
 				53F4FBEE24063F970016A38B /* SWBaseTabbarController.swift in Sources */,
-				81F9C42B2407879F002B49C7 /* SWABTestAViewModel.swift in Sources */,
 				53F4FBED24063F910016A38B /* SWBaseCollectionViewCell.swift in Sources */,
 				53F4FBEC24063F8C0016A38B /* CUSemiModalView.swift in Sources */,
 				53F4FBEB24063F840016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
@@ -1248,13 +1240,13 @@
 				810AF8C9240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
 				53CF47A123FBE333005A52B9 /* ApiManager.swift in Sources */,
 				53D07EF22403935C00607088 /* SWCheckNewProductsModel.swift in Sources */,
-				81F9C42F240787B6002B49C7 /* SWABTestBViewModel.swift in Sources */,
 				533C5A2F23FBB10100735670 /* Helper.swift in Sources */,
 				533C5A2C23FBB10100735670 /* PageContentView+Rx.swift in Sources */,
 				534C132A23FF6F8B00FEE103 /* SWBaseViewModel.swift in Sources */,
 				53AC692323FB742C0088CBC0 /* SWAppDelegate.swift in Sources */,
 				53AC698123FB83650088CBC0 /* SWUIView+Rx.swift in Sources */,
 				53AC699723FB873F0088CBC0 /* SWNetworkConfig.swift in Sources */,
+				812046AF240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,
 				533C5A1A23FBB03600735670 /* SWSearchViewController.swift in Sources */,
 				810FE05F2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				53D07EFA2403B4E400607088 /* SWUIControlExtension.swift in Sources */,
@@ -1263,7 +1255,7 @@
 				81036CD72408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
 				81036CD32408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				5389E93824050DC700F18377 /* SWTrendViewController.swift in Sources */,
-				810FE06B240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
+				812046B3240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1292,7 +1284,6 @@
 				53F4FBE924063E640016A38B /* SWBaseCollectionViewCell.swift in Sources */,
 				534420F02408A7890072AC16 /* SWCollectionViewCell+Rx.swift in Sources */,
 				53F4FBE824063E5E0016A38B /* SWNetworkRequest.swift in Sources */,
-				81F9C4292407879F002B49C7 /* SWABTestAViewModel.swift in Sources */,
 				53F4FBE724063E550016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
 				533D10F724074E64000F116D /* SWSearchHistoryModel.swift in Sources */,
@@ -1330,13 +1321,14 @@
 				8174159D240519890033FE43 /* ApiManager.swift in Sources */,
 				8174159E240519890033FE43 /* SWCheckNewProductsModel.swift in Sources */,
 				8174159F240519890033FE43 /* Helper.swift in Sources */,
-				81F9C42D240787B6002B49C7 /* SWABTestBViewModel.swift in Sources */,
 				817415A0240519890033FE43 /* PageContentView+Rx.swift in Sources */,
+				812046B1240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift in Sources */,
 				817415A1240519890033FE43 /* SWBaseViewModel.swift in Sources */,
 				817415A2240519890033FE43 /* SWAppDelegate.swift in Sources */,
 				817415A3240519890033FE43 /* SWUIView+Rx.swift in Sources */,
 				817415A4240519890033FE43 /* SWNetworkConfig.swift in Sources */,
 				817415A5240519890033FE43 /* SWSearchViewController.swift in Sources */,
+				812046AD240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,
 				810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */,
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
@@ -1344,7 +1336,6 @@
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
 				81036CD52408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
-				810FE069240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
 				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1356,7 +1347,6 @@
 				53F4FBF6240640440016A38B /* SWBaseTabbarController.swift in Sources */,
 				53F4FBF52406403F0016A38B /* SWBaseCollectionViewCell.swift in Sources */,
 				53F4FBF4240640320016A38B /* SWNetworkRequest.swift in Sources */,
-				81F9C42A2407879F002B49C7 /* SWABTestAViewModel.swift in Sources */,
 				53F4FBF32406402E0016A38B /* CUSemiModalView.swift in Sources */,
 				53F4FBF22406402A0016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				53F4FBF1240640250016A38B /* SWUIColorExtension.swift in Sources */,
@@ -1386,13 +1376,13 @@
 				810AF8C8240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
 				817415D7240519A90033FE43 /* ApiManager.swift in Sources */,
 				817415D8240519A90033FE43 /* SWCheckNewProductsModel.swift in Sources */,
-				81F9C42E240787B6002B49C7 /* SWABTestBViewModel.swift in Sources */,
 				817415D9240519A90033FE43 /* Helper.swift in Sources */,
 				817415DA240519A90033FE43 /* PageContentView+Rx.swift in Sources */,
 				817415DB240519A90033FE43 /* SWBaseViewModel.swift in Sources */,
 				817415DC240519A90033FE43 /* SWAppDelegate.swift in Sources */,
 				817415DD240519A90033FE43 /* SWUIView+Rx.swift in Sources */,
 				817415DE240519A90033FE43 /* SWNetworkConfig.swift in Sources */,
+				812046AE240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,
 				817415DF240519A90033FE43 /* SWSearchViewController.swift in Sources */,
 				810FE05E2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				817415E0240519A90033FE43 /* SWUIControlExtension.swift in Sources */,
@@ -1401,7 +1391,7 @@
 				81036CD62408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
 				81036CD22408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				817415E3240519A90033FE43 /* SWTrendViewController.swift in Sources */,
-				810FE06A240616D000CE1F54 /* SWABTestProtocolDispatcher.m in Sources */,
+				812046B2240DE4B6007B57ED /* SWShoppingABTestViewModelB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

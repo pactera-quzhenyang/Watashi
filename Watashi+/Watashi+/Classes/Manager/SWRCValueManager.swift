@@ -39,8 +39,14 @@ class SWRCValueManager {
                 print("Config fetched!")
                 // 让提取的参数值可供应用使用
                 strongSelf.fetchComplete = true
+//                if let done = strongSelf.loadingDoneCallback {
+//                    done()
+//                }
                 RemoteConfig.remoteConfig().activate(completionHandler: { (error) in
                   // ...
+                    if let done = strongSelf.loadingDoneCallback {
+                        done()
+                    }
                     print("Error: \(error?.localizedDescription ?? "")")
                 })
             } else {
