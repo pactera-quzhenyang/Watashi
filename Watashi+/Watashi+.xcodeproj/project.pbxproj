@@ -33,6 +33,7 @@
 		534420F22408BC840072AC16 /* SWSearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F12408BC830072AC16 /* SWSearchHistoryView.swift */; };
 		534420F42408EF980072AC16 /* SWSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F32408EF980072AC16 /* SWSearchView.swift */; };
 		534420F62408EFC50072AC16 /* SWSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534420F52408EFC50072AC16 /* SWSearchView.xib */; };
+		53451774240E37E80067BD16 /* SWSearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */; };
 		534C132A23FF6F8B00FEE103 /* SWBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */; };
 		537BD83B2403C1A30069C44C /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		5389E93624050D8900F18377 /* SWCheckNewProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */; };
@@ -296,6 +297,7 @@
 		534420F12408BC830072AC16 /* SWSearchHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWSearchHistoryView.swift; sourceTree = "<group>"; };
 		534420F32408EF980072AC16 /* SWSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchView.swift; sourceTree = "<group>"; };
 		534420F52408EFC50072AC16 /* SWSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWSearchView.xib; sourceTree = "<group>"; };
+		53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchHistoryManager.swift; sourceTree = "<group>"; };
 		534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBaseViewModel.swift; sourceTree = "<group>"; };
 		537BD83A2403C1A30069C44C /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsViewController.swift; sourceTree = "<group>"; };
@@ -852,6 +854,7 @@
 				53CF47A023FBE333005A52B9 /* ApiManager.swift */,
 				810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */,
 				81036CCC24089F9200300E01 /* SWABTestingManager.swift */,
+				53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1335,6 +1338,7 @@
 				810AF8B3240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
 				53F0BF8D240799AA00473C46 /* SWSearchHistoryViewModel.swift in Sources */,
 				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
+				53451774240E37E80067BD16 /* SWSearchHistoryManager.swift in Sources */,
 				539D7D6C240CFD16002130EF /* SWSearchHeaderView.swift in Sources */,
 				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				8174158D240519890033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,

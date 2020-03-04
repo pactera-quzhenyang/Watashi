@@ -18,6 +18,7 @@ class SWSearchViewController: SWBaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     var searchHistortViewModel = SWSearchHistoryViewModel()
+    var searchHistoryView = SWSearchHistoryView()
     var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String,SWSearchHistoryModel>>?
     let disposeBag = DisposeBag()
     var selectIndex: Int?
@@ -39,10 +40,24 @@ class SWSearchViewController: SWBaseViewController {
             .notification(NSNotification.Name(NotifyName.searchListChange))
             .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
             .subscribe({ notify in
+                if let userInfo = notify.element?.userInfo as? [String: Bool] {
+                    let isShowAll = userInfo[SearchListChangeType.reloadCellHeight] ?? false
+                    if isShowAll {
+                        self.searchHistortViewModel.list = self.searchHistortViewModel.getAllHistoryData()
+                        let newData = SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: self.searchHistortViewModel.list)])
+                        self.tableList.onNext([newData])
+                    } else {
+                        self.searchHistortViewModel.list = self.searchHistortViewModel.getDefaultData(toIndex: self.searchHistortViewModel.toIndex)
+                        let newData = SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: self.searchHistortViewModel.list)])
+                        self.tableList.onNext([newData])
+                    }
+                    return
+                }
                 let object = notify.element?.object
                 if object != nil {
                     let index = object  as? Int
                     self.searchHistortViewModel.list.remove(at: index ?? 0)
+                    self.searchHistortViewModel.list = self.searchHistortViewModel.addItemAtLast()
                 } else {
                     self.searchHistortViewModel.list.removeAll()
                 }
@@ -63,11 +78,22 @@ class SWSearchViewController: SWBaseViewController {
         dataSource!.titleForHeaderInSection = { ds, index in
             return ds.sectionModels[index].model
         }
+
+        searchHistoryView.setupUI(list: searchHistortViewModel.list)
+        searchHistortViewModel.list = searchHistortViewModel.getDefaultData(toIndex: searchHistoryView.stopAtIndex)
+        
         tableList = BehaviorSubject(value: [
             SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: searchHistortViewModel.list)]),
         ])
         tableList.bind(to: searchTableView.rx.items(dataSource: dataSource!)).disposed(by: disposeBag)
         searchTableView.rx.setDelegate(self).disposed(by: disposeBag)
+
+        let tap = UITapGestureRecognizer()
+        searchTableView.addGestureRecognizer(tap)
+
+        tap.rx.event.subscribe(onNext: { (grs) in
+            self.searchTableView.reloadData()
+            }).disposed(by: disposeBag)
     }
 
     func collectionType() {
@@ -114,7 +140,9 @@ class SWSearchViewController: SWBaseViewController {
 
 extension SWSearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let searchHistoryView = SWSearchHistoryView()
+        if searchHistortViewModel.list.count == 0 {
+            return 0
+        }
         searchHistoryView.setupUI(list: searchHistortViewModel.list)
         return searchHistoryView.frame.height + 30
     }
@@ -127,6 +155,9 @@ extension SWSearchViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if searchHistortViewModel.list.count == 0 {
+            return 0
+        }
         return 70
     }
 }
