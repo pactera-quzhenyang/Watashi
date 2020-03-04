@@ -12,4 +12,5 @@ class SWSearchHistoryManager: NSObject {
     static let shared = SWSearchHistoryManager()
 
     var isShowAll = false //是否展示全部
+    var isHideSearchHistory = false // 是否隐藏搜索发现
 }

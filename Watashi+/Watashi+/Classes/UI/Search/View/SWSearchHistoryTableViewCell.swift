@@ -27,6 +27,29 @@ class SWSearchHistoryTableViewCell: SWBaseTableViewCell {
         searchHistoryView.setupUI(list: tagList!)
     }
 
+    func setSearchFound(model: SWSearchHistoryModel) {
+        let tagList = model.tagList
+
+        selectionStyle = .none
+        for view in contentView.subviews {
+            view.removeFromSuperview()
+        }
+        let searchFoundView = SWSearchFoundView()
+        contentView.addSubview(searchFoundView)
+
+        searchFoundView.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.width.equalTo(screenWidth)
+            make.bottom.equalTo(contentView)
+        }
+        if tagList?.count == 0 {
+            searchFoundView.setHideSearchFoundView()
+        } else {
+            searchFoundView.setupUI(list: tagList!)
+        }
+    }
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
