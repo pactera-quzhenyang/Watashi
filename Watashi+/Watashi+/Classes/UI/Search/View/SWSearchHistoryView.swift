@@ -140,7 +140,6 @@ class SWSearchHistoryView: UIView {
             }
 
             bindDeleteButton(deleteButton: deleteButton)
-            print(buttonWidth)
         }
 
         if let lastView = (viewWithTag(list.count + 99) != nil) ? viewWithTag(list.count + 99) : viewWithTag(stopAtIndex + 99){

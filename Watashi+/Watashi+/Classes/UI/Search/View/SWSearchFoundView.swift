@@ -51,7 +51,7 @@ class SWSearchFoundView: SWSearchHistoryView {
         self.addSubview(label)
 
         label.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+            make.edges.equalToSuperview()
         }
 
         self.addSubview(lineView)

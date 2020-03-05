@@ -18,24 +18,34 @@ class SWSearchViewController: SWBaseViewController {
     @IBOutlet weak var searchTableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
 
+    lazy var searchFiled: SWSearchView = {
+        let searchFiled = SWSearchView.loadFromNib()
+        searchFiled.setSearchFieldStyle(style: .navigationView)
+        return searchFiled
+    }()
+
+    let disposeBag = DisposeBag()
     var searchHistortViewModel = SWSearchHistoryViewModel()
     var searchHistoryView = SWSearchHistoryView()
     var searchFoundViewModel = SWSearchFoundViewModel()
     var searchFoundView = SWSearchFoundView()
+    var searchDataViewModel = SWSearchDataViewModel()
     var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String,SWSearchHistoryModel>>?
-    let disposeBag = DisposeBag()
-    var selectIndex: Int?
-    var dataList = Variable([String]())
-    var sels = [Int]()
-
     var tableList = BehaviorSubject(value: [SectionModel<String, SWSearchHistoryModel>]())
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setNaviBarStyle()
         listenDataSourceChange()
         bindViewModel()
+    }
+
+    func setNaviBarStyle() {
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.addSubview(searchFiled)
     }
 
     func listenDataSourceChange() {
@@ -81,15 +91,21 @@ class SWSearchViewController: SWBaseViewController {
                         newData.removeFirst()
                     }
                     self.tableList.onNext(newData)
-        }
+                }
         })
     }
 
     func bindViewModel() {
         searchTableView.register(cellType: SWSearchHistoryTableViewCell.self)
+        searchTableView.register(cellType: SWSearchResultTableViewCell.self)
         searchTableView.tableFooterView = UIView()
 
-        dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWSearchHistoryModel>>(configureCell: { (dataSouece, tv, indexPath, element) -> SWSearchHistoryTableViewCell in
+        dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWSearchHistoryModel>>(configureCell: { (dataSouece, tv, indexPath, element) in
+            if self.searchDataViewModel.dataList.count > 0 {
+                let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWSearchResultTableViewCell.self)
+                cell.textLabel?.text = element.tagList?.first
+                return cell
+            }
             if indexPath.section == 0 {
                 let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWSearchHistoryTableViewCell.self)
                 cell.setModel(model: element)
@@ -118,6 +134,30 @@ class SWSearchViewController: SWBaseViewController {
         tap.rx.event.subscribe(onNext: { (grs) in
             self.searchTableView.reloadData()
             }).disposed(by: disposeBag)
+
+        searchFiled.searchField.rx.text.orEmpty
+            .throttle(0.2, scheduler: MainScheduler.instance)
+            .map({_ in [String]()})
+            .bind(to: searchDataViewModel.rx.dataList)
+            .disposed(by: disposeBag)
+        searchFiled.searchField.rx.text.changed.subscribe(onNext: { (text) in
+            if text?.count == 0 {
+                let newData = [
+                    SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: self.searchHistortViewModel.list)]),
+                    SectionModel(model: SearchPage.searchFound, items: [SWSearchHistoryModel(tagList: self.searchFoundViewModel.list)])
+                    ]
+                self.tableList.onNext(newData)
+                return
+            }
+            self.searchDataViewModel.getData()
+            let newData = [
+                SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: self.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: self.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: self.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: self.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: self.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: self.searchDataViewModel.dataList)]),
+                ]
+            self.tableList.onNext(newData)
+            }).disposed(by: disposeBag)
+        searchFiled.cancelButton.rx.tap.subscribe(onNext: { (text) in
+            self.tabBarController?.selectedIndex = 0
+            }).disposed(by: disposeBag)
     }
 
     func getDefaultHistoryData() {
@@ -129,6 +169,9 @@ class SWSearchViewController: SWBaseViewController {
 
 extension SWSearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if searchDataViewModel.dataList.count > 0 {
+            return 50
+        }
         if indexPath.section == 0 {
             if searchHistortViewModel.list.count == 0 {
                 return 0.01
@@ -142,6 +185,9 @@ extension SWSearchViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if searchDataViewModel.dataList.count > 0 {
+            return nil
+        }
         if section == 0 {
             let headerView = SWSearchHeaderView.loadFromNib()
             headerView.discoverButton.isHidden = true
@@ -155,7 +201,7 @@ extension SWSearchViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0 && searchHistortViewModel.list.count == 0 {
+        if section == 0 && searchHistortViewModel.list.count == 0 || searchDataViewModel.dataList.count > 0 {
             return 0.01
         }
         return 70
