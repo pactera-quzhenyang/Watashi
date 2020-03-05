@@ -19,12 +19,6 @@ extension Reactive where Base: UIView {
             })
         }
     }
-
-    var touchbegin: Binder<Void> {
-        return Binder(self.base) { view, void in
-            
-        }
-    }
 }
 
 extension Reactive where Base: SWSearchHistoryView {
@@ -37,19 +31,6 @@ extension Reactive where Base: SWSearchHistoryView {
     var isShowAll: Binder<Bool> {
         return Binder(self.base) { view, isShowAll in
             view.isShowAll = isShowAll
-        }
-    }
-}
-
-extension Reactive where Base: UIButton {
-
-    var showImage: Binder<Bool> {
-        return Binder(self.base) { view, select in
-            if select {
-                view.setImage(UIImage(named: "up"), for: .normal)
-            } else {
-                view.setImage(UIImage(named: "down"), for: .normal)
-            }
         }
     }
 }

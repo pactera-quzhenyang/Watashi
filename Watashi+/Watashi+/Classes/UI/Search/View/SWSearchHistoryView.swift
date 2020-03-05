@@ -37,6 +37,12 @@ class SWSearchHistoryView: UIView {
         return arrowButton
     }()
 
+    lazy var lineView: UIView = {
+        let lineView = UIView()
+        lineView.backgroundColor = UIColor.init(hex: 0xeeeeee)
+        return lineView
+    }()
+
     func setupUI(list: [String]) {
         self.list = list
 
@@ -44,6 +50,7 @@ class SWSearchHistoryView: UIView {
         let defalutShowLines = 2 //默认显示两行
 
         tapGestures.removeAll()
+        lineView.removeFromSuperview()
 
         for i in 0..<list.count {
             let title = list[i]
@@ -108,9 +115,15 @@ class SWSearchHistoryView: UIView {
 
         if let lastButton = viewWithTag(list.count + 99) {
             self.addSubview(arrowButton)
+            self.addSubview(lineView)
 
-            arrowButton.frame = CGRect(x: lastButton.frame.maxX, y: lastButton.frame.minY, width: viewHeight, height: viewHeight)
-            self.frame = CGRect(x: 0, y: 0, width: screenWidth, height: lastButton.frame.maxY)
+            let newLine = viewMaxWidth - lastButton.frame.maxX < 30
+            let x = newLine ? 15 : lastButton.frame.maxX
+            let y = newLine ? lastButton.frame.maxY + viewSpace : lastButton.frame.minY
+
+            arrowButton.frame = CGRect(x: x, y: y, width: viewHeight, height: viewHeight)
+            lineView.frame = CGRect(x: viewBeginX, y: arrowButton.frame.maxY + 30, width: viewMaxWidth, height: 1)
+            self.frame = CGRect(x: 0, y: 0, width: screenWidth, height: lineView.frame.maxY)
         }
 
         bindLongPress()
@@ -175,16 +188,12 @@ class SWSearchHistoryView: UIView {
 
     func bindDeleteButton(deleteButton: UIButton) {
         deleteButton.rx.tap.subscribe(onNext: { () in
-            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: self.selectIndex)
+            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeObjectAtIndex: self.selectIndex])
         }).disposed(by: disposeBag)
     }
 
     func bindArrowButton() {
-        Observable.just(SWSearchHistoryManager.shared.isShowAll ? UIImage(named: "up") : UIImage(named: "down")).bind(to: arrowButton.rx.image()).disposed(by: disposeBag)        
-        arrowButton.rx.tap
-            .map({_ in !SWSearchHistoryManager.shared.isShowAll})
-            .bind(to: self.arrowButton.rx.showImage)
-            .disposed(by: disposeBag)
+        Observable.just(SWSearchHistoryManager.shared.isShowAll ? UIImage(named: "up") : UIImage(named: "down")).bind(to: arrowButton.rx.image()).disposed(by: disposeBag)
         arrowButton.rx.tap.subscribe(onNext: { () in
             SWSearchHistoryManager.shared.isShowAll = !SWSearchHistoryManager.shared.isShowAll
             NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.reloadCellHeight: SWSearchHistoryManager.shared.isShowAll])

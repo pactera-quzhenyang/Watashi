@@ -27,6 +27,13 @@
                     </constraints>
                     <state key="normal" image="trash"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx4-6o-aJ3">
+                    <rect key="frame" x="364" y="0.0" width="50" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="AHA-Cf-6Nz"/>
+                        <constraint firstAttribute="width" constant="50" id="ddE-dI-9pI"/>
+                    </constraints>
+                </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrv-Uo-y8D">
                     <rect key="frame" x="374" y="0.0" width="30" height="70"/>
                     <constraints>
@@ -54,9 +61,6 @@
                     <state key="normal" title="全部删除">
                         <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                    <connections>
-                        <action selector="allDeleteButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="phM-FL-mny"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,10 +69,13 @@
                 <constraint firstItem="5MO-80-PcT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ql5-vl-Ht9"/>
                 <constraint firstItem="48G-4d-0JW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RAV-ja-24k"/>
                 <constraint firstItem="5MO-80-PcT" firstAttribute="leading" secondItem="48G-4d-0JW" secondAttribute="trailing" constant="5" id="Rn9-2P-5MR"/>
+                <constraint firstItem="jx4-6o-aJ3" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="S72-eR-Tbz"/>
                 <constraint firstItem="kCS-wO-JQ3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="Xcx-bd-H4c"/>
                 <constraint firstItem="5MO-80-PcT" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="aoQ-EE-T7O"/>
                 <constraint firstItem="Wrv-Uo-y8D" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bY6-xQ-wve"/>
+                <constraint firstItem="jx4-6o-aJ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bbx-PX-klM"/>
                 <constraint firstItem="Wrv-Uo-y8D" firstAttribute="leading" secondItem="r48-xx-hWQ" secondAttribute="trailing" constant="5" id="c9a-A4-TkS"/>
+                <constraint firstItem="jx4-6o-aJ3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="kOK-wc-VAt"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wrv-Uo-y8D" secondAttribute="trailing" constant="10" id="mIt-rU-rla"/>
                 <constraint firstItem="48G-4d-0JW" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rP3-3C-rV9"/>
                 <constraint firstItem="Wrv-Uo-y8D" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rXA-IU-B1j"/>
@@ -80,6 +87,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="allDeleteButton" destination="48G-4d-0JW" id="8el-i0-HoW"/>
+                <outlet property="discoverButton" destination="jx4-6o-aJ3" id="xiW-ai-say"/>
                 <outlet property="finishButton" destination="Wrv-Uo-y8D" id="ehY-4V-qFB"/>
                 <outlet property="lineView" destination="r48-xx-hWQ" id="blE-9a-9hn"/>
                 <outlet property="titleLabel" destination="kCS-wO-JQ3" id="nrC-ah-rT0"/>

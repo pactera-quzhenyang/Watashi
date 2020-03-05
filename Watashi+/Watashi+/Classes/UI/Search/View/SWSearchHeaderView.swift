@@ -18,6 +18,7 @@ class SWSearchHeaderView: BaseView {
     @IBOutlet weak var allDeleteButton: UIButton!
     @IBOutlet weak var finishButton: UIButton!
     @IBOutlet weak var lineView: UIView!
+    @IBOutlet weak var discoverButton: UIButton!
 
     let disposeBag = DisposeBag()
     /*
@@ -46,6 +47,10 @@ class SWSearchHeaderView: BaseView {
             .bind(to: lineView.rx.isHidden)
         .disposed(by: disposeBag)
 
+        allDeleteButton.rx.tap.subscribe(onNext: { () in            
+            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeAllObject: SearchListChangeType.removeAllObject])
+            }).disposed(by: disposeBag)
+
         finishButton.rx.tap
             .map({_ in self.finishButton.isSelected})
             .bind(to: trashButton.rx.isHidden)
@@ -62,8 +67,12 @@ class SWSearchHeaderView: BaseView {
             .map({_ in !self.finishButton.isSelected})
             .bind(to: self.finishButton.rx.isHidden)
             .disposed(by: disposeBag)
-    }
-    @IBAction func allDeleteButtonTapped() {
-        NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil)
+
+        Observable.just(SWSearchHistoryManager.shared.isHideSearchHistory ? UIImage(named: "hide") : UIImage(named: "discover")).bind(to: discoverButton.rx.image()).disposed(by: disposeBag)
+
+        discoverButton.rx.tap.subscribe(onNext: { () in
+            SWSearchHistoryManager.shared.isHideSearchHistory = !SWSearchHistoryManager.shared.isHideSearchHistory
+            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.hideSearchDiscover: SWSearchHistoryManager.shared.isHideSearchHistory])
+            }).disposed(by: disposeBag)
     }
 }

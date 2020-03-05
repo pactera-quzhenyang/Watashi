@@ -16,6 +16,8 @@ struct PageTitles {
 
 struct SearchPage {
     static let searchHistory = "搜索历史"
+    static let searchFound = "搜索发现"
+    static let hideSearchFound = "已隐藏搜索发现"
 }
 
 struct NotifyName {
@@ -26,4 +28,5 @@ struct SearchListChangeType {
     static let removeObjectAtIndex = "removeObjectAtIndex"
     static let removeAllObject = "removeAllObject"
     static let reloadCellHeight = "reloadCellHeight"
+    static let hideSearchDiscover = "hideSearchDiscover"
 }
