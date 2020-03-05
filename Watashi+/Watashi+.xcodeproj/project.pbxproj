@@ -975,6 +975,7 @@
 				817415B0240519890033FE43 /* Resources */,
 				817415BA240519890033FE43 /* [CP] Embed Pods Frameworks */,
 				817415BB240519890033FE43 /* CopyFiles */,
+				81EA81F8240FABAB004429F4 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -1233,6 +1234,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Watashi+-stg/Pods-Watashi+-stg-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		81EA81F8240FABAB004429F4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
 		};
 		9856C19FEFD1CDC67A81CB3E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
