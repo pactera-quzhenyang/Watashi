@@ -110,7 +110,7 @@ struct GAKey {
     static let up_net_ac_flg = "up_net_ac_flg"
     static let up_ac_number = "up_ac_number"
     static let up_balance_disp_status = "up_balance_disp_status"
-    static let up_primary_ac_balance = "up_primary_ac_balance"
+    static let upprimaryac_balance = "up_primary_ac_balance"
     static let up_push_set_status = "up_push_set_status"
     static let up_app_userID = "up_app_userID"
     static let up_stage_point = "up_stage_point"

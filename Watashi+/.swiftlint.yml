@@ -1,0 +1,4 @@
+excluded:
+- Pods
+
+line_length: 250 # 单行代码长度,默认error 120

@@ -13,14 +13,14 @@ import UIKit
 /// - all: 一星计算
 /// - half: 半星计算
 /// - custom: 随意
-public enum rateStyle: Int {
+public enum RateStyle: Int {
     case  all = 0
     case  half = 1
     case  custom = 2
 }
 
 //计算显示完回调方法
-public typealias CountCompleteBackBlock = (_ currentCount:Float) -> ()
+public typealias CountCompleteBackBlock = (_ currentCount:Float) -> Void
 
 
 class CUStarView: UIView {
@@ -54,7 +54,7 @@ class CUStarView: UIView {
     // 回调函数
     var callback: CountCompleteBackBlock?
     //选择单位 默认全选
-    var selectStarUnit: rateStyle = .all
+    var selectStarUnit: RateStyle = .all
     // 背景view
     fileprivate var backgroundView: UIView!
     // 选择view
@@ -75,7 +75,7 @@ class CUStarView: UIView {
     ///   - starCount: 背景星星个数
     ///   - currentStar: 当前星星个数
     ///   - rateStyle:选择单位 默认全选
-    convenience init(frame: CGRect,starCount: UInt?,currentStar: Float?, rateStyle: rateStyle?, complete: @escaping CountCompleteBackBlock) {
+    convenience init(frame: CGRect,starCount: UInt?,currentStar: Float?, rateStyle: RateStyle?, complete: @escaping CountCompleteBackBlock) {
         self.init(frame: frame)
         callback = complete
         numberOfStar = starCount ?? 5
@@ -272,16 +272,12 @@ extension CUStarView {
     func yanh() {
         //创建发射器
         let emitter = CAEmitterLayer()
-        
         //发射器中心点
         emitter.emitterPosition = CGPoint(x: foreView.bounds.size.width / 2.0, y: foreView.bounds.size.height)
-        
         //发射器尺寸
         emitter.emitterSize = CGSize(width: foreView.bounds.size.width, height: 0.0)
-        
         //发射器发射模式
         emitter.emitterMode = .outline
-        
         //发射器形状
         //        NSString * const kCAEmitterLayerPoint;//点的形状，粒子从一个点发出
         //        NSString * const kCAEmitterLayerLine;//线的形状，粒子从一条线发出
@@ -290,7 +286,6 @@ extension CUStarView {
         //        NSString * const kCAEmitterLayerCircle;//圆形，粒子会在圆形范围发射
         //        NSString * const kCAEmitterLayerSphere;//球型
         emitter.emitterShape = .line
-        
         //发射器粒子渲染效果
         //        NSString * const kCAEmitterLayerUnordered;//粒子无序出现
         //        NSString * const kCAEmitterLayerOldestFirst;//声明久的粒子会被渲染在最上层
