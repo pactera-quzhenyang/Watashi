@@ -24,27 +24,22 @@ class SWSearchFoundView: SWSearchHistoryView {
             itemButton.tag = i + 99
             self.addSubview(itemButton)
 
-            let lineView = UIView()
-            lineView.backgroundColor = UIColor.init(hex: 0xeeeeee)
-            self.addSubview(lineView)
-
             itemButton.snp.makeConstraints { (make) in
                 make.width.equalTo(viewMaxWidth / 2)
                 make.height.equalTo(viewHeight)
                 make.left.equalTo(i % 2 == 0 ? viewSpace : viewMaxWidth / 2)
                 make.top.equalTo(CGFloat(i / 2) * viewHeight + (CGFloat(i / 2) * viewSpace))
-//                if i == list.count - 1 {
-//                    make.bottom.equalTo(self.snp.bottom).offset(0)
-//                }
+                if i == list.count - 1 {
+                    make.bottom.equalTo(self.snp.bottom).offset(-10)
+                }
             }
-
-            lineView.snp.makeConstraints { (make) in
-                make.left.equalTo(viewBeginX)
-                make.top.equalTo(self.snp.bottom).offset(-19)
-                make.bottom.equalTo(self.snp.bottom).offset(-20)
-                make.height.equalTo(1)
-                make.width.equalTo(viewMaxWidth)
-            }
+        }
+        self.addSubview(lineView)
+        lineView.snp.makeConstraints { (make) in
+            make.left.equalTo(viewBeginX)
+            make.right.equalTo(-viewBeginX)
+            make.top.equalTo(CGFloat(list.count / 2) * viewHeight + (CGFloat(list.count / 2) * viewSpace))
+            make.height.equalTo(1)
         }
     }
 
@@ -57,7 +52,18 @@ class SWSearchFoundView: SWSearchHistoryView {
         self.addSubview(label)
 
         label.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+            make.left.equalTo(viewBeginX)
+            make.right.equalTo(-viewBeginX)
+            make.top.equalTo(0)
+        }
+
+        self.addSubview(lineView)
+        lineView.snp.makeConstraints { (make) in
+            make.left.equalTo(viewBeginX)
+            make.right.equalTo(-viewBeginX)
+            make.top.equalTo(label.snp.bottom).offset(1)
+            make.bottom.equalTo(self.snp.bottom)
+            make.height.equalTo(1)
         }
     }
 

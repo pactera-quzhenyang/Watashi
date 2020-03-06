@@ -36,6 +36,9 @@
 		534420F62408EFC50072AC16 /* SWSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534420F52408EFC50072AC16 /* SWSearchView.xib */; };
 		53451774240E37E80067BD16 /* SWSearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */; };
 		534C132A23FF6F8B00FEE103 /* SWBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */; };
+		534F67BD2410DAED008A8BE2 /* SWSearchDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */; };
+		534F67C22410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */; };
+		534F67C32410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */; };
 		537BD83B2403C1A30069C44C /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		5389E93624050D8900F18377 /* SWCheckNewProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */; };
 		5389E93824050DC700F18377 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
@@ -329,6 +332,9 @@
 		534420F52408EFC50072AC16 /* SWSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWSearchView.xib; sourceTree = "<group>"; };
 		53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchHistoryManager.swift; sourceTree = "<group>"; };
 		534C132923FF6F8B00FEE103 /* SWBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBaseViewModel.swift; sourceTree = "<group>"; };
+		534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchDataViewModel.swift; sourceTree = "<group>"; };
+		534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWSearchResultTableViewCell.xib; sourceTree = "<group>"; };
 		537BD83A2403C1A30069C44C /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsViewController.swift; sourceTree = "<group>"; };
 		5389E93724050DC700F18377 /* SWTrendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTrendViewController.swift; sourceTree = "<group>"; };
@@ -589,6 +595,7 @@
 		533C5A1523FBAFE600735670 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */,
 				53F0BF8C240799AA00473C46 /* SWSearchHistoryViewModel.swift */,
 				533EC153240F4B0200A44CB8 /* SWSearchFoundViewModel.swift */,
 			);
@@ -600,13 +607,15 @@
 			children = (
 				53AE73AF2407620900056460 /* SWSearchHistoryTableViewCell.swift */,
 				534420F12408BC830072AC16 /* SWSearchHistoryView.swift */,
-				53AE73B5240792FF00056460 /* SWSearchHistoryCollectionViewCell.swift */,
 				53CC1006240F396300AA353A /* SWSearchFoundView.swift */,
+				53AE73B5240792FF00056460 /* SWSearchHistoryCollectionViewCell.swift */,
 				53F0BF8E2407A16100473C46 /* SWGridFlowLayout.swift */,
 				534420F32408EF980072AC16 /* SWSearchView.swift */,
 				534420F52408EFC50072AC16 /* SWSearchView.xib */,
 				539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */,
 				539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */,
+				534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */,
+				534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1148,6 +1157,7 @@
 				817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */,
 				817415B4240519890033FE43 /* Assets.xcassets in Resources */,
 				810AF8C5240C9DDA0086176B /* GoogleService-dev-Info.plist in Resources */,
+				534F67C32410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib in Resources */,
 				817415B5240519890033FE43 /* Search.storyboard in Resources */,
 				812046BD240E5BE2007B57ED /* SWCheckNewProductsCollectionViewCellA.xib in Resources */,
 				817415B6240519890033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */,
@@ -1440,6 +1450,7 @@
 				534420F42408EF980072AC16 /* SWSearchView.swift in Sources */,
 				534420F22408BC840072AC16 /* SWSearchHistoryView.swift in Sources */,
 				813304502411EF2800C0B263 /* SWGoodsFilterHeaderView.swift in Sources */,
+				534F67BD2410DAED008A8BE2 /* SWSearchDataViewModel.swift in Sources */,
 				81741592240519890033FE43 /* SWBaseViewController.swift in Sources */,
 				81741593240519890033FE43 /* SWAccountViewController.swift in Sources */,
 				81FD77962410D25700739E84 /* CULoopBannerView.swift in Sources */,
@@ -1466,6 +1477,7 @@
 				817415A1240519890033FE43 /* SWBaseViewModel.swift in Sources */,
 				817415A2240519890033FE43 /* SWAppDelegate.swift in Sources */,
 				817415A3240519890033FE43 /* SWUIView+Rx.swift in Sources */,
+				534F67C22410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift in Sources */,
 				817415A4240519890033FE43 /* SWNetworkConfig.swift in Sources */,
 				817415A5240519890033FE43 /* SWSearchViewController.swift in Sources */,
 				812046AD240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,

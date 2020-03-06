@@ -31,13 +31,13 @@ extension Reactive where Base: UILabel {
     var isSelected: Binder<Bool> {
         return Binder(self.base) { label, isLongPress  in
             if isLongPress {
-                var rect = label.frame
-                rect.origin.x = 5
-                label.frame = rect
+                label.snp.updateConstraints { (make) in
+                    make.left.equalTo(5)
+                }
             } else {
-                var rect = label.frame
-                rect.origin.x = 15
-                label.frame = rect
+                label.snp.updateConstraints { (make) in
+                    make.left.equalTo(15)
+                }
             }
         }
     }

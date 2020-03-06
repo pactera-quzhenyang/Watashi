@@ -11,16 +11,34 @@ import Reusable
 import RxSwift
 import RxCocoa
 
+public enum searchFieldStyle: Int {
+    case home = 0
+    case navigationView = 1
+}
+
 class SWSearchView: UIView, NibLoadable {
 
     @IBOutlet weak var searchField: SWHomeSearchField!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var filedHeightConstraint: NSLayoutConstraint!
 
     let disposBag = DisposeBag()
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+    }
+
+    func setSearchFieldStyle(style: searchFieldStyle = .home) {
+        switch style {
+        case .navigationView:
+            filedHeightConstraint.constant = 34
+            searchField.placeholder = ""
+            searchField.backgroundColor = UIColor.init(hex: 0xeeeeee)
+            searchField.layer.cornerRadius = 17
+            searchField.becomeFirstResponder()
+        default:
+            break
+        }
     }
     /*
     // Only override draw() if you perform custom drawing.

@@ -24,6 +24,13 @@ class SWSearchHistoryTableViewCell: SWBaseTableViewCell {
         let searchHistoryView = SWSearchHistoryView()
         contentView.addSubview(searchHistoryView)
 
+        searchHistoryView.snp.makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.width.equalTo(screenWidth)
+            make.bottom.equalTo(contentView)
+        }
+
         searchHistoryView.setupUI(list: tagList!)
     }
 

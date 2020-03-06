@@ -28,21 +28,15 @@ class SWHomeViewController: SWBaseViewController {
 
         // Do any additional setup after loading the view.
         setPageViewCon()
-        bind()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
-
-    func bind() {
-        searchField.rx.text.orEmpty.asObservable().subscribe { (text) in
-            self.tabBarController?.selectedIndex = 1
-        }.disposed(by: disposeBag)
-    }
     
     func setPageViewCon() {
+        searchField.delegate = self
 
         let style = PageStyle()
         style.titleViewBackgroundColor = UIColor.white
@@ -143,8 +137,8 @@ class SWHomeViewController: SWBaseViewController {
 
 extension SWHomeViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        s()
-        return true
+        self.tabBarController?.selectedIndex = 1
+        return false
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

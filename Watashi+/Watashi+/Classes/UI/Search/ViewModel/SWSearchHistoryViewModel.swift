@@ -17,12 +17,12 @@ class SWSearchHistoryViewModel: NSObject {
     override init() {
         list.append("iphonexsmadaskldaskldjalskdjalsjdlaskdjalskdjalskdjalskdjalskdjaslkdjalskdjalskdjalskdjaslkdjalskdjdjaskldjaklsjax")
         list.append("iphone")
-        list.append("面膜")
-        list.append("电脑桌")
-        list.append("电竞椅")
-        list.append("iphone8 plus")
-        list.append("氨基酸洗面奶")
-        list.append("空气清新剂")
+        list.append("仮面")
+        list.append("コンピューターデスク")
+        list.append("ゲーミングチェア")
+        list.append("iphone8 pluss")
+        list.append("アミノ酸洗顔料")
+        list.append("芳香剤")
         list.append("iphonexsmax")
     }
 
@@ -31,7 +31,9 @@ class SWSearchHistoryViewModel: NSObject {
         var newData = [String]()
         for item in list.enumerated() {
             if item.offset > toIndex {
-                surplusList.append(item.element)
+                if !surplusList.contains(item.element) {
+                    surplusList.append(item.element)
+                }
             } else {
                 newData.append(item.element)
             }
@@ -42,9 +44,10 @@ class SWSearchHistoryViewModel: NSObject {
     func getAllHistoryData() -> [String] {
         var newData = list
         for item in surplusList.enumerated() {
-            newData.append(item.element)
+            if !newData.contains(item.element) {
+                newData.append(item.element)
+            }
         }
-        surplusList.removeAll()
         return newData
     }
 
@@ -52,7 +55,6 @@ class SWSearchHistoryViewModel: NSObject {
         var newData = list
         if let nextData = surplusList.first {
             newData.append(nextData)
-            surplusList.removeFirst()
         }
         return newData
     }

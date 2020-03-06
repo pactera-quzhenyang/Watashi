@@ -18,7 +18,7 @@
                     <rect key="frame" x="15" y="0.0" width="340" height="44"/>
                     <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="YTd-5Y-Qpu"/>
+                        <constraint firstAttribute="height" constant="44" id="9jo-2s-E5M"/>
                     </constraints>
                     <string key="placeholder">キーワードで探す
 </string>
@@ -43,16 +43,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ZOw-5U-4MK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0K7-Ig-efz"/>
                 <constraint firstItem="MDw-ei-DeO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3xq-5c-9Gg"/>
                 <constraint firstItem="MDw-ei-DeO" firstAttribute="leading" secondItem="ZOw-5U-4MK" secondAttribute="trailing" id="EhL-Ug-QRb"/>
-                <constraint firstItem="ZOw-5U-4MK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X43-Vh-3xQ"/>
                 <constraint firstItem="MDw-ei-DeO" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="i7H-99-Uy0"/>
+                <constraint firstItem="ZOw-5U-4MK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="lj8-xh-Znk"/>
                 <constraint firstItem="ZOw-5U-4MK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="nmP-Yk-WVl"/>
                 <constraint firstAttribute="trailing" secondItem="MDw-ei-DeO" secondAttribute="trailing" id="wCQ-Ph-wU8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancelButton" destination="MDw-ei-DeO" id="HmQ-CP-eFR"/>
+                <outlet property="filedHeightConstraint" destination="9jo-2s-E5M" id="cVH-f2-IhK"/>
+                <outlet property="searchField" destination="ZOw-5U-4MK" id="3on-Yd-Nht"/>
+            </connections>
             <point key="canvasLocation" x="-370" y="115"/>
         </view>
     </objects>
