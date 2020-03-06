@@ -13,7 +13,6 @@ class SWShoppingABTestViewModelB: NSObject, SWShoppingABTestProtocol, SWGAProtoc
 
     let disposeBag = DisposeBag()
     var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>?
-    var navigationController: UINavigationController?
     
     // MARK: SWShoppingABTestProtocol
     func shoppingButton(forProduct product: SWCheckNewProductsModel, superView: UIView) {
@@ -58,7 +57,8 @@ class SWShoppingABTestViewModelB: NSObject, SWShoppingABTestProtocol, SWGAProtoc
             cell.buyButton.rx.tap.asDriver().drive(onNext: {
                 self.logEvent(list: ["buyClick"])
                 let goods = SWGoodsViewController()
-                self.navigationController?.pushViewController(goods, animated: true)
+                SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
+//                self.navigationController?.pushViewController(goods, animated: true)
             }).disposed(by: cell.disposeBag)
             cell.buyButton.rx.tap.map{ cell.buyButton.isSelected ? "立即购买" : "已购买" }.bind(to: cell.buyButton.rx.title()).disposed(by: cell.disposeBag)
             cell.buyButton.rx.tap.map{ !cell.buyButton.isSelected }.bind(to: cell.buyButton.rx.isSelected).disposed(by: cell.disposeBag)

@@ -57,6 +57,8 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
             cell.priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
             cell.cartButton.rx.tap.subscribe(onNext: {
                 self.logEvent(list: ["cartClick"])
+                let goods = SWGoodsViewController()
+                SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
             }).disposed(by: cell.disposeBag)
             return cell
             }

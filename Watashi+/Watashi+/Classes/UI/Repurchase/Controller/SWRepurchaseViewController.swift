@@ -12,7 +12,7 @@ class SWRepurchaseViewController: SWBaseViewController {
     let tableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
     let loopBackView = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 300))
     let loop = CULoopBannerView()
-    let dis = DisposeBag()
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,9 +26,11 @@ class SWRepurchaseViewController: SWBaseViewController {
            cell.textLabel?.text = "\(row + 1)、\(element)"
            
        }
-       .disposed(by: dis)
-        
-        tableView.rx.setDelegate(self).disposed(by: dis)
+       .disposed(by: disposeBag)
+        tableView.rx.itemSelected.subscribe(onNext: { (indexPath) in
+            self.itemSelect()
+        }).disposed(by: disposeBag)
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
         
         loop.images = ["1", "2", "3", "4", "5", "6"]
         loop.bindCollection()
@@ -73,7 +75,7 @@ extension SWRepurchaseViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        itemSelect()
+//        itemSelect()
     }
 }
 

@@ -152,6 +152,9 @@
 		813304542411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813304532411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib */; };
 		813304552411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813304532411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib */; };
 		813304562411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813304532411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib */; };
+		81330458241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81330457241215B100C0B263 /* SWAppDelegateExtension.swift */; };
+		81330459241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81330457241215B100C0B263 /* SWAppDelegateExtension.swift */; };
+		8133045A241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81330457241215B100C0B263 /* SWAppDelegateExtension.swift */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
 		8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
@@ -401,6 +404,7 @@
 		8133044B2411EA9000C0B263 /* SWUIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUIButtonExtension.swift; sourceTree = "<group>"; };
 		8133044F2411EF2800C0B263 /* SWGoodsFilterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGoodsFilterHeaderView.swift; sourceTree = "<group>"; };
 		813304532411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWGoodsFilterHeaderView.xib; sourceTree = "<group>"; };
+		81330457241215B100C0B263 /* SWAppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppDelegateExtension.swift; sourceTree = "<group>"; };
 		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
 		817415BF240519890033FE43 /* Watashi+-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817415C0240519890033FE43 /* Watashi+-dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-dev-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-dev-Info.plist"; sourceTree = "<absolute>"; };
@@ -671,6 +675,7 @@
 				81EA81F4240FA631004429F4 /* SWStringExtension.swift */,
 				813304472411E82A00C0B263 /* SWUIViewExtension.swift */,
 				8133044B2411EA9000C0B263 /* SWUIButtonExtension.swift */,
+				81330457241215B100C0B263 /* SWAppDelegateExtension.swift */,
 			);
 			path = SwiftExtension;
 			sourceTree = "<group>";
@@ -1374,6 +1379,7 @@
 				810AF8C9240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
 				53CF47A123FBE333005A52B9 /* ApiManager.swift in Sources */,
 				53D07EF22403935C00607088 /* SWCheckNewProductsModel.swift in Sources */,
+				8133045A241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */,
 				533C5A2F23FBB10100735670 /* Helper.swift in Sources */,
 				533C5A2C23FBB10100735670 /* PageContentView+Rx.swift in Sources */,
 				534C132A23FF6F8B00FEE103 /* SWBaseViewModel.swift in Sources */,
@@ -1444,6 +1450,7 @@
 				53F0BF8F2407A16200473C46 /* SWGridFlowLayout.swift in Sources */,
 				81741590240519890033FE43 /* PageTitleView.swift in Sources */,
 				81036CCD24089F9200300E01 /* SWABTestingManager.swift in Sources */,
+				81330458241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */,
 				81741591240519890033FE43 /* SWConstant.swift in Sources */,
 				81FD779E2410ECEB00739E84 /* CULoopCollectionViewCell.swift in Sources */,
 				53AE73B6240792FF00056460 /* SWSearchHistoryCollectionViewCell.swift in Sources */,
@@ -1540,6 +1547,7 @@
 				810AF8C8240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
 				817415D7240519A90033FE43 /* ApiManager.swift in Sources */,
 				817415D8240519A90033FE43 /* SWCheckNewProductsModel.swift in Sources */,
+				81330459241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */,
 				817415D9240519A90033FE43 /* Helper.swift in Sources */,
 				817415DA240519A90033FE43 /* PageContentView+Rx.swift in Sources */,
 				817415DB240519A90033FE43 /* SWBaseViewModel.swift in Sources */,
