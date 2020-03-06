@@ -58,7 +58,11 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
             cell.cartButton.rx.tap.subscribe(onNext: {
                 self.logEvent(list: ["cartClick"])
                 SWTabbarBadgeValueManager.shared.addBadgeValue()
+                let goods = SWGoodsViewController()
+                SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
+
                 NotificationCenter.default.post(name: Notification.Name("badge"), object: nil)
+
             }).disposed(by: cell.disposeBag)
             return cell
             }

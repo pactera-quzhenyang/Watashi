@@ -22,10 +22,7 @@ class CULoopCollectionViewCell: SWBaseCollectionViewCell {
         self.addSubview(scrollView)
         scrollView.isUserInteractionEnabled = false
         scrollView.isScrollEnabled = false
-        scrollView.addSubview(imageView)
-//        imageView.contentMode = .scaleAspectFill
-//        scrollView.backgroundColor = .green
-      
+        scrollView.addSubview(imageView)      
     }
     
     override func layoutSubviews() {

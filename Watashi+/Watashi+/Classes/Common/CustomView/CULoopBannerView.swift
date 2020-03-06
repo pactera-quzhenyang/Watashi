@@ -65,7 +65,6 @@ class CULoopBannerView: UIView {
             cell.imageView.image = UIImage(named: element)!
             let itemIndex = indexPath.item % self.images.count
             cell.indexRow = itemIndex
-            print(indexPath.item)
             return cell
             }
         )
