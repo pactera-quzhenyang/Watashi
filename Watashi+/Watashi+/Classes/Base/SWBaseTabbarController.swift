@@ -24,9 +24,20 @@ class SWBaseTabbarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        _ = NotificationCenter.default.rx
+        .notification(NSNotification.Name("badge"))
+        .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
+            .subscribe({ notify in
+                for (index, item) in self.tabBar.items!.enumerated() {
+                    if index == 2 {
+                        item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
+                    }
+                }
+            })
+
         for (index, item) in tabBar.items!.enumerated() {
             if index == 2 || index == 3 {
-                item.badgeValue = "6"
+                item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
                 item.badgeColor = baseColor
             }
         }
@@ -45,7 +56,7 @@ class SWBaseTabbarController: UITabBarController {
                         self.lineView.snp.updateConstraints { (make) in
                             make.left.equalTo(Int(screenWidth / 5) * index)
                         }
-                        self.view.layoutIfNeeded()
+                        self.tabBar.layoutIfNeeded()
                     }
                 }
             }

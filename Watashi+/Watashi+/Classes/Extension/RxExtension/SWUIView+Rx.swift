@@ -34,3 +34,12 @@ extension Reactive where Base: SWSearchHistoryView {
         }
     }
 }
+
+extension Reactive where Base: UITabBarItem {
+    public var setBadgeValue: Binder<String> {
+        return Binder(self.base) { barItem, value in
+            barItem.badgeValue = value
+        }
+    }
+}
+
