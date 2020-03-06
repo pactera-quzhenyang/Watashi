@@ -39,6 +39,7 @@
 		534F67BD2410DAED008A8BE2 /* SWSearchDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */; };
 		534F67C22410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */; };
 		534F67C32410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */; };
+		5360DA382411FAD8006C5613 /* SWTabbarBadgeValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360DA372411FAD8006C5613 /* SWTabbarBadgeValueManager.swift */; };
 		537BD83B2403C1A30069C44C /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537BD83A2403C1A30069C44C /* Cart.storyboard */; };
 		5389E93624050D8900F18377 /* SWCheckNewProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */; };
 		5389E93824050DC700F18377 /* SWTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5389E93724050DC700F18377 /* SWTrendViewController.swift */; };
@@ -335,6 +336,7 @@
 		534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchDataViewModel.swift; sourceTree = "<group>"; };
 		534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWSearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		5360DA372411FAD8006C5613 /* SWTabbarBadgeValueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabbarBadgeValueManager.swift; sourceTree = "<group>"; };
 		537BD83A2403C1A30069C44C /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
 		5389E93524050D8800F18377 /* SWCheckNewProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsViewController.swift; sourceTree = "<group>"; };
 		5389E93724050DC700F18377 /* SWTrendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTrendViewController.swift; sourceTree = "<group>"; };
@@ -915,6 +917,7 @@
 				810FE06D24063FDE00CE1F54 /* SWFirebaseManager.swift */,
 				81036CCC24089F9200300E01 /* SWABTestingManager.swift */,
 				53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */,
+				5360DA372411FAD8006C5613 /* SWTabbarBadgeValueManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1439,6 +1442,7 @@
 				810FE06E24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */,
 				81EA81F5240FA631004429F4 /* SWStringExtension.swift in Sources */,
 				8174158E240519890033FE43 /* SWUITextFieldExtension.swift in Sources */,
+				5360DA382411FAD8006C5613 /* SWTabbarBadgeValueManager.swift in Sources */,
 				8174158F240519890033FE43 /* SWCheckNewProductsViewController.swift in Sources */,
 				53F0BF932407BB7000473C46 /* SWUILabel+Rx.swift in Sources */,
 				53F0BF8F2407A16200473C46 /* SWGridFlowLayout.swift in Sources */,

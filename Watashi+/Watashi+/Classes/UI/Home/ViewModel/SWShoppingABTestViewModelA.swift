@@ -57,6 +57,8 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
             cell.priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
             cell.cartButton.rx.tap.subscribe(onNext: {
                 self.logEvent(list: ["cartClick"])
+                SWTabbarBadgeValueManager.shared.badgeValue = "\(Int(SWTabbarBadgeValueManager.shared.badgeValue)! + 1)"
+                NotificationCenter.default.post(name: Notification.Name("badge"), object: nil)
             }).disposed(by: cell.disposeBag)
             return cell
             }
