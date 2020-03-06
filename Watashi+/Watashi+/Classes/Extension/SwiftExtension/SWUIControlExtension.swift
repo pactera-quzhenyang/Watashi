@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIControl {
+extension UIView {
     //フィレットサイズを設定する
     @IBInspectable var cornerRadius: CGFloat {
         get {

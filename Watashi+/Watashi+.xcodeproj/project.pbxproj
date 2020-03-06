@@ -156,6 +156,12 @@
 		81330458241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81330457241215B100C0B263 /* SWAppDelegateExtension.swift */; };
 		81330459241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81330457241215B100C0B263 /* SWAppDelegateExtension.swift */; };
 		8133045A241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81330457241215B100C0B263 /* SWAppDelegateExtension.swift */; };
+		8133045D24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8133045B24121A6800C0B263 /* SWGoodsCollectionViewCell.swift */; };
+		8133045E24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8133045B24121A6800C0B263 /* SWGoodsCollectionViewCell.swift */; };
+		8133045F24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8133045B24121A6800C0B263 /* SWGoodsCollectionViewCell.swift */; };
+		8133046024121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8133045C24121A6800C0B263 /* SWGoodsCollectionViewCell.xib */; };
+		8133046124121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8133045C24121A6800C0B263 /* SWGoodsCollectionViewCell.xib */; };
+		8133046224121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8133045C24121A6800C0B263 /* SWGoodsCollectionViewCell.xib */; };
 		81741552240516010033FE43 /* CUStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81741551240516010033FE43 /* CUStarView.swift */; };
 		8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A2823FBB10100735670 /* PageTitleView+Rx.swift */; };
@@ -407,6 +413,8 @@
 		8133044F2411EF2800C0B263 /* SWGoodsFilterHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGoodsFilterHeaderView.swift; sourceTree = "<group>"; };
 		813304532411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWGoodsFilterHeaderView.xib; sourceTree = "<group>"; };
 		81330457241215B100C0B263 /* SWAppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppDelegateExtension.swift; sourceTree = "<group>"; };
+		8133045B24121A6800C0B263 /* SWGoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWGoodsCollectionViewCell.swift; sourceTree = "<group>"; };
+		8133045C24121A6800C0B263 /* SWGoodsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWGoodsCollectionViewCell.xib; sourceTree = "<group>"; };
 		81741551240516010033FE43 /* CUStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CUStarView.swift; sourceTree = "<group>"; };
 		817415BF240519890033FE43 /* Watashi+-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817415C0240519890033FE43 /* Watashi+-dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Watashi+-dev-Info.plist"; path = "/Users/ios/Watashi/Watashi+/Watashi+-dev-Info.plist"; sourceTree = "<absolute>"; };
@@ -864,6 +872,8 @@
 				812046C1240E5BF7007B57ED /* SWCheckNewProductsCollectionViewCellB.xib */,
 				8133044F2411EF2800C0B263 /* SWGoodsFilterHeaderView.swift */,
 				813304532411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib */,
+				8133045B24121A6800C0B263 /* SWGoodsCollectionViewCell.swift */,
+				8133045C24121A6800C0B263 /* SWGoodsCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1136,6 +1146,7 @@
 				53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */,
 				812046BF240E5BE2007B57ED /* SWCheckNewProductsCollectionViewCellA.xib in Resources */,
 				532142292403C6EB00BB5977 /* Account.storyboard in Resources */,
+				8133046224121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */,
 				5321422B2403C71600BB5977 /* Repurchase.storyboard in Resources */,
 				53AC69A523FBACBF0088CBC0 /* Home.storyboard in Resources */,
 			);
@@ -1162,6 +1173,7 @@
 				539D7D6A240CFD03002130EF /* SWSearchHeaderView.xib in Resources */,
 				817415B1240519890033FE43 /* Cart.storyboard in Resources */,
 				817415B2240519890033FE43 /* Main.storyboard in Resources */,
+				8133046024121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */,
 				817415B3240519890033FE43 /* LaunchScreen.storyboard in Resources */,
 				817415B4240519890033FE43 /* Assets.xcassets in Resources */,
 				810AF8C5240C9DDA0086176B /* GoogleService-dev-Info.plist in Resources */,
@@ -1193,6 +1205,7 @@
 				817415F0240519A90033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */,
 				812046BE240E5BE2007B57ED /* SWCheckNewProductsCollectionViewCellA.xib in Resources */,
 				817415F1240519A90033FE43 /* Account.storyboard in Resources */,
+				8133046124121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */,
 				817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */,
 				817415F3240519A90033FE43 /* Home.storyboard in Resources */,
 			);
@@ -1364,6 +1377,7 @@
 				53AC698A23FB851D0088CBC0 /* SWConstant.swift in Sources */,
 				533C5A3A23FBB39700735670 /* SWBaseViewController.swift in Sources */,
 				813304462411E2D400C0B263 /* SWGoodsViewController.swift in Sources */,
+				8133045F24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */,
 				532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */,
 				81EA81F7240FA631004429F4 /* SWStringExtension.swift in Sources */,
 				5322D4A523FE1A200069D0C9 /* SWCheckNewProductsCell.swift in Sources */,
@@ -1498,6 +1512,7 @@
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
 				817415A8240519890033FE43 /* RxPageContentViewDelegateProxy.swift in Sources */,
 				539D7D6E240CFF2E002130EF /* BaseView.swift in Sources */,
+				8133045D24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */,
 				812046BA240E5BE2007B57ED /* SWCheckNewProductsCollectionViewCellA.swift in Sources */,
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
 				81036CD52408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
@@ -1533,6 +1548,7 @@
 				817415CB240519A90033FE43 /* SWConstant.swift in Sources */,
 				817415CC240519A90033FE43 /* SWBaseViewController.swift in Sources */,
 				813304452411E2D400C0B263 /* SWGoodsViewController.swift in Sources */,
+				8133045E24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */,
 				817415CD240519A90033FE43 /* SWAccountViewController.swift in Sources */,
 				81EA81F6240FA631004429F4 /* SWStringExtension.swift in Sources */,
 				817415CE240519A90033FE43 /* SWCheckNewProductsCell.swift in Sources */,
