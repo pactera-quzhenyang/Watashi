@@ -20,7 +20,7 @@ public enum RateStyle: Int {
 }
 
 //计算显示完回调方法
-public typealias CountCompleteBackBlock = (_ currentCount:Float) -> Void
+public typealias CountCompleteBackBlock = (_ currentCount: Float) -> Void
 
 
 class CUStarView: UIView {
@@ -75,7 +75,7 @@ class CUStarView: UIView {
     ///   - starCount: 背景星星个数
     ///   - currentStar: 当前星星个数
     ///   - rateStyle:选择单位 默认全选
-    convenience init(frame: CGRect,starCount: UInt?,currentStar: Float?, rateStyle: RateStyle?, complete: @escaping CountCompleteBackBlock) {
+    convenience init(frame: CGRect, starCount: UInt?, currentStar: Float?, rateStyle: RateStyle?, complete: @escaping CountCompleteBackBlock) {
         self.init(frame: frame)
         callback = complete
         numberOfStar = starCount ?? 5
@@ -120,7 +120,7 @@ extension CUStarView {
         // 选择view
         foreView = creatStarView(image: UIImage(named: "b27_icon_star_yellow")!)
         
-        foreView.frame = CGRect(x: 0, y: 0, width: starWidth * CGFloat(selectNumberOfStar), height: self.bounds.size.height)
+        foreView.frame = CGRect(x: 0, y: 0, width: starWidth * CGFloat(selectNumberOfStar), height: self.bounds.height)
         self.addSubview(backgroundView)
         self.addSubview(foreView)
         setGesture()
