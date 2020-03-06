@@ -45,7 +45,7 @@ class SWShoppingABTestViewModelB: NSObject, SWShoppingABTestProtocol, SWGAProtoc
 
     }
     
-    func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String]) {
+    func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String], cell: SWCheckNewProductsCell) {
         collectionView.register(UINib(nibName: "SWCheckNewProductsCollectionViewCellB", bundle: nil), forCellWithReuseIdentifier: "cell")
         let items = Observable.just([
         SectionModel(model: "", items: imageArray)

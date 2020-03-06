@@ -24,8 +24,23 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .purple
         return collectionView
+    }()
+
+    lazy var arrowImageView: UIImageView = {
+        let arrowImageView = UIImageView()
+        arrowImageView.image = UIImage(named: "arrowleft")
+        return arrowImageView
+    }()
+
+    lazy var titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.text = Product.lookDetail
+        titleLabel.font = UIFont.systemFont(ofSize: 12)
+        titleLabel.textColor = UIColor.init(hex: 0x666666)
+        titleLabel.numberOfLines = 0
+        return titleLabel
     }()
     
     weak var delegate: SWShoppingABTestProtocol?
@@ -38,6 +53,8 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(collectionView)
+        contentView.addSubview(arrowImageView)
+        contentView.addSubview(titleLabel)
     }
     
     required init?(coder: NSCoder) {
@@ -48,6 +65,16 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         super.layoutSubviews()
         collectionView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
+        }
+
+        arrowImageView.snp.makeConstraints { (make) in
+            make.centerY.equalTo(contentView)
+            make.width.height.equalTo(15)
+            make.left.equalTo(contentView.snp.right)
+        }
+        titleLabel.snp.makeConstraints { (make) in
+            make.top.bottom.equalTo(contentView)
+            make.left.equalTo(arrowImageView.snp.right)
         }
     }
     
@@ -121,7 +148,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
 //
 //
 //        }
-        delegate?.bindCheckNewProducts(collectionView, imageArray: model.imageArray ?? [])
+        delegate?.bindCheckNewProducts(collectionView, imageArray: model.imageArray ?? [], cell: self)
     }
 
  
@@ -137,7 +164,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
 protocol SWShoppingABTestProtocol: NSObjectProtocol {
     
 //    func shoppingButton(forProduct product: SWCheckNewProductsModel, superView: UIView)
-    func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String])
+    func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String], cell: SWCheckNewProductsCell)
 }
 
 

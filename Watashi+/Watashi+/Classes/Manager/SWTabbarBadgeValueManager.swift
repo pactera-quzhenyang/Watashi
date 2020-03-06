@@ -12,5 +12,20 @@ class SWTabbarBadgeValueManager: NSObject {
 
     static let shared = SWTabbarBadgeValueManager()
 
-    var badgeValue: String = "6"
+    private(set) var badgeValue: String = "6"
+
+    fileprivate let maxBadgeValue = 99
+
+    func addBadgeValue() {
+        let newBadgeValue = (Int(badgeValue)!) + 1
+        guard newBadgeValue <= maxBadgeValue else {
+            badgeValue = "\(maxBadgeValue)+"
+            return
+        }
+        badgeValue = "\(newBadgeValue)"
+    }
+
+    func reduceBadgeValue() {
+        badgeValue = "\(Int(badgeValue)! - 1)"
+    }
 }

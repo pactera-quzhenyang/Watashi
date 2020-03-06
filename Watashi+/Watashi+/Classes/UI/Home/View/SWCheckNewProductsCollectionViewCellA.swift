@@ -22,9 +22,7 @@ class SWCheckNewProductsCollectionViewCellA: SWBaseCollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
-  
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
