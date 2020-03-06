@@ -36,8 +36,9 @@ class SWSearchFoundView: SWSearchHistoryView {
         }
         self.addSubview(lineView)
         lineView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(viewBeginX)
-            make.top.equalTo(CGFloat(list.count / 2) * viewHeight + (CGFloat(list.count / 2) * viewSpace + 9))
+            make.left.equalTo(viewBeginX)
+            make.right.equalTo(-viewBeginX)
+            make.top.equalTo(CGFloat(list.count / 2) * viewHeight + (CGFloat(list.count / 2) * viewSpace))
             make.height.equalTo(1)
         }
     }
@@ -51,13 +52,17 @@ class SWSearchFoundView: SWSearchHistoryView {
         self.addSubview(label)
 
         label.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
+            make.left.equalTo(viewBeginX)
+            make.right.equalTo(-viewBeginX)
+            make.top.equalTo(0)
         }
 
         self.addSubview(lineView)
         lineView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(viewBeginX)
-            make.top.equalTo(label.snp.bottom).offset(-1)
+            make.left.equalTo(viewBeginX)
+            make.right.equalTo(-viewBeginX)
+            make.top.equalTo(label.snp.bottom).offset(1)
+            make.bottom.equalTo(self.snp.bottom)
             make.height.equalTo(1)
         }
     }

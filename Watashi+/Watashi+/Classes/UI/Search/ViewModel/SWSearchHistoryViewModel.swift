@@ -17,12 +17,12 @@ class SWSearchHistoryViewModel: NSObject {
     override init() {
         list.append("iphonexsmadaskldaskldjalskdjalsjdlaskdjalskdjalskdjalskdjalskdjaslkdjalskdjalskdjalskdjaslkdjalskdjdjaskldjaklsjax")
         list.append("iphone")
-        list.append("面膜")
-        list.append("电脑桌")
-        list.append("电竞椅")
+        list.append("仮面")
+        list.append("コンピューターデスク")
+        list.append("ゲーミングチェア")
         list.append("iphone8 pluss")
-        list.append("氨基酸洗面奶")
-        list.append("空气清新剂")
+        list.append("アミノ酸洗顔料")
+        list.append("芳香剤")
         list.append("iphonexsmax")
     }
 

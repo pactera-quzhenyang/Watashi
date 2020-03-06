@@ -13,15 +13,15 @@ class SWSearchFoundViewModel: NSObject {
     var saveList = [String]()
 
     override init() {
-        list.append("笔记本电脑")
-        list.append("东方小魔方新品")
-        list.append("免费问诊抗疫情")
-        list.append("小米电脑")
-        list.append("八音盒")
-        list.append("双头u盘")
-        list.append("休闲西裤")
-        list.append("常购清单")
-        list.append("二手苹果8p")
+        list.append("ラップトップ")
+        list.append("ニューオリエンタルルービックキューブ")
+        list.append("抗流行状況に関する無料相談")
+        list.append("Xiaomiコンピューター")
+        list.append("オルゴール")
+        list.append("ダブルヘッドUディスク")
+        list.append("カジュアルパンツ")
+        list.append("よく購入するリスト")
+        list.append("使用済みのApple 8p")
         list.append("iphone11")
     }
 

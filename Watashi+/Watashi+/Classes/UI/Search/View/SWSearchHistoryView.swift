@@ -59,9 +59,9 @@ class SWSearchHistoryView: UIView {
             let buttonWidth = tagButtonWidth(title: title) //button总宽度
             getPrevViewMaxX += buttonWidth + labelTextSpace + viewSpace
             let remainingWidth = prevTagButton != nil ? (viewMaxWidth - getPrevViewMaxX) : viewMaxWidth //剩余宽度
-            let isNewLine = remainingWidth - buttonWidth <= 0 //是否换行
-            if isNewLine {
-                getPrevViewMaxX = 0
+            let isNewLine = remainingWidth <= 0 //是否换行
+            if isNewLine && i > 0 {
+                getPrevViewMaxX = buttonWidth + labelTextSpace + viewSpace
                 lines += 1
                 if lines == defalutShowLines && !SWSearchHistoryManager.shared.isShowAll {
                     stopAtIndex = i - 1
