@@ -42,7 +42,7 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
     }
     
     
-    func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String]) {
+    func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String], cell: SWCheckNewProductsCell) {
         collectionView.register(UINib(nibName: "SWCheckNewProductsCollectionViewCellA", bundle: nil), forCellWithReuseIdentifier: "cell")
         
         let items = Observable.just([
@@ -57,11 +57,10 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
             cell.priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
             cell.cartButton.rx.tap.subscribe(onNext: {
                 self.logEvent(list: ["cartClick"])
-
+                SWTabbarBadgeValueManager.shared.addBadgeValue()
                 let goods = SWGoodsViewController()
                 SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
 
-                SWTabbarBadgeValueManager.shared.badgeValue = "\(Int(SWTabbarBadgeValueManager.shared.badgeValue)! + 1)"
                 NotificationCenter.default.post(name: Notification.Name("badge"), object: nil)
 
             }).disposed(by: cell.disposeBag)
@@ -70,7 +69,24 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
         )
         items.bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
         collectionView.rx.setDelegate(self).disposed(by: disposeBag)
+        collectionView.rx.contentOffset.subscribe(onNext: { (offset) in
+            guard collectionView.contentSize.width > 0 else { return }
+            let x = offset.x - (collectionView.contentSize.width - screenWidth + 30)
+            print(x)
+            if x >= 0 && x <= 100 {
+                cell.arrowImageView.snp.updateConstraints { (make) in
+                    make.left.equalTo(cell.contentView.snp.right).offset(-x+15)
+                }
+                cell.titleLabel.snp.updateConstraints { (make) in
+                    make.left.equalTo(cell.arrowImageView.snp.right)
+                }
+            }
+            }).disposed(by: disposeBag)
+        collectionView.rx.didEndDragging.subscribe(onNext: { (end) in
+            if end {
 
+            }
+            }).disposed(by: disposeBag)
     }
 }
 
