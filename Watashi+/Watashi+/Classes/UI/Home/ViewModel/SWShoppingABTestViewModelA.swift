@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 import RxDataSources
-class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol {
+class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtocol {
     
     let disposeBag = DisposeBag()
     var dataSource: RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>?
@@ -48,7 +48,7 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol {
         let items = Observable.just([
         SectionModel(model: "", items: imageArray)
         ])
-        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (dataSource, collectionView, indexPath, element) -> SWCheckNewProductsCollectionViewCellA in
+        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: {(dataSource, collectionView, indexPath, element) -> SWCheckNewProductsCollectionViewCellA in
 
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SWCheckNewProductsCollectionViewCellA
 
@@ -56,7 +56,7 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol {
             cell.imageView.image = UIImage(named: element)!
             cell.priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
             cell.cartButton.rx.tap.subscribe(onNext: {
-                print("----------")
+                self.logEvent(list: ["cartClick"])
             }).disposed(by: cell.disposeBag)
             return cell
             }

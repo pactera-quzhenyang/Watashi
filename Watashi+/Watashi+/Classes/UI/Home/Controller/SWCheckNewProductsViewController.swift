@@ -60,6 +60,7 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
         items.bind(to: tableView.rx.items(dataSource: dataSource!)).disposed(by: disposeBag)
         a.dataSource = dataSource
         b.dataSource = dataSource
+        b.navigationController = self.navigationController
         let delegate = SWABTestingManager.shoppingCartsType() as? UITableViewDelegate
         tableView.rx.setDelegate(delegate!).disposed(by: disposeBag)
     }
