@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2DE60F10DCA8365F81011CB9 /* Pods_Watashi__dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90827FD2430D33F487E4ECC8 /* Pods_Watashi__dev.framework */; };
+		53002C972415D07E000F21F9 /* SWFirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C962415D07E000F21F9 /* SWFirstLoginViewController.swift */; };
+		53002C9D2415D1AF000F21F9 /* SWFirstLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */; };
+		53002C9F2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */; };
+		53139F142415E376007FC9B2 /* SWFirstLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */; };
+		53139F1624161CF9007FC9B2 /* SWAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53139F1524161CF9007FC9B2 /* SWAppColor.swift */; };
 		531C9F8823FD2F0500391B77 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */; };
 		532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532142262403C5AD00BB5977 /* SWAccountViewController.swift */; };
@@ -308,6 +313,11 @@
 		159F44300C287005828C2E31 /* Pods-Watashi+-pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-pro.debug.xcconfig"; path = "Target Support Files/Pods-Watashi+-pro/Pods-Watashi+-pro.debug.xcconfig"; sourceTree = "<group>"; };
 		42EF376369F902C9B77526C6 /* Pods-Watashi+-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watashi+-dev.release.xcconfig"; path = "Target Support Files/Pods-Watashi+-dev/Pods-Watashi+-dev.release.xcconfig"; sourceTree = "<group>"; };
 		4D133F8CF9FDEB1A9D8843C3 /* Pods_Watashi__stg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watashi__stg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53002C962415D07E000F21F9 /* SWFirstLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginViewController.swift; sourceTree = "<group>"; };
+		53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginView.swift; sourceTree = "<group>"; };
+		53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginCollectionViewCell.swift; sourceTree = "<group>"; };
+		53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginViewModel.swift; sourceTree = "<group>"; };
+		53139F1524161CF9007FC9B2 /* SWAppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppColor.swift; sourceTree = "<group>"; };
 		531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSeasonRecommendViewController.swift; sourceTree = "<group>"; };
 		5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRepurchaseViewController.swift; sourceTree = "<group>"; };
 		532142262403C5AD00BB5977 /* SWAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewController.swift; sourceTree = "<group>"; };
@@ -466,6 +476,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53002C952415D05C000F21F9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				53002C982415D107000F21F9 /* Controller */,
+				53002C9B2415D122000F21F9 /* Model */,
+				53002C9A2415D11E000F21F9 /* View */,
+				53002C992415D117000F21F9 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		53002C982415D107000F21F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53002C962415D07E000F21F9 /* SWFirstLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		53002C992415D117000F21F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53002C9A2415D11E000F21F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */,
+				53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53002C9B2415D122000F21F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5321421A2403C46700BB5977 /* Repurchase */ = {
 			isa = PBXGroup;
 			children = (
@@ -696,6 +749,7 @@
 		539FD81B24037D0D005CBA87 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				53002C952415D05C000F21F9 /* Login */,
 				53AC695F23FB82E60088CBC0 /* Home */,
 				533C5A0E23FBAEF500735670 /* Search */,
 				532C3D932403C0C000B12A2A /* Cart */,
@@ -888,6 +942,7 @@
 				53AC698923FB851D0088CBC0 /* SWAppConfig.swift */,
 				810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */,
 				8133043F2411DBFB00C0B263 /* SWGAProtocol.swift */,
+				53139F1524161CF9007FC9B2 /* SWAppColor.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1437,12 +1492,14 @@
 				81FD77812410898F00739E84 /* SWProductDetailsViewController.swift in Sources */,
 				533D10F724074E64000F116D /* SWSearchHistoryModel.swift in Sources */,
 				810AF8C7240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
+				53002C972415D07E000F21F9 /* SWFirstLoginViewController.swift in Sources */,
 				810AF8B3240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
 				53F0BF8D240799AA00473C46 /* SWSearchHistoryViewModel.swift in Sources */,
 				813304482411E82A00C0B263 /* SWUIViewExtension.swift in Sources */,
 				8174158B240519890033FE43 /* PageTitleView+Rx.swift in Sources */,
 				53451774240E37E80067BD16 /* SWSearchHistoryManager.swift in Sources */,
 				539D7D6C240CFD16002130EF /* SWSearchHeaderView.swift in Sources */,
+				53139F142415E376007FC9B2 /* SWFirstLoginViewModel.swift in Sources */,
 				8174158C240519890033FE43 /* RxPageTitleViewDelegateProxy.swift in Sources */,
 				8174158D240519890033FE43 /* PageCollectionViewFlowLayout.swift in Sources */,
 				810FE06E24063FDE00CE1F54 /* SWFirebaseManager.swift in Sources */,
@@ -1493,6 +1550,8 @@
 				817415A5240519890033FE43 /* SWSearchViewController.swift in Sources */,
 				812046AD240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,
 				810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
+				53002C9F2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift in Sources */,
+				53139F1624161CF9007FC9B2 /* SWAppColor.swift in Sources */,
 				53CC1007240F396300AA353A /* SWSearchFoundView.swift in Sources */,
 				817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */,
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
@@ -1504,6 +1563,7 @@
 				812046C2240E5BF7007B57ED /* SWCheckNewProductsCollectionViewCellB.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
+				53002C9D2415D1AF000F21F9 /* SWFirstLoginView.swift in Sources */,
 				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 				533EC154240F4B0200A44CB8 /* SWSearchFoundViewModel.swift in Sources */,
 			);

@@ -16,7 +16,3 @@ var screenWidth: CGFloat {
 var screenHeight: CGFloat {
     return UIScreen.main.bounds.height
 }
-
-var baseColor: UIColor {
-    return UIColor.init(hex: 0xDF0068)
-}

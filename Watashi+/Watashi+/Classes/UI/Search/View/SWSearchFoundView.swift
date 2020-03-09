@@ -17,7 +17,7 @@ class SWSearchFoundView: SWSearchHistoryView {
 
             let itemButton = UIButton()
             itemButton.setTitle(title, for: .normal)
-            itemButton.setTitleColor(UIColor.init(hex: 0x666666), for: .normal)
+            itemButton.setTitleColor(SWMiddleBlack, for: .normal)
             itemButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
             itemButton.contentHorizontalAlignment = .left
             itemButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
@@ -46,7 +46,7 @@ class SWSearchFoundView: SWSearchHistoryView {
     func setHideSearchFoundView() {
         let label = UILabel()
         label.text = SearchPage.hideSearchFound
-        label.textColor = UIColor.init(hex: 0x666666)
+        label.textColor = SWMiddleBlack
         label.font = UIFont.systemFont(ofSize: 14)
         label.textAlignment = .center
         self.addSubview(label)

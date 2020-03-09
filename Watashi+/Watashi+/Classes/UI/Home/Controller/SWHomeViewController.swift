@@ -137,7 +137,7 @@ class SWHomeViewController: SWBaseViewController {
 
 extension SWHomeViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        self.tabBarController?.selectedIndex = 1
+        navigationController?.pushViewController(SWFirstLoginViewController(), animated: true)
         return false
     }
 
