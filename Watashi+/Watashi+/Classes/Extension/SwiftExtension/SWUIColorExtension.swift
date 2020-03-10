@@ -77,4 +77,8 @@ extension UIColor {
     class var mainWhite: UIColor {
         return UIColor.init(hex: 0xf5f5f5)
     }
+
+    class var firstLoginBorder: UIColor {
+        return UIColor.init(hex: 0xdddddd)
+    }
 }

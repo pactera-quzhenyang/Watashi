@@ -20,23 +20,25 @@ class SWBaseTabbarController: UITabBarController {
 
     let disposeBag = DisposeBag()
 
+    let lineViewWidth = screenWidth / 5
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         _ = NotificationCenter.default.rx
-        .notification(NSNotification.Name("badge"))
+            .notification(NSNotification.Name(NotifyName.badgeValueChange))
         .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
             .subscribe({ notify in
                 for (index, item) in self.tabBar.items!.enumerated() {
-                    if index == 2 {
+                    if index == BadgeType.shoppingCart {
                         item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
                     }
                 }
             })
 
         for (index, item) in tabBar.items!.enumerated() {
-            if index == 2 || index == 3 {
+            if index == BadgeType.shoppingCart || index == BadgeType.repurchase {
                 item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
                 item.badgeColor = .mainColor
             }
@@ -45,7 +47,7 @@ class SWBaseTabbarController: UITabBarController {
         lineView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
             make.left.equalTo(0)
-            make.width.equalTo(screenWidth / 5)
+            make.width.equalTo(lineViewWidth)
             make.height.equalTo(1)
         }
 
@@ -54,7 +56,7 @@ class SWBaseTabbarController: UITabBarController {
                 if selectController == item {
                     UIView.animate(withDuration: 0.3) {
                         self.lineView.snp.updateConstraints { (make) in
-                            make.left.equalTo(Int(screenWidth / 5) * index)
+                            make.left.equalTo(Int(self.lineViewWidth) * index)
                         }
                         self.tabBar.layoutIfNeeded()
                     }

@@ -14,6 +14,8 @@ class SWTabbarBadgeValueManager: NSObject {
 
     private(set) var badgeValue: String = "6"
 
+    fileprivate let minBadgeValue = 0
+
     fileprivate let maxBadgeValue = 99
 
     func addBadgeValue() {
@@ -26,6 +28,11 @@ class SWTabbarBadgeValueManager: NSObject {
     }
 
     func reduceBadgeValue() {
-        badgeValue = "\(Int(badgeValue)! - 1)"
+        let newBadgeValue = (Int(badgeValue)!) - 1
+        badgeValue = newBadgeValue >= 0 ? "\(newBadgeValue)" : "\(minBadgeValue)"
+    }
+
+    func clearBadgeValue() {
+        badgeValue = "\(minBadgeValue)"
     }
 }

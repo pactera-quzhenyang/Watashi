@@ -36,6 +36,11 @@ class SWHomeViewController: SWBaseViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
     
     func setPageViewCon() {
         searchField.delegate = self
@@ -139,7 +144,7 @@ class SWHomeViewController: SWBaseViewController {
 
 extension SWHomeViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        navigationController?.pushViewController(SWFirstLoginViewController(), animated: true)
+        navigationController?.pushViewController(SWFirstLoginViewController.instantiate(), animated: true)
         return false
     }
 
