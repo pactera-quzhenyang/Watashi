@@ -8,9 +8,12 @@
 
 import Foundation
 
-enum SWRemoteConfigKey: String {
-    case shoppingCart
-}
+//enum SWRemoteConfigKey: String {
+//    case shoppingCart
+//}
+
+let shoppingCart = "shoppingCart"
+
 
 enum SWRemoteConfigValue: String {
     case shoppingCartA

@@ -23,7 +23,7 @@ class SWRCValueManager {
     func loadDefaultValues() {
         
         let appDefaults: [String: Any?] = [
-            SWRemoteConfigKey.shoppingCart.rawValue: SWRemoteConfigValue.shoppingCartA.rawValue
+            shoppingCart: SWRemoteConfigValue.shoppingCartA.rawValue
             
         ]
         RemoteConfig.remoteConfig().setDefaults(appDefaults as? [String: NSObject])
@@ -61,21 +61,21 @@ class SWRCValueManager {
         RemoteConfig.remoteConfig().configSettings = RemoteConfigSettings()
     }
     
-    func color(forKey key: SWRemoteConfigKey) -> UIColor {
-      let hexString = RemoteConfig.remoteConfig()[key.rawValue].stringValue ?? "#FFFFFFFF"
+    func color(forKey key: String) -> UIColor {
+      let hexString = RemoteConfig.remoteConfig()[key].stringValue ?? "#FFFFFFFF"
       return UIColor(hex: hexString)!
     }
     
-    func bool(forKey key: SWRemoteConfigKey) -> Bool {
-      return RemoteConfig.remoteConfig()[key.rawValue].boolValue
+    func bool(forKey key: String) -> Bool {
+      return RemoteConfig.remoteConfig()[key].boolValue
     }
     
-    func string(forKey key: SWRemoteConfigKey) -> String {
-      return RemoteConfig.remoteConfig()[key.rawValue].stringValue ?? ""
+    func string(forKey key: String) -> String {
+      return RemoteConfig.remoteConfig()[key].stringValue ?? ""
     }
     
-    func double(forKey key: SWRemoteConfigKey) -> Double {
-      if let numberValue = RemoteConfig.remoteConfig()[key.rawValue].numberValue {
+    func double(forKey key: String) -> Double {
+      if let numberValue = RemoteConfig.remoteConfig()[key].numberValue {
         return numberValue.doubleValue
       } else {
         return 0.0

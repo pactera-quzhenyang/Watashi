@@ -16,7 +16,7 @@ class SWABTestingManager {
         
     }
     
-    class func string(forKey key: SWRemoteConfigKey) -> String {
+    class func string(forKey key: String) -> String {
         return SWRCValueManager.shared.string(forKey: key)
     }
 }
@@ -27,7 +27,7 @@ extension SWABTestingManager {
     }
     
     class func shoppingCartsTypes() -> Any {
-        let key = string(forKey: .shoppingCart)
+        let key = string(forKey: shoppingCart)
         switch key {
         case SWRemoteConfigValue.shoppingCartA.rawValue:
             return SWShoppingABTestViewModelA()
@@ -40,8 +40,18 @@ extension SWABTestingManager {
     
     
     class func shoppingCartsHeight() -> CGFloat {
-        let key = string(forKey: .shoppingCart)
-        return key == SWRemoteConfigValue.shoppingCartA.rawValue ? 170 : 200
+        let key = string(forKey: shoppingCart)
+        switch key {
+        case SWRemoteConfigValue.shoppingCartA.rawValue:
+            return 170
+        case SWRemoteConfigValue.shoppingCartB.rawValue:
+            return 200
+        default:
+            return 0
+        }
     }
     
+    class func shoppingCartsRequest() {
+        
+    }
 }
