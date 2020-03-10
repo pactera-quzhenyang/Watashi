@@ -976,3 +976,20 @@ extension String {
     }
 
 }
+
+extension String {
+    func projectName() -> String {
+        let pName = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String
+        if var name = pName {
+            name = name.replacingOccurrences(of: "-", with: "_")
+            name = name.replacingOccurrences(of: "+", with: "_")
+            return name
+        }
+        return ""
+    }
+    
+    func className() -> String {
+        return projectName() + "." + self
+    }
+    
+}

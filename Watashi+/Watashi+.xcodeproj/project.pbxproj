@@ -2061,7 +2061,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-dev-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+/Supporting Files/Plist/Watashi+-dev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2096,7 +2096,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-dev-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+/Supporting Files/Plist/Watashi+-dev-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2130,7 +2130,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-stg-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+/Supporting Files/Plist/Watashi+-stg-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2165,7 +2165,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Watashi+-stg-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watashi+/Supporting Files/Plist/Watashi+-stg-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
