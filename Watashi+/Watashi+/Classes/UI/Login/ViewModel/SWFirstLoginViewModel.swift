@@ -9,18 +9,10 @@
 import UIKit
 
 class SWFirstLoginViewModel: NSObject {
-    var dataList = [String]()
+    var titleString: String!
 
-    override init() {
-        super.init()
-        dataList.append("ナチュラル")
-        dataList.append("マキアージュ")
-        dataList.append("モードスタイル")
-        dataList.append("ベタつき")
-        dataList.append("マキアージュ")
-        dataList.append("にびき")
-        dataList.append("乾燥肌")
-        dataList.append("ｄプログラム")
-        dataList.append("インテグレート")
+    convenience init(title: String) {
+        self.init()
+        self.titleString = title
     }
 }

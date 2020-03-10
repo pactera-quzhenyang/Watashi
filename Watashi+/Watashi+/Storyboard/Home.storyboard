@@ -235,8 +235,96 @@
             </objects>
             <point key="canvasLocation" x="133" y="139"/>
         </scene>
+        <!--First Login View Controller-->
+        <scene sceneID="4rM-1x-k9e">
+            <objects>
+                <viewController storyboardIdentifier="SWFirstLoginViewController" id="AZG-pz-UDT" customClass="SWFirstLoginViewController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ju-iP-S9g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRk-gc-0gy">
+                                <rect key="frame" x="0.0" y="74" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qmk-Kh-hLz"/>
+                                </constraints>
+                                <string key="text">あなたの好み
+（好きなブランド/肌悩み/好みのメイクスタイル）
+を教えてください</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hri-Rc-t9f">
+                                <rect key="frame" x="0.0" y="154" width="414" height="580"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vsz-3Z-0zS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-m1-CEr">
+                                <rect key="frame" x="107" y="765" width="200" height="35"/>
+                                <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Ha9-Ve-pAx"/>
+                                    <constraint firstAttribute="width" constant="200" id="ORX-1c-YSJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYX-7k-OaJ">
+                                <rect key="frame" x="147" y="810" width="120" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jah-LK-MEH"/>
+                                    <constraint firstAttribute="height" constant="35" id="afO-97-OWY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="リセット" image="delete">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hri-Rc-t9f" firstAttribute="leading" secondItem="gpR-aF-nEs" secondAttribute="leading" id="05d-hR-CMJ"/>
+                            <constraint firstItem="sYX-7k-OaJ" firstAttribute="top" secondItem="uMP-m1-CEr" secondAttribute="bottom" constant="10" id="5iH-Oc-9Jj"/>
+                            <constraint firstItem="uMP-m1-CEr" firstAttribute="centerX" secondItem="3ju-iP-S9g" secondAttribute="centerX" id="SWR-YZ-e3z"/>
+                            <constraint firstItem="gpR-aF-nEs" firstAttribute="bottom" secondItem="sYX-7k-OaJ" secondAttribute="bottom" constant="17" id="SfS-Um-Bfq"/>
+                            <constraint firstItem="QRk-gc-0gy" firstAttribute="trailing" secondItem="gpR-aF-nEs" secondAttribute="trailing" id="Vfu-mB-uSK"/>
+                            <constraint firstItem="uMP-m1-CEr" firstAttribute="top" secondItem="hri-Rc-t9f" secondAttribute="bottom" constant="31" id="bLR-5U-8hM"/>
+                            <constraint firstItem="QRk-gc-0gy" firstAttribute="leading" secondItem="gpR-aF-nEs" secondAttribute="leading" id="gJh-HM-eK3"/>
+                            <constraint firstItem="sYX-7k-OaJ" firstAttribute="centerX" secondItem="3ju-iP-S9g" secondAttribute="centerX" id="h5n-Ew-DTv"/>
+                            <constraint firstItem="hri-Rc-t9f" firstAttribute="trailing" secondItem="gpR-aF-nEs" secondAttribute="trailing" id="rdG-lp-3Zw"/>
+                            <constraint firstItem="QRk-gc-0gy" firstAttribute="top" secondItem="gpR-aF-nEs" secondAttribute="top" constant="30" id="tyq-IA-QJD"/>
+                            <constraint firstItem="hri-Rc-t9f" firstAttribute="top" secondItem="QRk-gc-0gy" secondAttribute="bottom" constant="20" id="xzj-55-o0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gpR-aF-nEs"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="hri-Rc-t9f" id="ZJg-ry-o6S"/>
+                        <outlet property="loginButton" destination="uMP-m1-CEr" id="ew5-e9-An2"/>
+                        <outlet property="resetButton" destination="sYX-7k-OaJ" id="fPn-lH-BcI"/>
+                        <outlet property="titleLabel" destination="QRk-gc-0gy" id="5UA-1Y-k9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3z-4P-7du" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="-535"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="delete" width="16" height="16"/>
         <image name="face" width="24" height="24"/>
         <image name="medal" width="32" height="32"/>
         <image name="play" width="24" height="24"/>
