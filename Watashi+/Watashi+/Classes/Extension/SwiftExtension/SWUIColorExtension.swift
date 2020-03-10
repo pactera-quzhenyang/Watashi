@@ -60,3 +60,21 @@ extension UIColor {
         self.init(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1.0)
     }
 }
+
+extension UIColor {
+    class var mainColor: UIColor {
+        return UIColor.init(hex: 0xDF0068)
+    }
+
+    class var mainLightGray: UIColor {
+        return UIColor.init(hex: 0xeeeeee)
+    }
+
+    class var mainDarkGray: UIColor {
+        return UIColor.init(hex: 0x666666)
+    }
+
+    class var mainWhite: UIColor {
+        return UIColor.init(hex: 0xf5f5f5)
+    }
+}

@@ -16,7 +16,6 @@ import SnapKit
 class SWSearchViewController: SWBaseViewController {
 
     @IBOutlet weak var searchTableView: UITableView!
-    @IBOutlet weak var collectionView: UICollectionView!
 
     lazy var searchFiled: SWSearchView = {
         let searchFiled = SWSearchView.loadFromNib()

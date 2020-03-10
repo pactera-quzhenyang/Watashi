@@ -18,7 +18,7 @@ class SWSearchHistoryCollectionViewCell: SWBaseCollectionViewCell {
 
     lazy var tagLabel: UILabel = {
         let tagLabel = UILabel()
-        tagLabel.textColor = SWMiddleBlack
+        tagLabel.textColor = .mainDarkGray
         tagLabel.font = UIFont.systemFont(ofSize: 14)
         tagLabel.textAlignment = .center
         tagLabel.lineBreakMode = .byTruncatingMiddle
@@ -60,7 +60,7 @@ class SWSearchHistoryCollectionViewCell: SWBaseCollectionViewCell {
     }
 
     func initUI() {
-        backgroundColor = SWLightWhite_F5
+        backgroundColor = .mainWhite
         layer.cornerRadius = 15
         addSubview(tagLabel)
         addSubview(lineView)

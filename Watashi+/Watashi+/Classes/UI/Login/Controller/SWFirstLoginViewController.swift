@@ -17,7 +17,7 @@ class SWFirstLoginViewController: SWBaseViewController {
     let viewModel = SWFirstLoginViewModel()
 
     private (set) public lazy var collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
+        let layout = SWFirstLoginFlowLayout()
 
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
@@ -74,7 +74,7 @@ class SWFirstLoginViewController: SWBaseViewController {
 
 extension SWFirstLoginViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = CGFloat(getItemRadius(max: 180, min: 50))
+        let width = CGFloat(getItemRadius(max: 150, min: 40))
         return CGSize(width: width, height: width)
     }
 

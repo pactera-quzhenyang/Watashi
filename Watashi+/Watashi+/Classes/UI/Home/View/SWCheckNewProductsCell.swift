@@ -38,7 +38,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         let titleLabel = UILabel()
         titleLabel.text = Product.lookDetail
         titleLabel.font = UIFont.systemFont(ofSize: 12)
-        titleLabel.textColor = SWMiddleBlack
+        titleLabel.textColor = .mainDarkGray
         titleLabel.numberOfLines = 0
         return titleLabel
     }()

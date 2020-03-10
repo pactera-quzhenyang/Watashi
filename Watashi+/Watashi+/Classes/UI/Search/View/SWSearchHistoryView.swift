@@ -39,7 +39,7 @@ class SWSearchHistoryView: UIView {
 
     lazy var lineView: UIView = {
         let lineView = UIView()
-        lineView.backgroundColor = SWLightWhite
+        lineView.backgroundColor = .mainLightGray
         return lineView
     }()
 
@@ -70,14 +70,14 @@ class SWSearchHistoryView: UIView {
             }
 
             let tagView = UIView()
-            tagView.backgroundColor = SWLightWhite_F5
+            tagView.backgroundColor = .mainWhite
             tagView.layer.cornerRadius = 15
             tagView.tag = i + 100
             self.addSubview(tagView)
 
             let tagLabel = UILabel()
             tagLabel.text = title
-            tagLabel.textColor = SWMiddleBlack
+            tagLabel.textColor = .mainDarkGray
             tagLabel.font = UIFont.systemFont(ofSize: 14)
             tagLabel.textAlignment = .center
             tagLabel.lineBreakMode = .byTruncatingMiddle

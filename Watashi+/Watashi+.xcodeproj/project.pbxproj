@@ -12,7 +12,56 @@
 		53002C9D2415D1AF000F21F9 /* SWFirstLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */; };
 		53002C9F2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */; };
 		53139F142415E376007FC9B2 /* SWFirstLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */; };
-		53139F1624161CF9007FC9B2 /* SWAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53139F1524161CF9007FC9B2 /* SWAppColor.swift */; };
+		5315C6D32416245F008DE93D /* SWMoneyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C6D22416245F008DE93D /* SWMoneyExtension.swift */; };
+		5315C6D42416245F008DE93D /* SWMoneyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C6D22416245F008DE93D /* SWMoneyExtension.swift */; };
+		5315C6D52416245F008DE93D /* SWMoneyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C6D22416245F008DE93D /* SWMoneyExtension.swift */; };
+		5315C6D62416248C008DE93D /* SWUITextFiled+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73AD240759AD00056460 /* SWUITextFiled+Rx.swift */; };
+		5315C6D72416248C008DE93D /* SWUILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0BF922407BB7000473C46 /* SWUILabel+Rx.swift */; };
+		5315C6D82416248C008DE93D /* SWCollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420EF2408A7890072AC16 /* SWCollectionViewCell+Rx.swift */; };
+		5315C6D92416248C008DE93D /* SWFirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C962415D07E000F21F9 /* SWFirstLoginViewController.swift */; };
+		5315C6DA2416248C008DE93D /* SWFirstLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */; };
+		5315C6DB2416248C008DE93D /* SWFirstLoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */; };
+		5315C6DC2416248C008DE93D /* SWFirstLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */; };
+		5315C6DD241624A5008DE93D /* SWSearchHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D10F624074E64000F116D /* SWSearchHistoryModel.swift */; };
+		5315C6DE241624A5008DE93D /* SWSearchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73AF2407620900056460 /* SWSearchHistoryTableViewCell.swift */; };
+		5315C6DF241624A5008DE93D /* SWSearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F12408BC830072AC16 /* SWSearchHistoryView.swift */; };
+		5315C6E0241624A5008DE93D /* SWSearchFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC1006240F396300AA353A /* SWSearchFoundView.swift */; };
+		5315C6E1241624A5008DE93D /* SWSearchHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73B5240792FF00056460 /* SWSearchHistoryCollectionViewCell.swift */; };
+		5315C6E2241624A5008DE93D /* SWSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F32408EF980072AC16 /* SWSearchView.swift */; };
+		5315C6E3241624A5008DE93D /* SWSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */; };
+		5315C6E4241624A5008DE93D /* SWSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */; };
+		5315C6E5241624A5008DE93D /* SWSearchDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */; };
+		5315C6E6241624A5008DE93D /* SWSearchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0BF8C240799AA00473C46 /* SWSearchHistoryViewModel.swift */; };
+		5315C6E7241624A5008DE93D /* SWSearchFoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC153240F4B0200A44CB8 /* SWSearchFoundViewModel.swift */; };
+		5315C6E8241624A6008DE93D /* SWSearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */; };
+		5315C6E9241624A6008DE93D /* SWTabbarBadgeValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360DA372411FAD8006C5613 /* SWTabbarBadgeValueManager.swift */; };
+		5315C6EB241624A6008DE93D /* SWBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73B324076DC800056460 /* SWBaseTableViewCell.swift */; };
+		5315C6EC241624A6008DE93D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6D240CFF2E002130EF /* BaseView.swift */; };
+		5315C6ED241624E1008DE93D /* SWUITextFiled+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73AD240759AD00056460 /* SWUITextFiled+Rx.swift */; };
+		5315C6EE241624E1008DE93D /* SWUILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0BF922407BB7000473C46 /* SWUILabel+Rx.swift */; };
+		5315C6EF241624E1008DE93D /* SWCollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420EF2408A7890072AC16 /* SWCollectionViewCell+Rx.swift */; };
+		5315C6F0241624E1008DE93D /* SWFirstLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C962415D07E000F21F9 /* SWFirstLoginViewController.swift */; };
+		5315C6F1241624E1008DE93D /* SWFirstLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */; };
+		5315C6F2241624E1008DE93D /* SWFirstLoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */; };
+		5315C6F3241624E1008DE93D /* SWFirstLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */; };
+		5315C6F4241624E1008DE93D /* SWSearchHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D10F624074E64000F116D /* SWSearchHistoryModel.swift */; };
+		5315C6F5241624E1008DE93D /* SWSearchHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73AF2407620900056460 /* SWSearchHistoryTableViewCell.swift */; };
+		5315C6F6241624E1008DE93D /* SWSearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F12408BC830072AC16 /* SWSearchHistoryView.swift */; };
+		5315C6F7241624E1008DE93D /* SWSearchFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC1006240F396300AA353A /* SWSearchFoundView.swift */; };
+		5315C6F8241624E1008DE93D /* SWSearchHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73B5240792FF00056460 /* SWSearchHistoryCollectionViewCell.swift */; };
+		5315C6F9241624E1008DE93D /* SWSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F32408EF980072AC16 /* SWSearchView.swift */; };
+		5315C6FA241624E1008DE93D /* SWSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */; };
+		5315C6FB241624E1008DE93D /* SWSearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */; };
+		5315C6FC241624E1008DE93D /* SWSearchDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F67BC2410DAED008A8BE2 /* SWSearchDataViewModel.swift */; };
+		5315C6FD241624E1008DE93D /* SWSearchHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0BF8C240799AA00473C46 /* SWSearchHistoryViewModel.swift */; };
+		5315C6FE241624E1008DE93D /* SWSearchFoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC153240F4B0200A44CB8 /* SWSearchFoundViewModel.swift */; };
+		5315C6FF241624E1008DE93D /* SWSearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451773240E37E80067BD16 /* SWSearchHistoryManager.swift */; };
+		5315C700241624E1008DE93D /* SWTabbarBadgeValueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5360DA372411FAD8006C5613 /* SWTabbarBadgeValueManager.swift */; };
+		5315C702241624E1008DE93D /* SWBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AE73B324076DC800056460 /* SWBaseTableViewCell.swift */; };
+		5315C703241624E1008DE93D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6D240CFF2E002130EF /* BaseView.swift */; };
+		5315C70524162E76008DE93D /* SWFirstLoginFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C70424162E76008DE93D /* SWFirstLoginFlowLayout.swift */; };
+		5315C70624162E76008DE93D /* SWFirstLoginFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C70424162E76008DE93D /* SWFirstLoginFlowLayout.swift */; };
+		5315C70724162E76008DE93D /* SWFirstLoginFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5315C70424162E76008DE93D /* SWFirstLoginFlowLayout.swift */; };
 		531C9F8823FD2F0500391B77 /* SWSeasonRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */; };
 		532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */; };
 		532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532142262403C5AD00BB5977 /* SWAccountViewController.swift */; };
@@ -323,7 +372,8 @@
 		53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginView.swift; sourceTree = "<group>"; };
 		53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginCollectionViewCell.swift; sourceTree = "<group>"; };
 		53139F132415E376007FC9B2 /* SWFirstLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginViewModel.swift; sourceTree = "<group>"; };
-		53139F1524161CF9007FC9B2 /* SWAppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppColor.swift; sourceTree = "<group>"; };
+		5315C6D22416245F008DE93D /* SWMoneyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWMoneyExtension.swift; sourceTree = "<group>"; };
+		5315C70424162E76008DE93D /* SWFirstLoginFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWFirstLoginFlowLayout.swift; sourceTree = "<group>"; };
 		531C9F8723FD2F0500391B77 /* SWSeasonRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSeasonRecommendViewController.swift; sourceTree = "<group>"; };
 		5321421F2403C57500BB5977 /* SWRepurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWRepurchaseViewController.swift; sourceTree = "<group>"; };
 		532142262403C5AD00BB5977 /* SWAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAccountViewController.swift; sourceTree = "<group>"; };
@@ -516,6 +566,7 @@
 			children = (
 				53002C9C2415D1AF000F21F9 /* SWFirstLoginView.swift */,
 				53002C9E2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift */,
+				5315C70424162E76008DE93D /* SWFirstLoginFlowLayout.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -739,6 +790,7 @@
 				813304472411E82A00C0B263 /* SWUIViewExtension.swift */,
 				8133044B2411EA9000C0B263 /* SWUIButtonExtension.swift */,
 				81330457241215B100C0B263 /* SWAppDelegateExtension.swift */,
+				5315C6D22416245F008DE93D /* SWMoneyExtension.swift */,
 			);
 			path = SwiftExtension;
 			sourceTree = "<group>";
@@ -952,7 +1004,6 @@
 				53AC698923FB851D0088CBC0 /* SWAppConfig.swift */,
 				810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */,
 				8133043F2411DBFB00C0B263 /* SWGAProtocol.swift */,
-				53139F1524161CF9007FC9B2 /* SWAppColor.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1412,10 +1463,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5315C6ED241624E1008DE93D /* SWUITextFiled+Rx.swift in Sources */,
+				5315C6EE241624E1008DE93D /* SWUILabel+Rx.swift in Sources */,
+				5315C6EF241624E1008DE93D /* SWCollectionViewCell+Rx.swift in Sources */,
+				5315C6F0241624E1008DE93D /* SWFirstLoginViewController.swift in Sources */,
+				5315C6F1241624E1008DE93D /* SWFirstLoginView.swift in Sources */,
+				5315C6F2241624E1008DE93D /* SWFirstLoginCollectionViewCell.swift in Sources */,
+				5315C6F3241624E1008DE93D /* SWFirstLoginViewModel.swift in Sources */,
+				5315C6F4241624E1008DE93D /* SWSearchHistoryModel.swift in Sources */,
+				5315C6F5241624E1008DE93D /* SWSearchHistoryTableViewCell.swift in Sources */,
+				5315C6F6241624E1008DE93D /* SWSearchHistoryView.swift in Sources */,
+				5315C6F7241624E1008DE93D /* SWSearchFoundView.swift in Sources */,
+				5315C6F8241624E1008DE93D /* SWSearchHistoryCollectionViewCell.swift in Sources */,
+				5315C6F9241624E1008DE93D /* SWSearchView.swift in Sources */,
+				5315C6FA241624E1008DE93D /* SWSearchHeaderView.swift in Sources */,
+				5315C6FB241624E1008DE93D /* SWSearchResultTableViewCell.swift in Sources */,
+				5315C6FC241624E1008DE93D /* SWSearchDataViewModel.swift in Sources */,
+				5315C6FD241624E1008DE93D /* SWSearchHistoryViewModel.swift in Sources */,
+				5315C6FE241624E1008DE93D /* SWSearchFoundViewModel.swift in Sources */,
+				5315C6FF241624E1008DE93D /* SWSearchHistoryManager.swift in Sources */,
+				5315C700241624E1008DE93D /* SWTabbarBadgeValueManager.swift in Sources */,
+				5315C702241624E1008DE93D /* SWBaseTableViewCell.swift in Sources */,
+				5315C703241624E1008DE93D /* BaseView.swift in Sources */,
 				53F4FBF024063FB30016A38B /* SWNetworkRequest.swift in Sources */,
 				53F4FBEF24063FAE0016A38B /* SWUIColorExtension.swift in Sources */,
 				53F4FBEE24063F970016A38B /* SWBaseTabbarController.swift in Sources */,
 				53F4FBED24063F910016A38B /* SWBaseCollectionViewCell.swift in Sources */,
+				5315C6D52416245F008DE93D /* SWMoneyExtension.swift in Sources */,
 				53F4FBEC24063F8C0016A38B /* CUSemiModalView.swift in Sources */,
 				81FD77A02410ECEB00739E84 /* CULoopCollectionViewCell.swift in Sources */,
 				53F4FBEB24063F840016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
@@ -1456,6 +1530,7 @@
 				533C5A2C23FBB10100735670 /* PageContentView+Rx.swift in Sources */,
 				534C132A23FF6F8B00FEE103 /* SWBaseViewModel.swift in Sources */,
 				53AC692323FB742C0088CBC0 /* SWAppDelegate.swift in Sources */,
+				5315C70724162E76008DE93D /* SWFirstLoginFlowLayout.swift in Sources */,
 				53AC698123FB83650088CBC0 /* SWUIView+Rx.swift in Sources */,
 				53AC699723FB873F0088CBC0 /* SWNetworkConfig.swift in Sources */,
 				812046AF240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,
@@ -1546,10 +1621,12 @@
 				81741599240519890033FE43 /* Protocal.swift in Sources */,
 				8174159A240519890033FE43 /* PageContentView.swift in Sources */,
 				8133044C2411EA9000C0B263 /* SWUIButtonExtension.swift in Sources */,
+				5315C70524162E76008DE93D /* SWFirstLoginFlowLayout.swift in Sources */,
 				8174159B240519890033FE43 /* SWCartViewController.swift in Sources */,
 				8174159C240519890033FE43 /* PageStyle.swift in Sources */,
 				53F4FBE624063AA90016A38B /* SWUIColorExtension.swift in Sources */,
 				53AE73AE240759AD00056460 /* SWUITextFiled+Rx.swift in Sources */,
+				5315C6D32416245F008DE93D /* SWMoneyExtension.swift in Sources */,
 				8174159D240519890033FE43 /* ApiManager.swift in Sources */,
 				8174159E240519890033FE43 /* SWCheckNewProductsModel.swift in Sources */,
 				8174159F240519890033FE43 /* Helper.swift in Sources */,
@@ -1565,7 +1642,6 @@
 				812046AD240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,
 				810FE05D2405FC1900CE1F54 /* SWRCValueManager.swift in Sources */,
 				53002C9F2415D1F4000F21F9 /* SWFirstLoginCollectionViewCell.swift in Sources */,
-				53139F1624161CF9007FC9B2 /* SWAppColor.swift in Sources */,
 				53CC1007240F396300AA353A /* SWSearchFoundView.swift in Sources */,
 				817415A6240519890033FE43 /* SWUIControlExtension.swift in Sources */,
 				817415A7240519890033FE43 /* SWHomeSearchField.swift in Sources */,
@@ -1588,10 +1664,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5315C6DD241624A5008DE93D /* SWSearchHistoryModel.swift in Sources */,
+				5315C6DE241624A5008DE93D /* SWSearchHistoryTableViewCell.swift in Sources */,
+				5315C6DF241624A5008DE93D /* SWSearchHistoryView.swift in Sources */,
+				5315C6E0241624A5008DE93D /* SWSearchFoundView.swift in Sources */,
+				5315C6E1241624A5008DE93D /* SWSearchHistoryCollectionViewCell.swift in Sources */,
+				5315C6E2241624A5008DE93D /* SWSearchView.swift in Sources */,
+				5315C6E3241624A5008DE93D /* SWSearchHeaderView.swift in Sources */,
+				5315C6E4241624A5008DE93D /* SWSearchResultTableViewCell.swift in Sources */,
+				5315C6E5241624A5008DE93D /* SWSearchDataViewModel.swift in Sources */,
+				5315C6E6241624A5008DE93D /* SWSearchHistoryViewModel.swift in Sources */,
+				5315C6E7241624A5008DE93D /* SWSearchFoundViewModel.swift in Sources */,
+				5315C6E8241624A6008DE93D /* SWSearchHistoryManager.swift in Sources */,
+				5315C6E9241624A6008DE93D /* SWTabbarBadgeValueManager.swift in Sources */,
+				5315C6EB241624A6008DE93D /* SWBaseTableViewCell.swift in Sources */,
+				5315C6EC241624A6008DE93D /* BaseView.swift in Sources */,
+				5315C6D62416248C008DE93D /* SWUITextFiled+Rx.swift in Sources */,
+				5315C6D72416248C008DE93D /* SWUILabel+Rx.swift in Sources */,
+				5315C6D82416248C008DE93D /* SWCollectionViewCell+Rx.swift in Sources */,
+				5315C6D92416248C008DE93D /* SWFirstLoginViewController.swift in Sources */,
+				5315C6DA2416248C008DE93D /* SWFirstLoginView.swift in Sources */,
+				5315C6DB2416248C008DE93D /* SWFirstLoginCollectionViewCell.swift in Sources */,
+				5315C6DC2416248C008DE93D /* SWFirstLoginViewModel.swift in Sources */,
 				53F4FBF6240640440016A38B /* SWBaseTabbarController.swift in Sources */,
 				53F4FBF52406403F0016A38B /* SWBaseCollectionViewCell.swift in Sources */,
 				53F4FBF4240640320016A38B /* SWNetworkRequest.swift in Sources */,
 				53F4FBF32406402E0016A38B /* CUSemiModalView.swift in Sources */,
+				5315C6D42416245F008DE93D /* SWMoneyExtension.swift in Sources */,
 				53F4FBF22406402A0016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				81FD779F2410ECEB00739E84 /* CULoopCollectionViewCell.swift in Sources */,
 				53F4FBF1240640250016A38B /* SWUIColorExtension.swift in Sources */,
@@ -1632,6 +1731,7 @@
 				817415DA240519A90033FE43 /* PageContentView+Rx.swift in Sources */,
 				817415DB240519A90033FE43 /* SWBaseViewModel.swift in Sources */,
 				817415DC240519A90033FE43 /* SWAppDelegate.swift in Sources */,
+				5315C70624162E76008DE93D /* SWFirstLoginFlowLayout.swift in Sources */,
 				817415DD240519A90033FE43 /* SWUIView+Rx.swift in Sources */,
 				817415DE240519A90033FE43 /* SWNetworkConfig.swift in Sources */,
 				812046AE240DE4A4007B57ED /* SWShoppingABTestViewModelA.swift in Sources */,

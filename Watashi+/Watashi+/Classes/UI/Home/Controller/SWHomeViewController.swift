@@ -42,8 +42,8 @@ class SWHomeViewController: SWBaseViewController {
         style.titleViewBackgroundColor = UIColor.white
         style.titleFont = UIFont.systemFont(ofSize: 15)
         style.titleColor = .gray
-        style.titleSelectedColor = SWBaseColor
-        style.bottomLineColor = SWBaseColor
+        style.titleSelectedColor = .mainColor
+        style.bottomLineColor = .mainColor
         style.isShowBottomLine = true
 
         let titles = [PageTitles.checkNewProducts,PageTitles.trend,PageTitles.seasonRecommend]

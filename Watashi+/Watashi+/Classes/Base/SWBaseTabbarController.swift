@@ -14,7 +14,7 @@ class SWBaseTabbarController: UITabBarController {
 
     lazy var lineView: UIView = {
         let lineView = UIView()
-        lineView.backgroundColor = SWBaseColor
+        lineView.backgroundColor = .mainColor
         return lineView
     }()
 
@@ -38,7 +38,7 @@ class SWBaseTabbarController: UITabBarController {
         for (index, item) in tabBar.items!.enumerated() {
             if index == 2 || index == 3 {
                 item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
-                item.badgeColor = SWBaseColor
+                item.badgeColor = .mainColor
             }
         }
         tabBar.addSubview(lineView)
