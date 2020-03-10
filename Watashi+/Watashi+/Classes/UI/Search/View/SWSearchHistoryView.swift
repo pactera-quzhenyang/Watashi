@@ -233,8 +233,9 @@ class SWSearchHistoryView: UIView {
     }
 
     func bindDeleteButton(deleteButton: UIButton) {
-        deleteButton.rx.tap.subscribe(onNext: { () in
-            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeObjectAtIndex: self.selectIndex])
+        deleteButton.rx.tap.subscribe(onNext: {[weak self] () in
+            guard let weakSelf = self else { return }
+            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeObjectAtIndex: weakSelf.selectIndex])
         }).disposed(by: disposeBag)
     }
 
