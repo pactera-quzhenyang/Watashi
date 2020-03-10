@@ -8,25 +8,40 @@
 
 import UIKit
 
+
 class SWABTestingManager {
     static let shared = SWABTestingManager()
     lazy var shoppingCarts: [String: Any] = [:]
     private init() {
         
     }
+    
+    class func string(forKey key: SWRemoteConfigKey) -> String {
+        return SWRCValueManager.shared.string(forKey: key)
+    }
 }
 
 extension SWABTestingManager {
-    
-    /// 添加购物车类型
-    /// - Parameter shoppingCarts: 购物车类型
-    class func add(_ shoppingCarts: [String: Any]) {
-        SWABTestingManager.shared.shoppingCarts = shoppingCarts
+    class func fetchShoppingCartTest<T: SWShoppingABTestProtocol>(_ type: T.Type) -> T {
+        return T()
     }
     
-    /// 获取购物车类型
-    class func shoppingCartsType() -> Any {
-        let key = SWRCValueManager.shared.string(forKey: .shoppingCart)
-        return SWABTestingManager.shared.shoppingCarts[key] as Any
+    class func shoppingCartsTypes() -> Any {
+        let key = string(forKey: .shoppingCart)
+        switch key {
+        case SWRemoteConfigValue.shoppingCartA.rawValue:
+            return SWShoppingABTestViewModelA()
+        case SWRemoteConfigValue.shoppingCartB.rawValue:
+            return SWShoppingABTestViewModelB()
+        default:
+            return Any.self
+        }
     }
+    
+    
+    class func shoppingCartsHeight() -> CGFloat {
+        let key = string(forKey: .shoppingCart)
+        return key == SWRemoteConfigValue.shoppingCartA.rawValue ? 170 : 200
+    }
+    
 }
