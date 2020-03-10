@@ -33,24 +33,39 @@ class SWFirstLoginFlowLayout: UICollectionViewFlowLayout {
                     let lineMinX = currentLayoutAttributes.frame.minX
                     if lineMinX == 0 {
                         let prevLineAttributes = array[lineFirstIndexList[lines]!]
-                        let prevLineNextAttributes = array[lineFirstIndexList[lines]! + 1] //找到上一行的第二个，防止向上顶的时候把第二个盖上
                         let currentLineAttributes = array[index]
 
                         var frame = currentLineAttributes.frame;
-                        frame.origin.y =  prevLineAttributes.frame.maxY > prevLineNextAttributes.frame.maxY ? prevLineAttributes.frame.maxY : prevLineNextAttributes.frame.maxY
+                        frame.origin.y = prevLineAttributes.frame.maxY - 5
                         currentLineAttributes.frame = frame;
+
+                        let prevLineNextAttributes = array[lineFirstIndexList[lines]! + 1] //找到上一行的第二个，防止向上顶的时候把第二个盖上
+                        
+                        if prevLineNextAttributes.frame.maxY > currentLineAttributes.frame.maxY {
+                            var frame = currentLineAttributes.frame;
+                            frame.origin.y = prevLineNextAttributes.frame.maxY
+                            currentLineAttributes.frame = frame;
+                        }
 
                         lines += 1
                         lineFirstIndexList[lines] = index
                     }
-                    print(lineFirstIndexList)
 
-                    if lines == 2 && lineMinX > 0 {
+                    //修改每一行的第二个item以及d之后的item的位置
+                    if lines > 1 && lineMinX > 0 {
                         let prevLineAttributes = array[index - lineFirstIndexList[lines]!]
+
+                        //防止顶上去的时候把前后高出的部分覆盖
+                        let prevLinePreviousAttributes = array[index - lineFirstIndexList[lines]! - 1] //当前行对应上一行的前一个
+                        let prevLineNextAttributes = array[index - lineFirstIndexList[lines]! + 1] //当前行对应上一行的后一个
+
                         let currentLineAttributes = array[index]
 
+                        var getMaxY = prevLineAttributes.frame.maxY > prevLinePreviousAttributes.frame.maxY ? prevLineAttributes.frame.maxY : prevLinePreviousAttributes.frame.maxY
+                        getMaxY = getMaxY > prevLineNextAttributes.frame.maxY ? getMaxY : prevLineNextAttributes.frame.maxY
+
                         var frame = currentLineAttributes.frame;
-                        frame.origin.y = prevLineAttributes.frame.maxY
+                        frame.origin.y = getMaxY
                         currentLineAttributes.frame = frame;
                     }
                 }
