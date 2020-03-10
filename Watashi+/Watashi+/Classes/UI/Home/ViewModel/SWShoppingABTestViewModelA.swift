@@ -72,7 +72,6 @@ class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGAProtoc
         collectionView.rx.contentOffset.subscribe(onNext: { (offset) in
             guard collectionView.contentSize.width > 0 else { return }
             let x = offset.x - (collectionView.contentSize.width - screenWidth + 30)
-            print(x)
             if x >= 0 && x <= 100 {
                 cell.arrowImageView.snp.updateConstraints { (make) in
                     make.left.equalTo(cell.contentView.snp.right).offset(-x+15)

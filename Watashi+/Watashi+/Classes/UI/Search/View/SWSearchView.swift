@@ -33,7 +33,7 @@ class SWSearchView: UIView, NibLoadable {
         case .navigationView:
             filedHeightConstraint.constant = 34
             searchField.placeholder = ""
-            searchField.backgroundColor = UIColor.init(hex: 0xeeeeee)
+            searchField.backgroundColor = .mainWhite
             searchField.layer.cornerRadius = 17
             searchField.becomeFirstResponder()
         default:

@@ -44,8 +44,8 @@ class SWHomeViewController: SWBaseViewController {
         style.titleViewBackgroundColor = UIColor.white
         style.titleFont = UIFont.systemFont(ofSize: 15)
         style.titleColor = .gray
-        style.titleSelectedColor = baseColor
-        style.bottomLineColor = baseColor
+        style.titleSelectedColor = .mainColor
+        style.bottomLineColor = .mainColor
         style.isShowBottomLine = true
 
         let titles = [PageTitles.checkNewProducts,PageTitles.trend,PageTitles.seasonRecommend]
@@ -139,7 +139,7 @@ class SWHomeViewController: SWBaseViewController {
 
 extension SWHomeViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        self.tabBarController?.selectedIndex = 1
+        navigationController?.pushViewController(SWFirstLoginViewController(), animated: true)
         return false
     }
 

@@ -24,7 +24,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .purple
+        collectionView.backgroundColor = .white
         return collectionView
     }()
 
@@ -38,7 +38,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         let titleLabel = UILabel()
         titleLabel.text = Product.lookDetail
         titleLabel.font = UIFont.systemFont(ofSize: 12)
-        titleLabel.textColor = UIColor.init(hex: 0x666666)
+        titleLabel.textColor = .mainDarkGray
         titleLabel.numberOfLines = 0
         return titleLabel
     }()
