@@ -23,7 +23,7 @@ class SWRCValueManager {
     func loadDefaultValues() {
         
         let appDefaults: [String: Any?] = [
-            SWRemoteConfigKey.shoppingCart.rawValue: "shoppingCartA"
+            SWRemoteConfigKey.shoppingCart.rawValue: SWRemoteConfigValue.shoppingCartA.rawValue
             
         ]
         RemoteConfig.remoteConfig().setDefaults(appDefaults as? [String: NSObject])

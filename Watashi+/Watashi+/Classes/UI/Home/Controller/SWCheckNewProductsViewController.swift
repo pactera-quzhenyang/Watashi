@@ -20,11 +20,8 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
 
     var dataSource:RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>?
     let disposeBag = DisposeBag()
-    let a = SWShoppingABTestViewModelA()
-    let b = SWShoppingABTestViewModelB()
     override func viewDidLoad() {
         super.viewDidLoad()
-        SWABTestingManager.add(["shoppingCartA": a, "shoppingCartB": b])
         // Do any additional setup after loading the view.
         tableView.register(cellType: SWCheckNewProductsCell.self)
         bind()
@@ -33,7 +30,6 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
     func bind() {
         dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>(configureCell: { (dataSouece, tv, indexPath, element) -> SWCheckNewProductsCell in
             let cell = tv.dequeueReusableCell(for: indexPath, cellType: SWCheckNewProductsCell.self)
-            cell.delegate = SWABTestingManager.shoppingCartsType() as? SWShoppingABTestProtocol
             cell.setModel(model: element)
             return cell
         })
@@ -58,10 +54,7 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
             ])
         ])
         items.bind(to: tableView.rx.items(dataSource: dataSource!)).disposed(by: disposeBag)
-        a.dataSource = dataSource
-        b.dataSource = dataSource
-        let delegate = SWABTestingManager.shoppingCartsType() as? UITableViewDelegate
-        tableView.rx.setDelegate(delegate!).disposed(by: disposeBag)
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
     }
     
     /*
@@ -76,19 +69,19 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
 }
 
 extension SWCheckNewProductsViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 170
-//    }
-//
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let headerView = SWCheckNewProductsHeaderView.loadFromNib()
-//        headerView.setTitle(title: (dataSource?[section].model)!)
-//        return headerView
-//    }
-//
-//    //返回分区头部高度
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int)
-//        -> CGFloat {
-//        return 50
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return SWABTestingManager.shoppingCartsHeight()
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = SWCheckNewProductsHeaderView.loadFromNib()
+        headerView.setTitle(title: (dataSource?[section].model)!)
+        return headerView
+    }
+
+    //返回分区头部高度
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int)
+        -> CGFloat {
+        return 50
+    }
 }

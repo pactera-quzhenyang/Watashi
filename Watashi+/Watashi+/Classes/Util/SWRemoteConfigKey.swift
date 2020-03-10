@@ -11,3 +11,8 @@ import Foundation
 enum SWRemoteConfigKey: String {
     case shoppingCart
 }
+
+enum SWRemoteConfigValue: String {
+    case shoppingCartA
+    case shoppingCartB
+}
