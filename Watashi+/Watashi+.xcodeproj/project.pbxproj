@@ -306,6 +306,8 @@
 		81A9D9BE24188BED000BBD77 /* SWSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */; };
 		81A9D9BF24188BEF000BBD77 /* SWSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */; };
 		81A9D9C024188BF0000BBD77 /* SWSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */; };
+		81A9D9C22418CB7A000BBD77 /* SWBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341A5DF24187435006C7C88 /* SWBaseNavigationController.swift */; };
+		81A9D9C32418CB7A000BBD77 /* SWBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341A5DF24187435006C7C88 /* SWBaseNavigationController.swift */; };
 		81EA81F5240FA631004429F4 /* SWStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA81F4240FA631004429F4 /* SWStringExtension.swift */; };
 		81EA81F6240FA631004429F4 /* SWStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA81F4240FA631004429F4 /* SWStringExtension.swift */; };
 		81EA81F7240FA631004429F4 /* SWStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA81F4240FA631004429F4 /* SWStringExtension.swift */; };
@@ -1201,7 +1203,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "曲振阳";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					53AC691E23FB742C0088CBC0 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -1522,6 +1524,7 @@
 				533C5A3A23FBB39700735670 /* SWBaseViewController.swift in Sources */,
 				813304462411E2D400C0B263 /* SWGoodsViewController.swift in Sources */,
 				8133045F24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */,
+				81A9D9C32418CB7A000BBD77 /* SWBaseNavigationController.swift in Sources */,
 				532142272403C5AD00BB5977 /* SWAccountViewController.swift in Sources */,
 				81EA81F7240FA631004429F4 /* SWStringExtension.swift in Sources */,
 				5322D4A523FE1A200069D0C9 /* SWCheckNewProductsCell.swift in Sources */,
@@ -1724,6 +1727,7 @@
 				817415CC240519A90033FE43 /* SWBaseViewController.swift in Sources */,
 				813304452411E2D400C0B263 /* SWGoodsViewController.swift in Sources */,
 				8133045E24121A6800C0B263 /* SWGoodsCollectionViewCell.swift in Sources */,
+				81A9D9C22418CB7A000BBD77 /* SWBaseNavigationController.swift in Sources */,
 				817415CD240519A90033FE43 /* SWAccountViewController.swift in Sources */,
 				81EA81F6240FA631004429F4 /* SWStringExtension.swift in Sources */,
 				817415CE240519A90033FE43 /* SWCheckNewProductsCell.swift in Sources */,
