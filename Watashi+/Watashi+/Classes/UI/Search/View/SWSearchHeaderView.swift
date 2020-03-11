@@ -48,7 +48,7 @@ class SWSearchHeaderView: BaseView {
         .disposed(by: disposeBag)
 
         allDeleteButton.rx.tap.subscribe(onNext: { () in            
-            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeAllObject: SearchListChangeType.removeAllObject])
+            NotificationCenter.default.post(name: Notification.Name(NotificationName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeAllObject: SearchListChangeType.removeAllObject])
             }).disposed(by: disposeBag)
 
         finishButton.rx.tap
@@ -72,7 +72,7 @@ class SWSearchHeaderView: BaseView {
 
         discoverButton.rx.tap.subscribe(onNext: { () in
             SWSearchHistoryManager.shared.isHideSearchHistory = !SWSearchHistoryManager.shared.isHideSearchHistory
-            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.hideSearchDiscover: SWSearchHistoryManager.shared.isHideSearchHistory])
+            NotificationCenter.default.post(name: Notification.Name(NotificationName.searchListChange), object: nil, userInfo: [SearchListChangeType.hideSearchDiscover: SWSearchHistoryManager.shared.isHideSearchHistory])
             }).disposed(by: disposeBag)
     }
 }

@@ -41,7 +41,7 @@ class SWBaseTabbarController: UITabBarController {
 
     func setBadgeValue() {
         _ = NotificationCenter.default.rx
-            .notification(NSNotification.Name(NotifyName.badgeValueChange))
+            .notification(NSNotification.Name(NotificationName.badgeValueChange))
         .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
             .subscribe({ notify in
                 let item = notify.element?.object as? TabbarItem

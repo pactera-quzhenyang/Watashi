@@ -13,7 +13,9 @@ import RxDataSources
 import Reusable
 import SnapKit
 
-class SWSearchViewController: SWBaseViewController {
+class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
+
+    static let sceneStoryboard = UIStoryboard(name: "Search", bundle: nil)
 
     @IBOutlet weak var searchTableView: UITableView!
 
@@ -42,7 +44,7 @@ class SWSearchViewController: SWBaseViewController {
 
     func listenDataSourceChange() {
         _ = NotificationCenter.default.rx
-            .notification(NSNotification.Name(NotifyName.searchListChange))
+            .notification(NSNotification.Name(NotificationName.searchListChange))
             .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
             .subscribe({ notify in
                 if let userInfo = notify.element?.userInfo as? [String: Any] {

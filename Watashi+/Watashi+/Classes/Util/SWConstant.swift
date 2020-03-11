@@ -8,6 +8,7 @@
 
 import UIKit
 
+//页面文言提取
 struct NavigationTitle {
     static let firstLogin = "情報登録"
 }
@@ -24,18 +25,36 @@ struct SearchPage {
     static let hideSearchFound = "已隐藏搜索发现"
 }
 
-struct NotifyName {
-    static let searchListChange = "searchListChange"
-    static let badgeValueChange = "badgeValueChange"
-}
+/********************************************************************/
+/********************************************************************/
 
+
+/*
+//////通知名
+*/
+struct NotificationName {
+    //搜索
+    static let searchListChange = "SWSearchListChangeNotificationKey"
+    //tabbar角标
+    static let badgeValueChange = "SWBadgeValueChangeNotificationKey"
+}
+/*
+//////搜索页面
+*/
 struct SearchListChangeType {
+    //搜索历史删除某一项
     static let removeObjectAtIndex = "removeObjectAtIndex"
+    //搜索历史清空
     static let removeAllObject = "removeAllObject"
+    //搜索历史点击上下箭头
     static let reloadCellHeight = "reloadCellHeight"
+    //搜索发现隐藏按钮
     static let hideSearchDiscover = "hideSearchDiscover"
 }
-
+/*
+//////产品
+*/
 struct Product {
-    static let lookDetail = "リ\nス\nト\nを\n表\n示\nす\nる\nに\nは\nス\nラ\nイ\nド\nを\n続\nけ\nま\nす"
+    //右滑查看更多
+    static let lookDetail = "も\nっ\nと"
 }
