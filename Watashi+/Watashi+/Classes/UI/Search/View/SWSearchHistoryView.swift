@@ -233,7 +233,7 @@ class SWSearchHistoryView: UIView {
     func bindDeleteButton(deleteButton: UIButton) {
         deleteButton.rx.tap.subscribe(onNext: {[weak self] () in
             guard let weakSelf = self else { return }
-            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeObjectAtIndex: weakSelf.selectIndex])
+            NotificationCenter.default.post(name: Notification.Name(NotificationName.searchListChange), object: nil, userInfo: [SearchListChangeType.removeObjectAtIndex: weakSelf.selectIndex])
         }).disposed(by: disposeBag)
     }
 
@@ -241,7 +241,7 @@ class SWSearchHistoryView: UIView {
         Observable.just(SWSearchHistoryManager.shared.isShowAll ? UIImage(named: "up") : UIImage(named: "down")).bind(to: arrowButton.rx.image()).disposed(by: disposeBag)
         arrowButton.rx.tap.subscribe(onNext: { () in
             SWSearchHistoryManager.shared.isShowAll = !SWSearchHistoryManager.shared.isShowAll
-            NotificationCenter.default.post(name: Notification.Name(NotifyName.searchListChange), object: nil, userInfo: [SearchListChangeType.reloadCellHeight: SWSearchHistoryManager.shared.isShowAll])
+            NotificationCenter.default.post(name: Notification.Name(NotificationName.searchListChange), object: nil, userInfo: [SearchListChangeType.reloadCellHeight: SWSearchHistoryManager.shared.isShowAll])
         }).disposed(by: disposeBag)
     }
 

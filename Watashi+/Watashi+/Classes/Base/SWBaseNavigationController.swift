@@ -25,30 +25,14 @@ class SWBaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setBackButton()
     }
 
     func hideNaviLine() {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
     }
-
-    func setBackButton() {
-        let backButton = UIButton.init()
-        backButton.setImage(UIImage(named: "back"), for: UIControl.State.normal)
-        let backItem = UIBarButtonItem.init(customView: backButton)
-        self.navigationItem.leftBarButtonItems = [backItem]
-    }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
