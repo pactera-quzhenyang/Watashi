@@ -151,7 +151,7 @@ extension SWCheckNewProductsCell: SWSWBaseCollectionViewCellDelegate {
       
         logEvent(list: ["cartClick"])
         SWTabbarBadgeValueManager.shared.addBadgeValue()
-        NotificationCenter.default.post(name: Notification.Name(NotifyName.badgeValueChange), object: nil)
+        NotificationCenter.default.post(name: Notification.Name(NotifyName.badgeValueChange), object: TabbarItem.shoppingCartItem)
     }
     
     func shoppingCartB() {
