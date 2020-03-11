@@ -12,10 +12,6 @@ import RxCocoa
 
 class SWHomeViewController: SWBaseViewController {
 
-    let disposeBag = DisposeBag()
-    
-
-
     @IBOutlet weak var searchField: SWHomeSearchField!
 
     @IBOutlet weak var titleView: PageTitleView!
@@ -90,7 +86,6 @@ class SWHomeViewController: SWBaseViewController {
 
         titleView.pageContentView = contentView
         titleView.setupUI()
-
     }
 
     func firstLoginView() {
@@ -134,13 +129,11 @@ class SWHomeViewController: SWBaseViewController {
         group.fillMode = .forwards
         shape.add(group, forKey: nil)
     }
-
-
 }
 
 extension SWHomeViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        self.present(SWSearchViewController.instantiate(), animated: false, completion: nil)
+        baseNavigationController?.pushViewController(SWSearchViewController.instantiate(), animated: false)
         return false
     }
 

@@ -19,7 +19,6 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
 
     @IBOutlet weak var searchTableView: UITableView!
 
-    let disposeBag = DisposeBag()
     var searchHistortViewModel = SWSearchHistoryViewModel()
     var searchHistoryView = SWSearchHistoryView()
     var searchFoundViewModel = SWSearchFoundViewModel()
@@ -38,8 +37,8 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
     }
 
     func setNaviBarStyle() {
-        baseNavigationController?.barStyle = .search
         baseNavigationController?.searchFiled.setSearchFieldStyle(style: .navigationView)
+        baseNavigationController?.hideNaviLine()
     }
 
     func listenDataSourceChange() {

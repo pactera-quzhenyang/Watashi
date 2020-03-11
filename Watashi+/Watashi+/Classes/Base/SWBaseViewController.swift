@@ -9,6 +9,9 @@
 import UIKit
 import Reusable
 import Firebase
+import RxSwift
+import RxCocoa
+
 class SWBaseViewController: UIViewController, SWGAProtocol {
     
     var titleText: String = ""
@@ -19,6 +22,8 @@ class SWBaseViewController: UIViewController, SWGAProtocol {
 
     let backButtonWidth = 44
 
+    let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,24 +32,7 @@ class SWBaseViewController: UIViewController, SWGAProtocol {
         Analytics.logEvent("mainPageLoaded", parameters: nil)
         
         print("\(self.classForCoder) viewDidLoad")
-
-        initNavigationStyle()
     }
-
-    //MARK Common Navigationbar Style
-    func initNavigationStyle() {
-        if ((self.navigationController?.viewControllers.count) ?? 0 > 1) {
-            let backButton = UIButton.init()
-            backButton.frame = CGRect(x: 0, y: 0, width: backButtonWidth, height: backButtonWidth)
-            backButton.setImage(UIImage(named: "back"), for: UIControl.State.normal)
-            let backItem = UIBarButtonItem.init(customView: backButton)
-            self.navigationItem.leftBarButtonItems = [backItem]
-        }
-    }
-    
-
-
-
 }
 
 extension SWBaseViewController {

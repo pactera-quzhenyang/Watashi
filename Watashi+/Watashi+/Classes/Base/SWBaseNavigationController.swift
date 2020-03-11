@@ -31,8 +31,4 @@ class SWBaseNavigationController: UINavigationController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
     }
-    
-
-
-
 }

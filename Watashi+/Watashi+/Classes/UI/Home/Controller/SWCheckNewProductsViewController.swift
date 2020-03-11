@@ -19,7 +19,6 @@ class SWCheckNewProductsViewController: SWBaseViewController, StoryboardSceneBas
     @IBOutlet weak var tableView: UITableView!
 
     var dataSource:RxTableViewSectionedReloadDataSource<SectionModel<String,SWCheckNewProductsModel>>?
-    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -102,6 +102,7 @@
 		539D7D6A240CFD03002130EF /* SWSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */; };
 		539D7D6C240CFD16002130EF /* SWSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */; };
 		539D7D6E240CFF2E002130EF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539D7D6D240CFF2E002130EF /* BaseView.swift */; };
+		53AB9D982418D52500806CD8 /* SWTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AB9D972418D52500806CD8 /* SWTools.swift */; };
 		53AC692323FB742C0088CBC0 /* SWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */; };
 		53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692B23FB742D0088CBC0 /* Assets.xcassets */; };
 		53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC692D23FB742D0088CBC0 /* LaunchScreen.storyboard */; };
@@ -423,6 +424,7 @@
 		539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SWSearchHeaderView.xib; sourceTree = "<group>"; };
 		539D7D6B240CFD16002130EF /* SWSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchHeaderView.swift; sourceTree = "<group>"; };
 		539D7D6D240CFF2E002130EF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		53AB9D972418D52500806CD8 /* SWTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWTools.swift; sourceTree = "<group>"; };
 		53AC691F23FB742C0088CBC0 /* Watashi+-pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watashi+-pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AC692223FB742C0088CBC0 /* SWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAppDelegate.swift; sourceTree = "<group>"; };
 		53AC692B23FB742D0088CBC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1015,6 +1017,7 @@
 				53AC698923FB851D0088CBC0 /* SWAppConfig.swift */,
 				810AF8B2240C917B0086176B /* SWRemoteConfigKey.swift */,
 				8133043F2411DBFB00C0B263 /* SWGAProtocol.swift */,
+				53AB9D972418D52500806CD8 /* SWTools.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1596,6 +1599,7 @@
 				53F4FBE824063E5E0016A38B /* SWNetworkRequest.swift in Sources */,
 				53F4FBE724063E550016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
+				53AB9D982418D52500806CD8 /* SWTools.swift in Sources */,
 				81FD77812410898F00739E84 /* SWProductDetailsViewController.swift in Sources */,
 				533D10F724074E64000F116D /* SWSearchHistoryModel.swift in Sources */,
 				810AF8C7240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,

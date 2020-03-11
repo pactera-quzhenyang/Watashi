@@ -21,7 +21,6 @@ class SWFirstLoginViewController: SWBaseViewController, StoryboardSceneBased {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
 
-    let disposeBag = DisposeBag()
     let viewModel = SWFirstLoginViewModel()
 
     var tableList = BehaviorSubject(value: [SectionModel<String, SWFirstLoginViewModel>]())

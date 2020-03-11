@@ -325,8 +325,8 @@
     </scenes>
     <resources>
         <image name="delete" width="16" height="16"/>
-        <image name="face" width="24" height="24"/>
-        <image name="medal" width="32" height="32"/>
-        <image name="play" width="24" height="24"/>
+        <image name="face" width="10" height="10"/>
+        <image name="medal" width="11.5" height="6.5"/>
+        <image name="play" width="10" height="10"/>
     </resources>
 </document>

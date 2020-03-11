@@ -39,7 +39,6 @@ class SWGoodsViewController: SWBaseViewController {
         let filterHeaderView = Bundle.main.loadNibNamed("SWGoodsFilterHeaderView", owner: self, options: nil)?.last as! SWGoodsFilterHeaderView
         return filterHeaderView
     }()
-    let disposeBag = DisposeBag()
     var style: SWGoodsCellStyle  = .list
     
     override func viewDidLoad() {
