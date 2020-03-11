@@ -26,6 +26,10 @@ class SWSearchView: UIView, NibLoadable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+
+        cancelButton.rx.tap.subscribe(onNext: { () in
+            SWAppDelegate.nagvigationController()?.popViewController(animated: true)
+            }).disposed(by: disposBag)
     }
 
     func setSearchFieldStyle(style: searchFieldStyle = .home) {

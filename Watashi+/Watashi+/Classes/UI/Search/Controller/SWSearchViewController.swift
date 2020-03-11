@@ -37,8 +37,7 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
     }
 
     func setNaviBarStyle() {
-        baseNavigationController?.searchFiled.setSearchFieldStyle(style: .navigationView)
-        baseNavigationController?.hideNaviLine()
+        baseNavigationController?.barStyle = .searchView
     }
 
     func listenDataSourceChange() {
