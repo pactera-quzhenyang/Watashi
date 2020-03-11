@@ -27,8 +27,6 @@ class SWHomeViewController: SWBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let h = objc_getClass("Watashi__dev.SWHomeViewController")
-        type(of: h)
         setPageViewCon()
     }
 

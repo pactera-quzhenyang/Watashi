@@ -15,23 +15,28 @@ final class SWShoppingABTestViewModelB: NSObject, SWShoppingABTestProtocol, SWGA
    
     // MARK: SWShoppingABTestProtocol
     func bindCheckNewProducts(_ collectionView: UICollectionView, imageArray: [String], cell: SWCheckNewProductsCell) {
-        collectionView.register(UINib(nibName: "SWCheckNewProductsCollectionViewCellB", bundle: nil), forCellWithReuseIdentifier: "cell")
+//        collectionView.register(UINib(nibName: "SWCheckNewProductsCollectionViewCellB", bundle: nil), forCellWithReuseIdentifier: "cell")
+        collectionView.backgroundColor = .red
+        collectionView.register(SWCheckNewProductsCollectionViewCellB.self, forCellWithReuseIdentifier: "cell")
         let items = Observable.just([
         SectionModel(model: "", items: imageArray)
         ])
-        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (dataSource, collectionView, indexPath, element) -> SWCheckNewProductsCollectionViewCellB in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SWCheckNewProductsCollectionViewCellB
+        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (dataSource, collectionView, indexPath, element) -> SWBaseCollectionViewCell in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SWBaseCollectionViewCell
 //            Observable.just(UIImage(named: element)).bind(to: cell.imageView.rx.image).disposed(by: self.disposeBag)
-            cell.imageView.image = UIImage(named: element)
-            cell.priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
-            cell.buyButton.rx.tap.asDriver().drive(onNext: {
-                self.logEvent(list: ["buyClick"])
-                let goods = SWGoodsViewController()
-                SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
-//                self.navigationController?.pushViewController(goods, animated: true)
-            }).disposed(by: cell.disposeBag)
-            cell.buyButton.rx.tap.map{ cell.buyButton.isSelected ? "立即购买" : "已购买" }.bind(to: cell.buyButton.rx.title()).disposed(by: cell.disposeBag)
-            cell.buyButton.rx.tap.map{ !cell.buyButton.isSelected }.bind(to: cell.buyButton.rx.isSelected).disposed(by: cell.disposeBag)
+//            cell.imageView.image = UIImage(named: element)
+//            cell.priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
+//            cell.buyButton.rx.tap.asDriver().drive(onNext: {
+//                self.logEvent(list: ["buyClick"])
+//                let goods = SWGoodsViewController()
+//                SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
+////                self.navigationController?.pushViewController(goods, animated: true)
+//            }).disposed(by: cell.disposeBag)
+//            cell.buyButton.rx.tap.map{ cell.buyButton.isSelected ? "立即购买" : "已购买" }.bind(to: cell.buyButton.rx.title()).disposed(by: cell.disposeBag)
+//            cell.buyButton.rx.tap.map{ !cell.buyButton.isSelected }.bind(to: cell.buyButton.rx.isSelected).disposed(by: cell.disposeBag)
+            
+            cell.id = element
+            
             return cell
             }
         )
@@ -44,5 +49,9 @@ final class SWShoppingABTestViewModelB: NSObject, SWShoppingABTestProtocol, SWGA
 extension SWShoppingABTestViewModelB: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 140, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }
