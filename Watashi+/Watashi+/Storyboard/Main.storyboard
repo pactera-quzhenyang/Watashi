@@ -34,7 +34,7 @@
         <!--Home-->
         <scene sceneID="Yuk-Wb-xJP">
             <objects>
-                <navigationController id="ceL-Nn-i88" userLabel="Home" sceneMemberID="viewController">
+                <navigationController id="ceL-Nn-i88" userLabel="Home" customClass="SWBaseNavigationController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="ホーム" image="homeNormal" selectedImage="homeSelect" id="Dau-M8-fep">
                         <color key="badgeColor" red="0.16106376051902771" green="0.1561816930770874" blue="0.18167141079902649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
@@ -63,7 +63,7 @@
         <!--Search-->
         <scene sceneID="sNn-IL-pAG">
             <objects>
-                <navigationController id="6K9-lz-I43" userLabel="Search" sceneMemberID="viewController">
+                <navigationController id="6K9-lz-I43" userLabel="Search" customClass="SWBaseNavigationController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="さがす" image="searchNormal" selectedImage="search" id="uQM-KF-XA3">
                         <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
@@ -93,7 +93,7 @@
         <!--Cart-->
         <scene sceneID="Nur-6l-fOE">
             <objects>
-                <navigationController id="itI-DY-Wno" userLabel="Cart" sceneMemberID="viewController">
+                <navigationController id="itI-DY-Wno" userLabel="Cart" customClass="SWBaseNavigationController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="カート" image="cartNormal" selectedImage="cartSelect" id="dS9-gc-jSn">
                         <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
@@ -124,7 +124,7 @@
         <!--Repurchase-->
         <scene sceneID="9le-HY-GWj">
             <objects>
-                <navigationController id="bg3-MA-zcB" userLabel="Repurchase" sceneMemberID="viewController">
+                <navigationController id="bg3-MA-zcB" userLabel="Repurchase" customClass="SWBaseNavigationController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="再購入" image="rePurchase" selectedImage="rePurchaseSelect" id="FYf-eL-36B">
                         <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
@@ -155,7 +155,7 @@
         <!--Account-->
         <scene sceneID="UpY-ig-VVh">
             <objects>
-                <navigationController id="SZJ-jM-G8V" userLabel="Account" sceneMemberID="viewController">
+                <navigationController id="SZJ-jM-G8V" userLabel="Account" customClass="SWBaseNavigationController" customModule="Watashi__dev" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="アカウント" image="accountNormal" selectedImage="accountSelect" id="DyO-0t-N15">
                         <color key="badgeColor" red="0.16106376050000001" green="0.15618169309999999" blue="0.18167141079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>

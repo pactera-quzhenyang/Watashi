@@ -18,8 +18,8 @@ class SWTabbarBadgeValueManager: NSObject {
 
     fileprivate let maxBadgeValue = 99
 
-    func addBadgeValue() {
-        let newBadgeValue = (Int(badgeValue)!) + 1
+    func addBadgeValue(count: Int = 1) {
+        let newBadgeValue = (Int(badgeValue)!) + count
         guard newBadgeValue <= maxBadgeValue else {
             badgeValue = "\(maxBadgeValue)+"
             return
@@ -27,9 +27,9 @@ class SWTabbarBadgeValueManager: NSObject {
         badgeValue = "\(newBadgeValue)"
     }
 
-    func reduceBadgeValue() {
-        let newBadgeValue = (Int(badgeValue)!) - 1
-        badgeValue = newBadgeValue >= 0 ? "\(newBadgeValue)" : "\(minBadgeValue)"
+    func reduceBadgeValue(count: Int = 1) {
+        let newBadgeValue = (Int(badgeValue)!) - count
+        badgeValue = newBadgeValue >= minBadgeValue ? "\(newBadgeValue)" : "\(minBadgeValue)"
     }
 
     func clearBadgeValue() {
