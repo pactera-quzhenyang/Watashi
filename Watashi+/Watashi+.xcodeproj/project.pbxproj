@@ -1204,9 +1204,10 @@
 		53AC691723FB742C0088CBC0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SW;
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = "Watashi+";
 				TargetAttributes = {
 					53AC691E23FB742C0088CBC0 = {
 						CreatedOnToolsVersion = 11.2.1;
