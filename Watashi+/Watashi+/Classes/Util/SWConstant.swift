@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct NavigationTitle {
+    static let firstLogin = "情報登録"
+}
+
 struct PageTitles {
     static let checkNewProducts = "新商品をチェック"
     static let trend = "トレンド"
@@ -34,13 +38,4 @@ struct SearchListChangeType {
 
 struct Product {
     static let lookDetail = "リ\nス\nト\nを\n表\n示\nす\nる\nに\nは\nス\nラ\nイ\nド\nを\n続\nけ\nま\nす"
-}
-
-struct BadgeType {
-    static let shoppingCart = 2
-    static let repurchase = 3
-}
-
-struct NavigationTitle {
-    static let firstLogin = "情報登録"
 }

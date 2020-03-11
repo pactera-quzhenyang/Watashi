@@ -33,7 +33,7 @@ final class SWShoppingABTestViewModelA: NSObject, SWShoppingABTestProtocol, SWGA
                 let goods = SWGoodsViewController()
                 SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
 
-                NotificationCenter.default.post(name: Notification.Name(NotifyName.badgeValueChange), object: nil)
+                NotificationCenter.default.post(name: Notification.Name(NotifyName.badgeValueChange), object: TabbarItem.shoppingCartItem)
 
             }).disposed(by: cell.disposeBag)
             return cell

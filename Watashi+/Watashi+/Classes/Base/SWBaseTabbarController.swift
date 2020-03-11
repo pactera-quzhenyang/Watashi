@@ -10,6 +10,14 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
+enum TabbarItem: Int {
+    case homeItem = 0 //ホーム
+    case searchItem = 1 //さがす
+    case shoppingCartItem = 2 //カート
+    case repurchaseItem = 3 //再購入
+    case accountItem = 4 //アカウント
+}
+
 class SWBaseTabbarController: UITabBarController {
 
     lazy var lineView: UIView = {
@@ -30,15 +38,14 @@ class SWBaseTabbarController: UITabBarController {
             .notification(NSNotification.Name(NotifyName.badgeValueChange))
         .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
             .subscribe({ notify in
-                for (index, item) in self.tabBar.items!.enumerated() {
-                    if index == BadgeType.shoppingCart {
-                        item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
-                    }
+                let item = notify.element?.object as? TabbarItem
+                if item! == .shoppingCartItem {
+                    self.tabBar.items![item!.rawValue].badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
                 }
             })
 
-        for (index, item) in tabBar.items!.enumerated() {
-            if index == BadgeType.shoppingCart || index == BadgeType.repurchase {
+        for (_, item) in tabBar.items!.enumerated() {
+            if item == tabBar.items![TabbarItem.shoppingCartItem.rawValue] || item == tabBar.items![TabbarItem.repurchaseItem.rawValue] {
                 item.badgeValue = SWTabbarBadgeValueManager.shared.badgeValue
                 item.badgeColor = .mainColor
             }

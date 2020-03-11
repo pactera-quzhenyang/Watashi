@@ -17,12 +17,6 @@ class SWSearchViewController: SWBaseViewController {
 
     @IBOutlet weak var searchTableView: UITableView!
 
-    lazy var searchFiled: SWSearchView = {
-        let searchFiled = SWSearchView.loadFromNib()
-        searchFiled.setSearchFieldStyle(style: .navigationView)
-        return searchFiled
-    }()
-
     let disposeBag = DisposeBag()
     var searchHistortViewModel = SWSearchHistoryViewModel()
     var searchHistoryView = SWSearchHistoryView()
@@ -42,9 +36,8 @@ class SWSearchViewController: SWBaseViewController {
     }
 
     func setNaviBarStyle() {
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.addSubview(searchFiled)
+        baseNavigationController?.barStyle = .search
+        baseNavigationController?.searchFiled.setSearchFieldStyle(style: .navigationView)
     }
 
     func listenDataSourceChange() {
@@ -135,31 +128,31 @@ class SWSearchViewController: SWBaseViewController {
             self?.searchTableView.reloadData()
             }).disposed(by: disposeBag)
 
-        searchFiled.searchField.rx.text.orEmpty
-            .throttle(0.2, scheduler: MainScheduler.instance)
-            .map({_ in [String]()})
-            .bind(to: searchDataViewModel.rx.dataList)
-            .disposed(by: disposeBag)
-        searchFiled.searchField.rx.text.changed.subscribe(onNext: {[weak self] (text) in
-            guard let weakSelf = self else { return }
-            if text?.count == 0 {
-                let newData = [
-                    SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: weakSelf.searchHistortViewModel.list)]),
-                    SectionModel(model: SearchPage.searchFound, items: [SWSearchHistoryModel(tagList: weakSelf.searchFoundViewModel.list)])
-                    ]
-                weakSelf.tableList.onNext(newData)
-                return
-            }
-            weakSelf.searchDataViewModel.getData()
-            let newData = [
-                SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList)]),
-                ]
-            weakSelf.tableList.onNext(newData)
-            }).disposed(by: disposeBag)
-        searchFiled.cancelButton.rx.tap.subscribe(onNext: {[weak self] (text) in
-            guard let weakSelf = self else { return }
-            weakSelf.tabBarController?.selectedIndex = 0
-            }).disposed(by: disposeBag)
+//        searchFiled.searchField.rx.text.orEmpty
+//            .throttle(0.2, scheduler: MainScheduler.instance)
+//            .map({_ in [String]()})
+//            .bind(to: searchDataViewModel.rx.dataList)
+//            .disposed(by: disposeBag)
+//        searchFiled.searchField.rx.text.changed.subscribe(onNext: {[weak self] (text) in
+//            guard let weakSelf = self else { return }
+//            if text?.count == 0 {
+//                let newData = [
+//                    SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: weakSelf.searchHistortViewModel.list)]),
+//                    SectionModel(model: SearchPage.searchFound, items: [SWSearchHistoryModel(tagList: weakSelf.searchFoundViewModel.list)])
+//                    ]
+//                weakSelf.tableList.onNext(newData)
+//                return
+//            }
+//            weakSelf.searchDataViewModel.getData()
+//            let newData = [
+//                SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList),SWSearchHistoryModel(tagList: weakSelf.searchDataViewModel.dataList)]),
+//                ]
+//            weakSelf.tableList.onNext(newData)
+//            }).disposed(by: disposeBag)
+//        searchFiled.cancelButton.rx.tap.subscribe(onNext: {[weak self] (text) in
+//            guard let weakSelf = self else { return }
+//            weakSelf.tabBarController?.selectedIndex = 0
+//            }).disposed(by: disposeBag)
     }
 
     func getDefaultHistoryData() {

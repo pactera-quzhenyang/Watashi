@@ -12,6 +12,11 @@ import Firebase
 class SWBaseViewController: UIViewController, SWGAProtocol {
     
     var titleText: String = ""
+
+    var baseNavigationController: SWBaseNavigationController? {
+        return self.navigationController as? SWBaseNavigationController
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

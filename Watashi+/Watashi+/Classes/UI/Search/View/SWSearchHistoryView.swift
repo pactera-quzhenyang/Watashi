@@ -15,7 +15,6 @@ import RxCocoa
 class SWSearchHistoryView: UIView {
 
     var list: [String]! //title list
-    var tapGestures: [UILongPressGestureRecognizer] = [UILongPressGestureRecognizer]()
 
     let viewHeight: CGFloat = 30 //tagView高度
     let viewMaxWidth: CGFloat = screenWidth - 30 //tagView最大宽度
@@ -49,8 +48,7 @@ class SWSearchHistoryView: UIView {
         var lines: Int = 0 //获取当前行数
         let defalutShowLines = 2 //默认显示两行
         var getPrevViewMaxX: CGFloat = 0
-
-        tapGestures.removeAll()
+        var tapGestures: [UILongPressGestureRecognizer] = [UILongPressGestureRecognizer]()
 
         for i in 0..<list.count {
             let title = list[i]
@@ -172,29 +170,29 @@ class SWSearchHistoryView: UIView {
             }
         }
 
-        bindLongPress()
+        bindLongPress(tapGestures: tapGestures)
         bindArrowButton()
     }
 
-    func bindLongPress() {
+    func bindLongPress(tapGestures: [UILongPressGestureRecognizer]) {
         let selectedView = Observable.from(
-            self.tapGestures.map { gesture in gesture.rx.event.map { ele in ele } }
+            tapGestures.map { gesture in gesture.rx.event.map { ele in ele } }
             ).merge()
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let tagLabel: UILabel = gesture.view?.viewWithTag((gesture.view?.tag)! - 100 + 200) as! UILabel
             let subsciption = selectedView.filter({ $0.view?.tag == gesture.view?.tag})
                 .map({$0.isEnabled})
                 .bind(to: tagLabel.rx.isSelected)
                 return Disposables.create(disposable, subsciption)
             }.disposed(by: disposeBag)
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let lineView = gesture.view?.viewWithTag((gesture.view?.tag)! - 100 + 300)
             let subsciption = selectedView.filter({ $0.view?.tag == gesture.view?.tag})
                 .map({!$0.isEnabled})
                 .bind(to: (lineView?.rx.isHidden)!)
                 return Disposables.create(disposable, subsciption)
             }.disposed(by: disposeBag)
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let deleteButton: UIButton = gesture.view?.viewWithTag((gesture.view?.tag)! - 100 + 400) as! UIButton
             let subsciption = selectedView.filter({ $0.view?.tag == gesture.view?.tag})
                 .map({!$0.isEnabled})
@@ -202,28 +200,28 @@ class SWSearchHistoryView: UIView {
                 return Disposables.create(disposable, subsciption)
             }.disposed(by: disposeBag)
 
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let subsciption = selectedView.filter({ $0.view?.tag == gesture.view?.tag})
                 .map({$0.view!.tag - 100})
                 .bind(to: rx.selectIndex)
                 return Disposables.create(disposable, subsciption)
             }.disposed(by: disposeBag)
 
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let tagLabel: UILabel = gesture.view?.viewWithTag((gesture.view?.tag)! - 100 + 200) as! UILabel
             let subsciption = selectedView.filter({ $0.view?.tag != gesture.view?.tag})
                 .map({!$0.isEnabled})
                 .bind(to: tagLabel.rx.isSelected)
                 return Disposables.create(disposable, subsciption)
             }.disposed(by: disposeBag)
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let lineView = gesture.view?.viewWithTag((gesture.view?.tag)! - 100 + 300)
             let subsciption = selectedView.filter({ $0.view?.tag != gesture.view?.tag})
                 .map({$0.isEnabled})
                 .bind(to: (lineView?.rx.isHidden)!)
                 return Disposables.create(disposable, subsciption)
             }.disposed(by: disposeBag)
-        self.tapGestures.reduce(Disposables.create()) { disposable, gesture in
+        tapGestures.reduce(Disposables.create()) { disposable, gesture in
             let deleteButton: UIButton = gesture.view?.viewWithTag((gesture.view?.tag)! - 100 + 400) as! UIButton
             let subsciption = selectedView.filter({ $0.view?.tag != gesture.view?.tag})
                 .map({$0.isEnabled})

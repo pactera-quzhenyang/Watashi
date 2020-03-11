@@ -84,6 +84,7 @@
 		533C5A3A23FBB39700735670 /* SWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A3923FBB39700735670 /* SWBaseViewController.swift */; };
 		533D10F724074E64000F116D /* SWSearchHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D10F624074E64000F116D /* SWSearchHistoryModel.swift */; };
 		533EC154240F4B0200A44CB8 /* SWSearchFoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC153240F4B0200A44CB8 /* SWSearchFoundViewModel.swift */; };
+		5341A5E024187435006C7C88 /* SWBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5341A5DF24187435006C7C88 /* SWBaseNavigationController.swift */; };
 		534420F02408A7890072AC16 /* SWCollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420EF2408A7890072AC16 /* SWCollectionViewCell+Rx.swift */; };
 		534420F22408BC840072AC16 /* SWSearchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F12408BC830072AC16 /* SWSearchHistoryView.swift */; };
 		534420F42408EF980072AC16 /* SWSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534420F32408EF980072AC16 /* SWSearchView.swift */; };
@@ -396,6 +397,7 @@
 		533C5A3923FBB39700735670 /* SWBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBaseViewController.swift; sourceTree = "<group>"; };
 		533D10F624074E64000F116D /* SWSearchHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchHistoryModel.swift; sourceTree = "<group>"; };
 		533EC153240F4B0200A44CB8 /* SWSearchFoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchFoundViewModel.swift; sourceTree = "<group>"; };
+		5341A5DF24187435006C7C88 /* SWBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWBaseNavigationController.swift; sourceTree = "<group>"; };
 		534420EF2408A7890072AC16 /* SWCollectionViewCell+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWCollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
 		534420F12408BC830072AC16 /* SWSearchHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWSearchHistoryView.swift; sourceTree = "<group>"; };
 		534420F32408EF980072AC16 /* SWSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchView.swift; sourceTree = "<group>"; };
@@ -993,6 +995,7 @@
 				53E4F528240635DF00668DC6 /* SWBaseTabbarController.swift */,
 				53AE73B324076DC800056460 /* SWBaseTableViewCell.swift */,
 				539D7D6D240CFF2E002130EF /* BaseView.swift */,
+				5341A5DF24187435006C7C88 /* SWBaseNavigationController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1652,6 +1655,7 @@
 				817415A9240519890033FE43 /* SWTrendViewController.swift in Sources */,
 				81036CD52408DCD000300E01 /* SWAccountViewModel.swift in Sources */,
 				812046C2240E5BF7007B57ED /* SWCheckNewProductsCollectionViewCellB.swift in Sources */,
+				5341A5E024187435006C7C88 /* SWBaseNavigationController.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				53002C9D2415D1AF000F21F9 /* SWFirstLoginView.swift in Sources */,
