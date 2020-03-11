@@ -34,6 +34,12 @@ class SWBaseTabbarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setBadgeValue()
+        addLineView()
+        bindView()
+    }
+
+    func setBadgeValue() {
         _ = NotificationCenter.default.rx
             .notification(NSNotification.Name(NotifyName.badgeValueChange))
         .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
@@ -50,6 +56,9 @@ class SWBaseTabbarController: UITabBarController {
                 item.badgeColor = .mainColor
             }
         }
+    }
+
+    func addLineView() {
         tabBar.addSubview(lineView)
         lineView.snp.makeConstraints { (make) in
             make.top.equalTo(0)
@@ -57,7 +66,9 @@ class SWBaseTabbarController: UITabBarController {
             make.width.equalTo(lineViewWidth)
             make.height.equalTo(1)
         }
+    }
 
+    func bindView() {
         self.rx.didSelect.subscribe(onNext: { (selectController) in
             for (index, item) in self.viewControllers!.enumerated() {
                 if selectController == item {

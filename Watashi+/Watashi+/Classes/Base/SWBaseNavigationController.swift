@@ -25,18 +25,19 @@ class SWBaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        switch barStyle {
-        case .search:
-            navigationBar.addSubview(searchFiled)
-        default:
-            break
-        }
-        
+        setBackButton()
     }
 
     func hideNaviLine() {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.shadowImage = UIImage()
+    }
+
+    func setBackButton() {
+        let backButton = UIButton.init()
+        backButton.setImage(UIImage(named: "back"), for: UIControl.State.normal)
+        let backItem = UIBarButtonItem.init(customView: backButton)
+        self.navigationItem.leftBarButtonItems = [backItem]
     }
     
 

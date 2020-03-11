@@ -75,6 +75,10 @@ class SWFirstLoginViewController: SWBaseViewController, StoryboardSceneBased {
                 cell.contentView.backgroundColor = .white
             }
             }).disposed(by: disposeBag)
+
+        loginButton.rx.tap.subscribe(onNext: { () in
+            self.view.removeFromSuperview()
+            }).disposed(by: disposeBag)
     }
 
     func getItemRadius(max: UInt32, min: UInt32) -> UInt32 {

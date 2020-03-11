@@ -30,6 +30,7 @@ class SWHomeViewController: SWBaseViewController {
         let h = objc_getClass("Watashi__dev.SWHomeViewController")
         type(of: h)
         setPageViewCon()
+        firstLoginView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -94,6 +95,11 @@ class SWHomeViewController: SWBaseViewController {
 
     }
 
+    func firstLoginView() {
+        let delegate = UIApplication.shared.delegate as! SWAppDelegate
+        delegate.window?.addSubview(SWFirstLoginViewController.instantiate().view)
+    }
+
     func s() {
         let path = UIBezierPath()
         path.move(to: CGPoint(x: 100, y: 500))
@@ -144,7 +150,6 @@ class SWHomeViewController: SWBaseViewController {
 
 extension SWHomeViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        navigationController?.pushViewController(SWFirstLoginViewController.instantiate(), animated: true)
         return false
     }
 
