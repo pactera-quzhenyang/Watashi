@@ -19,13 +19,27 @@ class SWCheckNewProductsCollectionViewCellB: SWBaseCollectionViewCell {
     /// 购买
     @IBOutlet weak var buyButton: UIButton!
     
+    override var id: String {
+        didSet {
+            priceLabel.text = "¥\(Int(arc4random_uniform(10000) + 0))"
+            imageView.image = UIImage(named: id)
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        buyButton.addTarget(self, action: #selector(buy), for: .touchUpInside)
     }
 
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        disposeBag = DisposeBag()
+    @objc func buy() {
+        delegate?.shoppingCartB?()
     }
+    
+//    override func prepareForReuse() {
+//        super.prepareForReuse()
+//        disposeBag = DisposeBag()
+//    }
+    
+   
 }

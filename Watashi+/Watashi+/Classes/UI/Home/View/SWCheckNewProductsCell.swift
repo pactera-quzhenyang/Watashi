@@ -10,7 +10,8 @@ import UIKit
 import Reusable
 import SnapKit
 import RxDataSources
-class SWCheckNewProductsCell: UITableViewCell, Reusable {
+import RxSwift
+class SWCheckNewProductsCell: UITableViewCell, Reusable, SWGAProtocol {
     
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -22,9 +23,13 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.minimumInteritemSpacing = 10
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.backgroundColor = .white
+        collectionView.register(UINib(nibName: "SWCheckNewProductsCollectionViewCellA", bundle: nil), forCellWithReuseIdentifier: SWRemoteConfigValue.shoppingCartA.rawValue)
+        collectionView.register(UINib(nibName: "SWCheckNewProductsCollectionViewCellB", bundle: nil), forCellWithReuseIdentifier: SWRemoteConfigValue.shoppingCartB.rawValue)
         return collectionView
     }()
 
@@ -43,7 +48,7 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         return titleLabel
     }()
     
-
+    let disposeBag = DisposeBag()
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -81,18 +86,82 @@ class SWCheckNewProductsCell: UITableViewCell, Reusable {
         collectionView.delegate = nil
         collectionView.dataSource = nil
 
-        let type = SWABTestingManager.shoppingCartsTypes() as? SWShoppingABTestProtocol
-        type?.bindCheckNewProducts(collectionView, imageArray: model.imageArray ?? [], cell: self)
+//        let type = SWABTestingManager.shoppingCartsTypes() as? SWShoppingABTestProtocol
+//        type?.bindCheckNewProducts(collectionView, imageArray: model.imageArray ?? [], cell: self)
+        bindCheckNewProducts(model.imageArray ?? [])
     }
 
- 
+    func bindCheckNewProducts(_ images: [String]) {
+        
+        let items = Observable.just([
+         SectionModel(model: "", items: images)
+        ])
+        let dataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, String>>(configureCell: { (dataSource, collectionView, indexPath, element) -> SWBaseCollectionViewCell in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SWABTestingManager.string(forKey: shoppingCart), for: indexPath) as! SWBaseCollectionViewCell
+
+             cell.delegate = self
+             cell.id = element
+             return cell
+           }
+        )
+        items.bind(to: collectionView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
+        collectionView.rx.setDelegate(self).disposed(by: disposeBag)
     
+        collectionView.rx.contentOffset.subscribe(onNext: { [weak self] (offset) in
+            guard let strongSelf = self else { return }
+            guard strongSelf.collectionView.contentSize.width > 0 else { return }
+            let x = offset.x - (strongSelf.collectionView.contentSize.width - screenWidth + 30)
+            if x >= 0 && x <= 100 {
+                strongSelf.arrowImageView.snp.updateConstraints { (make) in
+                    make.left.equalTo(strongSelf.contentView.snp.right).offset(-x+15)
+                }
+                strongSelf.titleLabel.snp.updateConstraints { (make) in
+                    make.left.equalTo(strongSelf.arrowImageView.snp.right)
+                }
+            }
+            }).disposed(by: disposeBag)
+        collectionView.rx.didEndDragging.subscribe(onNext: { (end) in
+            if end {
+
+            }
+        }).disposed(by: disposeBag)
+    }
+
+
+ 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
+}
+
+//MARK: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
+extension SWCheckNewProductsCell: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 140, height: self.height)
+    }
+    
+}
+
+extension SWCheckNewProductsCell: SWSWBaseCollectionViewCellDelegate {
+    
+    func shoppingCartA() {
+      
+        logEvent(list: ["cartClick"])
+        SWTabbarBadgeValueManager.shared.addBadgeValue()
+        NotificationCenter.default.post(name: Notification.Name(NotifyName.badgeValueChange), object: TabbarItem.shoppingCartItem)
+    }
+    
+    func shoppingCartB() {
+       
+       logEvent(list: ["cartClick"])
+       
+       let goods = SWGoodsViewController()
+       SWAppDelegate.nagvigationController()?.pushViewController(goods, animated: true)
+
+    }
 }
 
 protocol SWShoppingABTestProtocol: NSObjectProtocol {

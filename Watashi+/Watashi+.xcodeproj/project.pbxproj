@@ -300,6 +300,12 @@
 		817415F1240519A90033FE43 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
 		817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
 		817415F3240519A90033FE43 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AC69A423FBACBF0088CBC0 /* Home.storyboard */; };
+		81A9D9BB24188BE4000BBD77 /* SWSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534420F52408EFC50072AC16 /* SWSearchView.xib */; };
+		81A9D9BC24188BE4000BBD77 /* SWSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534420F52408EFC50072AC16 /* SWSearchView.xib */; };
+		81A9D9BD24188BEC000BBD77 /* SWSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */; };
+		81A9D9BE24188BED000BBD77 /* SWSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */; };
+		81A9D9BF24188BEF000BBD77 /* SWSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */; };
+		81A9D9C024188BF0000BBD77 /* SWSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */; };
 		81EA81F5240FA631004429F4 /* SWStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA81F4240FA631004429F4 /* SWStringExtension.swift */; };
 		81EA81F6240FA631004429F4 /* SWStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA81F4240FA631004429F4 /* SWStringExtension.swift */; };
 		81EA81F7240FA631004429F4 /* SWStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EA81F4240FA631004429F4 /* SWStringExtension.swift */; };
@@ -1249,14 +1255,17 @@
 				53AC69A323FBABDE0088CBC0 /* Main.storyboard in Resources */,
 				813304562411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib in Resources */,
 				53AC692F23FB742D0088CBC0 /* LaunchScreen.storyboard in Resources */,
+				81A9D9C024188BF0000BBD77 /* SWSearchResultTableViewCell.xib in Resources */,
 				53AC692C23FB742D0088CBC0 /* Assets.xcassets in Resources */,
 				533C5A3823FBB1B100735670 /* Search.storyboard in Resources */,
 				810AF8C3240C9D810086176B /* GoogleService-pro-Info.plist in Resources */,
 				53F6429D23FE6D0600420A6F /* SWCheckNewProductsHeaderView.xib in Resources */,
 				812046BF240E5BE2007B57ED /* SWCheckNewProductsCollectionViewCellA.xib in Resources */,
 				532142292403C6EB00BB5977 /* Account.storyboard in Resources */,
+				81A9D9BE24188BED000BBD77 /* SWSearchHeaderView.xib in Resources */,
 				8133046224121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */,
 				5321422B2403C71600BB5977 /* Repurchase.storyboard in Resources */,
+				81A9D9BC24188BE4000BBD77 /* SWSearchView.xib in Resources */,
 				53AC69A523FBACBF0088CBC0 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1308,14 +1317,17 @@
 				817415EB240519A90033FE43 /* Cart.storyboard in Resources */,
 				813304552411EFBA00C0B263 /* SWGoodsFilterHeaderView.xib in Resources */,
 				817415EC240519A90033FE43 /* Main.storyboard in Resources */,
+				81A9D9BF24188BEF000BBD77 /* SWSearchResultTableViewCell.xib in Resources */,
 				817415ED240519A90033FE43 /* LaunchScreen.storyboard in Resources */,
 				817415EE240519A90033FE43 /* Assets.xcassets in Resources */,
 				817415EF240519A90033FE43 /* Search.storyboard in Resources */,
 				817415F0240519A90033FE43 /* SWCheckNewProductsHeaderView.xib in Resources */,
 				812046BE240E5BE2007B57ED /* SWCheckNewProductsCollectionViewCellA.xib in Resources */,
 				817415F1240519A90033FE43 /* Account.storyboard in Resources */,
+				81A9D9BD24188BEC000BBD77 /* SWSearchHeaderView.xib in Resources */,
 				8133046124121A6800C0B263 /* SWGoodsCollectionViewCell.xib in Resources */,
 				817415F2240519A90033FE43 /* Repurchase.storyboard in Resources */,
+				81A9D9BB24188BE4000BBD77 /* SWSearchView.xib in Resources */,
 				817415F3240519A90033FE43 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

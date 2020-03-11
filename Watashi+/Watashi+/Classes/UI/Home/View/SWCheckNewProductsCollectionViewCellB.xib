@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="140" height="189"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HjH-Yt-CXF">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14" translatesAutoresizingMaskIntoConstraints="NO" id="HjH-Yt-CXF">
                         <rect key="frame" x="0.0" y="0.0" width="140" height="129"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g02-Ew-cYD">
@@ -67,4 +67,7 @@
             <point key="canvasLocation" x="197.10144927536234" y="148.32589285714286"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="14" width="70" height="70"/>
+    </resources>
 </document>
