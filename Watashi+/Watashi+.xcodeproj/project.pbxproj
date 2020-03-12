@@ -68,6 +68,14 @@
 		532142292403C6EB00BB5977 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 532142282403C6EB00BB5977 /* Account.storyboard */; };
 		5321422B2403C71600BB5977 /* Repurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5321422A2403C71600BB5977 /* Repurchase.storyboard */; };
 		5322D4A523FE1A200069D0C9 /* SWCheckNewProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322D4A423FE1A200069D0C9 /* SWCheckNewProductsCell.swift */; };
+		53268F1E2419BFC1002F78D6 /* SWSearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53268F1D2419BFC1002F78D6 /* SWSearchContentView.swift */; };
+		53268F1F2419BFC1002F78D6 /* SWSearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53268F1D2419BFC1002F78D6 /* SWSearchContentView.swift */; };
+		53268F202419BFC1002F78D6 /* SWSearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53268F1D2419BFC1002F78D6 /* SWSearchContentView.swift */; };
+		53268F212419BFD9002F78D6 /* SWTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AB9D972418D52500806CD8 /* SWTools.swift */; };
+		53268F222419BFEA002F78D6 /* SWTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AB9D972418D52500806CD8 /* SWTools.swift */; };
+		53268F282419DCDA002F78D6 /* SWTabSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53268F272419DCDA002F78D6 /* SWTabSearchViewController.swift */; };
+		53268F292419DCDA002F78D6 /* SWTabSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53268F272419DCDA002F78D6 /* SWTabSearchViewController.swift */; };
+		53268F2A2419DCDA002F78D6 /* SWTabSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53268F272419DCDA002F78D6 /* SWTabSearchViewController.swift */; };
 		532C3D992403C11C00B12A2A /* SWCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532C3D982403C11C00B12A2A /* SWCartViewController.swift */; };
 		533C5A1A23FBB03600735670 /* SWSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1923FBB03600735670 /* SWSearchViewController.swift */; };
 		533C5A2A23FBB10100735670 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533C5A1F23FBB10000735670 /* PageContentView.swift */; };
@@ -390,6 +398,8 @@
 		532142282403C6EB00BB5977 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		5321422A2403C71600BB5977 /* Repurchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repurchase.storyboard; sourceTree = "<group>"; };
 		5322D4A423FE1A200069D0C9 /* SWCheckNewProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCheckNewProductsCell.swift; sourceTree = "<group>"; };
+		53268F1D2419BFC1002F78D6 /* SWSearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchContentView.swift; sourceTree = "<group>"; };
+		53268F272419DCDA002F78D6 /* SWTabSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWTabSearchViewController.swift; sourceTree = "<group>"; };
 		532C3D982403C11C00B12A2A /* SWCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWCartViewController.swift; sourceTree = "<group>"; };
 		533C5A1923FBB03600735670 /* SWSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWSearchViewController.swift; sourceTree = "<group>"; };
 		533C5A1F23FBB10000735670 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -746,6 +756,7 @@
 				539D7D69240CFD03002130EF /* SWSearchHeaderView.xib */,
 				534F67C02410E3B1008A8BE2 /* SWSearchResultTableViewCell.swift */,
 				534F67C12410E3B1008A8BE2 /* SWSearchResultTableViewCell.xib */,
+				53268F1D2419BFC1002F78D6 /* SWSearchContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -761,6 +772,7 @@
 		533C5A1823FBB02000735670 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				53268F272419DCDA002F78D6 /* SWTabSearchViewController.swift */,
 				533C5A1923FBB03600735670 /* SWSearchViewController.swift */,
 			);
 			path = Controller;
@@ -1484,6 +1496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53268F222419BFEA002F78D6 /* SWTools.swift in Sources */,
 				5315C6ED241624E1008DE93D /* SWUITextFiled+Rx.swift in Sources */,
 				5315C6EE241624E1008DE93D /* SWUILabel+Rx.swift in Sources */,
 				5315C6EF241624E1008DE93D /* SWCollectionViewCell+Rx.swift in Sources */,
@@ -1537,6 +1550,7 @@
 				812046C4240E5BF7007B57ED /* SWCheckNewProductsCollectionViewCellB.swift in Sources */,
 				81741552240516010033FE43 /* CUStarView.swift in Sources */,
 				810AF8B5240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
+				53268F202419BFC1002F78D6 /* SWSearchContentView.swift in Sources */,
 				5389E93A24050E1500F18377 /* SWHomeViewController.swift in Sources */,
 				532142202403C57500BB5977 /* SWRepurchaseViewController.swift in Sources */,
 				81FD77832410898F00739E84 /* SWProductDetailsViewController.swift in Sources */,
@@ -1545,6 +1559,7 @@
 				532C3D992403C11C00B12A2A /* SWCartViewController.swift in Sources */,
 				533C5A3023FBB10100735670 /* PageStyle.swift in Sources */,
 				810AF8C9240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
+				53268F2A2419DCDA002F78D6 /* SWTabSearchViewController.swift in Sources */,
 				53CF47A123FBE333005A52B9 /* ApiManager.swift in Sources */,
 				53D07EF22403935C00607088 /* SWCheckNewProductsModel.swift in Sources */,
 				8133045A241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */,
@@ -1601,6 +1616,7 @@
 				53F4FBE724063E550016A38B /* SWCheckNewProductsHeaderView.swift in Sources */,
 				8174158A240519890033FE43 /* SWSeasonRecommendViewController.swift in Sources */,
 				53AB9D982418D52500806CD8 /* SWTools.swift in Sources */,
+				53268F1E2419BFC1002F78D6 /* SWSearchContentView.swift in Sources */,
 				81FD77812410898F00739E84 /* SWProductDetailsViewController.swift in Sources */,
 				533D10F724074E64000F116D /* SWSearchHistoryModel.swift in Sources */,
 				810AF8C7240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
@@ -1678,6 +1694,7 @@
 				5341A5E024187435006C7C88 /* SWBaseNavigationController.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
 				81036CD12408D9EA00300E01 /* SWMJRefreshComponent+Rx.swift in Sources */,
+				53268F282419DCDA002F78D6 /* SWTabSearchViewController.swift in Sources */,
 				53002C9D2415D1AF000F21F9 /* SWFirstLoginView.swift in Sources */,
 				53E4F529240635DF00668DC6 /* SWBaseTabbarController.swift in Sources */,
 				533EC154240F4B0200A44CB8 /* SWSearchFoundViewModel.swift in Sources */,
@@ -1688,6 +1705,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53268F212419BFD9002F78D6 /* SWTools.swift in Sources */,
 				5315C6DD241624A5008DE93D /* SWSearchHistoryModel.swift in Sources */,
 				5315C6DE241624A5008DE93D /* SWSearchHistoryTableViewCell.swift in Sources */,
 				5315C6DF241624A5008DE93D /* SWSearchHistoryView.swift in Sources */,
@@ -1741,6 +1759,7 @@
 				812046C3240E5BF7007B57ED /* SWCheckNewProductsCollectionViewCellB.swift in Sources */,
 				817415D0240519A90033FE43 /* CUStarView.swift in Sources */,
 				810AF8B4240C917B0086176B /* SWRemoteConfigKey.swift in Sources */,
+				53268F1F2419BFC1002F78D6 /* SWSearchContentView.swift in Sources */,
 				817415D1240519A90033FE43 /* SWHomeViewController.swift in Sources */,
 				817415D2240519A90033FE43 /* SWRepurchaseViewController.swift in Sources */,
 				81FD77822410898F00739E84 /* SWProductDetailsViewController.swift in Sources */,
@@ -1749,6 +1768,7 @@
 				817415D5240519A90033FE43 /* SWCartViewController.swift in Sources */,
 				817415D6240519A90033FE43 /* PageStyle.swift in Sources */,
 				810AF8C8240CAB7C0086176B /* SWNetworkPlugin.swift in Sources */,
+				53268F292419DCDA002F78D6 /* SWTabSearchViewController.swift in Sources */,
 				817415D7240519A90033FE43 /* ApiManager.swift in Sources */,
 				817415D8240519A90033FE43 /* SWCheckNewProductsModel.swift in Sources */,
 				81330459241215B100C0B263 /* SWAppDelegateExtension.swift in Sources */,

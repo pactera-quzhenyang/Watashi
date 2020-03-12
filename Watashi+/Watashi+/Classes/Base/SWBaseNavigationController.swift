@@ -15,28 +15,29 @@ public enum BarStyle: Int {
     case searchHome = 0
     //搜索页搜索框
     case searchView = 1
+    //商品一览
+    case productList = 2
 }
 
 class SWBaseNavigationController: UINavigationController {
 
     var style: BarStyle!
 
-    lazy var searchFiled: SWSearchView = {
-        let searchFiled = SWSearchView.loadFromNib()
-        return searchFiled
-    }()
-
     var barStyle: BarStyle {
         get {
             return style
         }
         set {
+            let searchFiled = SWSearchView.loadFromNib()
             switch newValue {
             case .searchHome:
                 navigationBar.addSubview(searchFiled)
             case .searchView:
                 hideNaviLine()
-                searchFiled.setSearchFieldStyle(style: .navigationView)
+                searchFiled.setSearchFieldStyle(style: .searchHistoryStyle)
+                navigationBar.addSubview(searchFiled)
+            case .productList:
+                searchFiled.setSearchFieldStyle(style: .productListStyle)
                 navigationBar.addSubview(searchFiled)
             }
             style = newValue
@@ -47,10 +48,12 @@ class SWBaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.leftBarButtonItem = nil
     }
 
     func hideNaviLine() {
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = false
+        navigationBar.shadowImage = UIImage()
     }
 }

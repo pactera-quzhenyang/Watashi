@@ -11,35 +11,54 @@ import Reusable
 import RxSwift
 import RxCocoa
 
-public enum searchFieldStyle: Int {
-    case home = 0
-    case navigationView = 1
+public enum SearchFieldStyle: Int {
+    //home页
+    case homeStyle = 0
+    //搜索历史页面
+    case searchHistoryStyle = 1
+    //产品一览页面
+    case productListStyle = 2
 }
 
 class SWSearchView: UIView, NibLoadable {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var searchField: SWHomeSearchField!
-    @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var filedHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var rightButton: UIButton!
+    @IBOutlet weak var backButtonWidthConstraint: NSLayoutConstraint!
 
     let disposBag = DisposeBag()
+
+    let backButtonWidth: CGFloat = 44
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        cancelButton.rx.tap.subscribe(onNext: { () in
+        backButtonWidthConstraint.constant = 0
+        backButton.isHidden = true
+
+        backButton.rx.tap.subscribe(onNext: {[weak self] () in
+            guard let weakSelf = self else { return }
+            weakSelf.removeFromSuperview()
             SWAppDelegate.nagvigationController()?.popViewController(animated: true)
+        }).disposed(by: disposBag)
+
+        rightButton.rx.tap.subscribe(onNext: {[weak self] () in
+            guard let weakSelf = self else { return }
+            weakSelf.removeFromSuperview()
+            SWAppDelegate.nagvigationController()?.popViewController(animated: false)
             }).disposed(by: disposBag)
     }
 
-    func setSearchFieldStyle(style: searchFieldStyle = .home) {
+    func setSearchFieldStyle(style: SearchFieldStyle = .homeStyle) {
         switch style {
-        case .navigationView:
-            filedHeightConstraint.constant = 34
+        case .searchHistoryStyle:
             searchField.placeholder = ""
-            searchField.backgroundColor = .mainWhite
-            searchField.layer.cornerRadius = 17
             searchField.becomeFirstResponder()
+        case .productListStyle:
+            backButton.isHidden = false
+            backButtonWidthConstraint.constant = backButtonWidth
+            searchField.placeholder = ""
         default:
             break
         }

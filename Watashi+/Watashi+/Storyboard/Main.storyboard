@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="391" y="-1054"/>
         </scene>
-        <!--SWSearchViewController-->
+        <!--SWTabSearchViewController-->
         <scene sceneID="JVP-Sr-tZN">
             <objects>
-                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SWSearchViewController" id="6Yf-St-m2r" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SWTabSearchViewController" id="6Yf-St-m2r" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="f7n-px-CwR"/>
                     <navigationItem key="navigationItem" id="r73-ce-W0u"/>
                 </viewControllerPlaceholder>

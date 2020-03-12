@@ -43,7 +43,8 @@ class SWGoodsViewController: SWBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Goods"
+        baseNavigationController?.barStyle = .productList
+
         self.navigationController?.navigationBar.isHidden = false
         bindView()
     }

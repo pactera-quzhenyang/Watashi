@@ -36,6 +36,11 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
         bindViewModel()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        baseNavigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+
     func setNaviBarStyle() {
         baseNavigationController?.barStyle = .searchView
     }
