@@ -21,6 +21,8 @@ public enum BarStyle: Int {
 
 class SWBaseNavigationController: UINavigationController {
 
+    var searchString: String!
+
     var style: BarStyle!
 
     var barStyle: BarStyle {
@@ -28,17 +30,26 @@ class SWBaseNavigationController: UINavigationController {
             return style
         }
         set {
-            let searchFiled = SWSearchView.loadFromNib()
+            let searchView = SWSearchView.loadFromNib()
             switch newValue {
             case .searchHome:
-                navigationBar.addSubview(searchFiled)
+                navigationBar.addSubview(searchView)
             case .searchView:
-                hideNaviLine()
-                searchFiled.setSearchFieldStyle(style: .searchHistoryStyle)
-                navigationBar.addSubview(searchFiled)
+                for subView in self.navigationBar.subviews {
+                    if subView is SWSearchView {
+                        let view = subView as! SWSearchView
+                        if view.searchFieldStyle == .searchHistoryStyle {
+                            return
+                        }
+                    }
+                }
+                searchView.setSearchFieldStyle(style: .searchHistoryStyle)
+                navigationBar.addSubview(searchView)
+                navigationBar.shadowImage = UIImage()
             case .productList:
-                searchFiled.setSearchFieldStyle(style: .productListStyle)
-                navigationBar.addSubview(searchFiled)
+                searchView.setSearchFieldStyle(style: .productListStyle)
+                searchView.setSearchContentView(title: searchString)
+                navigationBar.addSubview(searchView)
             }
             style = newValue
         }
@@ -48,12 +59,34 @@ class SWBaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        self.navigationItem.leftBarButtonItem = nil
+        navigationBar.isTranslucent = false
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: UIView())
+        addNotification()
     }
 
-    func hideNaviLine() {
-        navigationBar.isTranslucent = false
-        navigationBar.shadowImage = UIImage()
+    func addNotification() {
+        _ = NotificationCenter.default.rx
+            .notification(NSNotification.Name(NotificationName.getSearchText))
+        .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
+            .subscribe({ notify in
+                let text = notify.element?.object as? String
+                for subView in self.navigationBar.subviews {
+                    if subView is SWSearchView {
+                        let view = subView as! SWSearchView
+                        if view.searchFieldStyle == .searchHistoryStyle {
+                            
+                            view.searchField.text = text
+                        }
+                    }
+                }
+            })
+    }
+
+    func setNaviBackButton() {
+        let backButton = UIButton.init()
+        backButton.frame = CGRect(x: 0, y: 0, width: 44, height: 40)
+        backButton.setImage(UIImage(named: "back"), for: UIControl.State.normal)
+        let backItem = UIBarButtonItem.init(customView: backButton)
+        self.navigationItem.leftBarButtonItems = [backItem]
     }
 }

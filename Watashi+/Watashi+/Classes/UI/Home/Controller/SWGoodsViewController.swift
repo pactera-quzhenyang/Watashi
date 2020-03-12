@@ -40,19 +40,21 @@ class SWGoodsViewController: SWBaseViewController {
         return filterHeaderView
     }()
     var style: SWGoodsCellStyle  = .list
+
+    var searchText: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        baseNavigationController?.searchString = searchText
         baseNavigationController?.barStyle = .productList
 
-        self.navigationController?.navigationBar.isHidden = false
         bindView()
     }
     
     func bindView() {
         self.view.addSubview(filterHeaderView)
         filterHeaderView.snp.makeConstraints { (make) in
-            make.top.equalTo(88)
+            make.top.equalTo(0)
             make.leading.right.equalToSuperview()
             make.height.equalTo(45)
         }

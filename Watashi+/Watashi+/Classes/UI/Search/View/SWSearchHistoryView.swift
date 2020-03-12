@@ -137,6 +137,7 @@ class SWSearchHistoryView: UIView {
                 make.height.equalTo(viewHeight)
             }
 
+            bindTagView(gesture: tap)
             bindDeleteButton(deleteButton: deleteButton)
         }
 
@@ -172,6 +173,16 @@ class SWSearchHistoryView: UIView {
 
         bindLongPress(tapGestures: tapGestures)
         bindArrowButton()
+    }
+
+    func bindTagView(gesture: UITapGestureRecognizer) {
+        gesture.rx.event.subscribe(onNext: {[weak self] (tapGesture) in
+            guard let weakSelf = self else { return }
+            let title = weakSelf.list[tapGesture.view!.tag - 100]
+            let controller = SWGoodsViewController()
+            controller.searchText = title
+            SWAppDelegate.nagvigationController()?.pushViewController(controller, animated: false)
+            }).disposed(by: disposeBag)
     }
 
     func bindLongPress(tapGestures: [UILongPressGestureRecognizer]) {

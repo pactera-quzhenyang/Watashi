@@ -36,11 +36,6 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
         bindViewModel()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        baseNavigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-
     func setNaviBarStyle() {
         baseNavigationController?.barStyle = .searchView
     }
@@ -49,45 +44,46 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
         _ = NotificationCenter.default.rx
             .notification(NSNotification.Name(NotificationName.searchListChange))
             .takeUntil(self.rx.deallocated) //页面销毁自动移除通知监听
-            .subscribe({ notify in
+            .subscribe({[weak self] notify in
+                guard let weakSelf = self else { return }
                 if let userInfo = notify.element?.userInfo as? [String: Any] {
                     for (_, element) in userInfo.enumerated() {
                         switch element.key {
                         case SearchListChangeType.removeObjectAtIndex:
                             let index = element.value as? Int
-                            self.searchHistortViewModel.list.remove(at: index ?? 0)
+                            weakSelf.searchHistortViewModel.list.remove(at: index ?? 0)
                             if !SWSearchHistoryManager.shared.isShowAll {
-                                self.searchHistortViewModel.list = self.searchHistortViewModel.addItemAtLast()
-                                self.getDefaultHistoryData()
+                                weakSelf.searchHistortViewModel.list = weakSelf.searchHistortViewModel.addItemAtLast()
+                                weakSelf.getDefaultHistoryData()
                             }
                         case SearchListChangeType.removeAllObject:
-                            self.searchHistortViewModel.list.removeAll()
+                            weakSelf.searchHistortViewModel.list.removeAll()
                         case SearchListChangeType.reloadCellHeight:
                             let isShowAll = element.value as? Bool ?? false
                             if isShowAll {
-                                self.searchHistortViewModel.list = self.searchHistortViewModel.getAllHistoryData()
+                                weakSelf.searchHistortViewModel.list = weakSelf.searchHistortViewModel.getAllHistoryData()
                             } else {
-                                self.searchHistortViewModel.list = self.searchHistortViewModel.getDefaultData(toIndex: self.searchHistortViewModel.toIndex)
+                                weakSelf.searchHistortViewModel.list = weakSelf.searchHistortViewModel.getDefaultData(toIndex: weakSelf.searchHistortViewModel.toIndex)
                             }
                         case SearchListChangeType.hideSearchDiscover:
                             let isShowData = element.value as? Bool ?? false
                             if isShowData {
-                                self.searchFoundViewModel.list = self.searchFoundViewModel.removeAllData()
+                                weakSelf.searchFoundViewModel.list = weakSelf.searchFoundViewModel.removeAllData()
                             } else {
-                                self.searchFoundViewModel.list = self.searchFoundViewModel.showAllData()
+                                weakSelf.searchFoundViewModel.list = weakSelf.searchFoundViewModel.showAllData()
                             }
                         default:
                             break
                         }
                     }
                     var newData = [
-                        SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: self.searchHistortViewModel.list)]),
-                        SectionModel(model: SearchPage.searchFound, items: [SWSearchHistoryModel(tagList: self.searchFoundViewModel.list)])
+                        SectionModel(model: SearchPage.searchHistory, items: [SWSearchHistoryModel(tagList: weakSelf.searchHistortViewModel.list)]),
+                        SectionModel(model: SearchPage.searchFound, items: [SWSearchHistoryModel(tagList: weakSelf.searchFoundViewModel.list)])
                         ]
-                    if self.searchHistoryView.list.count == 0 {
+                    if weakSelf.searchHistoryView.list.count == 0 {
                         newData.removeFirst()
                     }
-                    self.tableList.onNext(newData)
+                    weakSelf.tableList.onNext(newData)
                 }
         })
     }

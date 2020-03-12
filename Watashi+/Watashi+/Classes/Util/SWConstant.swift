@@ -37,6 +37,8 @@ struct NotificationName {
     static let searchListChange = "SWSearchListChangeNotificationKey"
     //tabbar角标
     static let badgeValueChange = "SWBadgeValueChangeNotificationKey"
+    //商品一览搜索点击空白区域
+    static let getSearchText = "SWGetSearchTextNotificationKey"
 }
 /*
 //////搜索页面
