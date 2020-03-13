@@ -142,30 +142,31 @@ class SWSearchHistoryView: UIView {
         }
 
         if let lastView = (viewWithTag(list.count + 99) != nil) ? viewWithTag(list.count + 99) : viewWithTag(stopAtIndex + 99){
-            self.addSubview(arrowButton)
-            self.addSubview(lineView)
-
             let newLine = viewMaxWidth - getPrevViewMaxX < 30
             if newLine && !SWSearchHistoryManager.shared.isShowAll && lines == defalutShowLines - 1 {
                 stopAtIndex -= 1
             }
 
-            arrowButton.snp.makeConstraints { (make) in
-                if newLine {
-                    make.left.equalTo(viewBeginX)
-                    make.top.equalTo(lastView.snp.bottom).offset(viewSpace)
-                } else {
-                    make.left.equalTo(lastView.snp.right)
-                    make.top.equalTo(lastView.snp.top)
+            if lines >= defalutShowLines {
+                self.addSubview(arrowButton)
+                arrowButton.snp.makeConstraints { (make) in
+                    if newLine {
+                        make.left.equalTo(viewBeginX)
+                        make.top.equalTo(lastView.snp.bottom).offset(viewSpace)
+                    } else {
+                        make.left.equalTo(lastView.snp.right)
+                        make.top.equalTo(lastView.snp.top)
+                    }
+                    make.width.equalTo(viewHeight)
+                    make.height.equalTo(viewHeight)
                 }
-                make.width.equalTo(viewHeight)
-                make.height.equalTo(viewHeight)
             }
+            self.addSubview(lineView)
 
             lineView.snp.makeConstraints { (make) in
                 make.left.equalTo(viewBeginX)
                 make.right.equalTo(-viewBeginX)
-                make.top.equalTo(arrowButton.snp.bottom).offset(30)
+                make.top.equalTo(lines < defalutShowLines ? lastView.snp.bottom : arrowButton.snp.bottom).offset(30)
                 make.bottom.equalToSuperview()
                 make.height.equalTo(1)
             }

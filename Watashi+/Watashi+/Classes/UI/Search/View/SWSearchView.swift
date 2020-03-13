@@ -92,11 +92,8 @@ class SWSearchView: UIView, NibLoadable {
             self.removeFromSuperview()
             SWAppDelegate.nagvigationController()?.popViewController(animated: false)
             NotificationCenter.default.post(name: Notification.Name(NotificationName.getSearchText), object: self.searchContentView.contentList.first!)
+            NotificationCenter.default.post(name: Notification.Name(NotificationName.searchListChange), object: nil, userInfo: [SearchListChangeType.productListBack: ""])
         }).disposed(by: disposBag)
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
     }
     /*
     // Only override draw() if you perform custom drawing.
@@ -111,6 +108,15 @@ class SWSearchView: UIView, NibLoadable {
 extension SWSearchView: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if searchFieldStyle == .searchHistoryStyle {
+            if let text = textField.text {
+                SWSearchHistoryManager.shared.saveSearchText(text)
+
+                textField.resignFirstResponder()
+                
+                let controller = SWGoodsViewController()
+                controller.searchText = text
+                SWAppDelegate.nagvigationController()?.pushViewController(controller, animated: false)
+            }
             return true
         }
         return false

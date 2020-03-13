@@ -52,6 +52,8 @@ struct SearchListChangeType {
     static let reloadCellHeight = "reloadCellHeight"
     //搜索发现隐藏按钮
     static let hideSearchDiscover = "hideSearchDiscover"
+    //商品一览搜索框
+    static let productListBack = "productListBack"
 }
 /*
 //////产品

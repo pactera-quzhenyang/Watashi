@@ -52,12 +52,14 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
                         case SearchListChangeType.removeObjectAtIndex:
                             let index = element.value as? Int
                             weakSelf.searchHistortViewModel.list.remove(at: index ?? 0)
+                            SWSearchHistoryManager.shared.deleteSearchHistoryAtIndex(index: index ?? 0)
                             if !SWSearchHistoryManager.shared.isShowAll {
                                 weakSelf.searchHistortViewModel.list = weakSelf.searchHistortViewModel.addItemAtLast()
                                 weakSelf.getDefaultHistoryData()
                             }
                         case SearchListChangeType.removeAllObject:
                             weakSelf.searchHistortViewModel.list.removeAll()
+                            SWSearchHistoryManager.shared.deleteAllSearchHistory()
                         case SearchListChangeType.reloadCellHeight:
                             let isShowAll = element.value as? Bool ?? false
                             if isShowAll {
@@ -71,6 +73,16 @@ class SWSearchViewController: SWBaseViewController, StoryboardSceneBased {
                                 weakSelf.searchFoundViewModel.list = weakSelf.searchFoundViewModel.removeAllData()
                             } else {
                                 weakSelf.searchFoundViewModel.list = weakSelf.searchFoundViewModel.showAllData()
+                            }
+                        case SearchListChangeType.productListBack:
+                            if weakSelf.searchHistortViewModel.toIndex == nil {
+                                weakSelf.searchHistortViewModel.list = SWSearchHistoryManager.shared.getSearchHistoryList()
+                            } else {
+                                if SWSearchHistoryManager.shared.isShowAll {
+                                    weakSelf.searchHistortViewModel.list = SWSearchHistoryManager.shared.getSearchHistoryList()
+                                } else {
+                                    weakSelf.searchHistortViewModel.addItemAtSurplusListLast()
+                                }
                             }
                         default:
                             break

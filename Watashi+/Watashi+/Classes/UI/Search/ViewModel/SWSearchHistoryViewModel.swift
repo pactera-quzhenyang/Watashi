@@ -15,18 +15,13 @@ class SWSearchHistoryViewModel: NSObject {
     var surplusList = [String]()
     var toIndex: Int!
     override init() {
-        list.append("iphonexsmadaskldaskldjalskdjalsjdlaskdjalskdjalskdjalskdjalskdjaslkdjalskdjalskdjalskdjaslkdjalskdjdjaskldjaklsjax")
-        list.append("iphone")
-        list.append("仮面")
-        list.append("コンピューターデスク")
-        list.append("ゲーミングチェア")
-        list.append("iphone8 pluss")
-        list.append("アミノ酸洗顔料")
-        list.append("芳香剤")
-        list.append("iphonexsmax")
+        list = SWSearchHistoryManager.shared.getSearchHistoryList()
     }
 
     func getDefaultData(toIndex: Int) -> [String] {
+        guard toIndex > 0 else {
+            return list
+        }
         self.toIndex = toIndex
         var newData = [String]()
         for item in list.enumerated() {
@@ -57,5 +52,10 @@ class SWSearchHistoryViewModel: NSObject {
             newData.append(nextData)
         }
         return newData
+    }
+
+    func addItemAtSurplusListLast() {
+        let list = SWSearchHistoryManager.shared.getSearchHistoryList()
+        surplusList.append(list.last!)
     }
 }
