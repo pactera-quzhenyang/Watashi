@@ -23,6 +23,7 @@ def default_pods
     pod 'FirebaseAnalytics'
     pod 'SwiftLint'
     pod 'MJRefresh'
+    pod 'MarketingCloudSDK'
 end
 
 target 'Watashi+-dev' do
